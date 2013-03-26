@@ -41,15 +41,17 @@
 ;; install extensions if they're missing
 (defun init--install-packages ()
   (packages-install
-   (cons 'ace-jump-mode marmalade)
+   (cons 'ace-jump-mode melpa)
    (cons 'ack gnu)
+   (cons 'auctex melpa)
    (cons 'auto-complete melpa)
    (cons 'auto-complete-clang melpa)
+   (cons 'android-mode marmalade)
    (cons 'browse-kill-ring melpa)
    (cons 'dynamic-fonts melpa)
    (cons 'ecb melpa)
    (cons 'evil melpa)
-   (cons 'flymake marmalade)
+   (cons 'flymake melpa)
    (cons 'flymake-cursor melpa)
    (cons 'fuzzy melpa)
    (cons 'ggtags gnu)
@@ -108,8 +110,8 @@
 ;; (require 'setup-ecb)
 (require 'setup-evil)
 (require 'setup-flymake)
-(require 'setup-helm)
 (require 'setup-ido)
+(require 'setup-helm)
 (require 'setup-ibuffer)
 (require 'setup-session)
 (require 'setup-shell-pop)
@@ -125,7 +127,24 @@
 
 (require 'smartparens-config)
 (smartparens-global-mode)
+
+(require 'window-numbering)
+;; highlight the window number in pink color
+(custom-set-faces '(window-numbering-face ((t (:foreground "SteelBule" :underline "SteelBule4" :weight bold)))))
+(window-numbering-mode 1)
 ;;; end of other extensions 
+
+;;; Android plugin
+(require 'eclim)
+(require 'eclimd)
+;; (global-eclim-mode)
+(require 'ac-emacs-eclim-source)
+(ac-emacs-eclim-config)
+(require 'company)
+(require 'company-emacs-eclim)
+(company-emacs-eclim-setup)
+;; (global-company-mode t)
+;;; end of Android plugin
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -147,29 +166,3 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((((class color) (min-colors 89)) (:foreground "#839496" :background "#002b36")))))
-
-;; (require 'eclim)
-;; (global-eclim-mode)
-;; (custom-set-variables
-;;  '(eclim-eclipse-dirs '("~/opt/eclipse")))
-
-;; Variables
-;; (setq eclim-auto-save t
-;;       eclim-executable "/opt/eclipse/eclim"
-;;       eclimd-executable "/opt/eclipse/eclimd"
-;;       eclimd-wait-for-process nil
-;;       eclimd-default-workspace "~/workspace"
-;;       help-at-pt-display-when-idle t
-;;       help-at-pt-timer-delay 0.1
-;;       ac-delay 0.5
-;;       )
-
-;; (require 'ac-emacs-eclim-source)
-;; (ac-emacs-eclim-config)
-
-;; (require 'company)
-;; (require 'company-emacs-eclim)
-;; (company-emacs-eclim-setup)
-;; (global-company-mode t)
-
-

@@ -111,15 +111,15 @@ In Insert state, insert a newline."
 (define-key evil-operator-state-map (kbd "C-SPC") #'evil-ace-jump-line-to-mode) ; similar to t
 (define-key evil-operator-state-map (kbd "M-SPC") #'evil-ace-jump-char-mode)
 ;; different jumps for different visual modes
-(defadvice evil-visual-line (before spc-for-line-jump activate)
-  (define-key evil-motion-state-map (kbd "SPC") #'evil-ace-jump-line-mode))
+;; (defadvice evil-visual-line (before spc-for-line-jump activate)
+;;   (define-key evil-motion-state-map (kbd "SPC") #'evil-ace-jump-line-mode))
 
-(defadvice evil-visual-char (before spc-for-char-jump activate)
-  (define-key evil-motion-state-map (kbd "SPC") #'evil-ace-jump-char-mode))
+;; (defadvice evil-visual-char (before spc-for-char-jump activate)
+;;   (define-key evil-motion-state-map (kbd "SPC") #'evil-ace-jump-char-mode))
 
-(defadvice evil-visual-block (before spc-for-char-jump activate)
-  (define-key evil-visual-state-map (kbd "M-k") 'mark-previous-like-this)
-  evil-motion-state-map (kbd "SPC") #'evil-ace-jump-char-mode)
+;; (defadvice evil-visual-block (before spc-for-char-jump activate)
+;;   (define-key evil-visual-state-map (kbd "M-k") 'mark-previous-like-this)
+;;   evil-motion-state-map (kbd "SPC") #'evil-ace-jump-char-mode)
 
 
 (require 'mark-multiple)
