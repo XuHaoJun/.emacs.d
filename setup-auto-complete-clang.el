@@ -2,8 +2,8 @@
 (setq clang-completion-suppress-error 't)
 ;; 添加c-mode和c++-mode的hook，开启auto-complete的clang扩展  
 (defun wttr/ac-cc-mode-setup ()  
-  (make-local-variable 'ac-auto-start)  
-  (setq ac-auto-start nil)              ;auto complete using clang is CPU sensitive  
+  ;; (make-local-variable 'ac-auto-start)  
+  ;; (setq ac-auto-start nil)              ;auto complete using clang is CPU sensitive  
   (setq ac-sources (append '(ac-source-clang) ac-sources)))  
 (add-hook 'c-mode-hook 'wttr/ac-cc-mode-setup)  
 (add-hook 'c++-mode-hook 'wttr/ac-cc-mode-setup)  
