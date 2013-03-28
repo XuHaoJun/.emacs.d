@@ -124,7 +124,6 @@
 (require 'transpose-frame)
 
 (require 'magit)
-(set 'magit-process-connection-type nil)
 
 (require 'smartparens-config)
 (smartparens-global-mode)
