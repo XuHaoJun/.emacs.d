@@ -6,13 +6,14 @@
 (setq-default save-place t)
 (setq save-place-file (expand-file-name ".places" user-emacs-directory))
 
+(require 'savekill)
+
 (require 'desktop)
 (custom-set-variables
  '(desktop-base-file-name ".emacs.desktop")
  '(desktop-dirname "~/.emacs.d/" t)
  '(desktop-path (quote ("~/.emacs.d/")))
  '(desktop-save-mode 1))
-
 ;; save a bunch of variables to the desktop file
 ;; for lists specify the len of the maximal saved data also
 (setq desktop-globals-to-save
