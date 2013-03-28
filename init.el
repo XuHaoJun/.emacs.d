@@ -124,6 +124,7 @@
 (require 'transpose-frame)
 
 (require 'magit)
+(add-hook 'magit-mode-hook (lambda() (linum-mode -1)))
 
 (require 'smartparens-config)
 (smartparens-global-mode)
