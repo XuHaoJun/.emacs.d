@@ -21,6 +21,7 @@
  /usr/local/include
  /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include-fixed
  /usr/include/SDL/SDL.h
+ /usr/include/libfreenect
  /usr/include
 ")))
 
