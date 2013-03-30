@@ -116,6 +116,7 @@
 (require 'setup-ibuffer)
 (require 'setup-session)
 (require 'setup-shell-pop)
+(require 'setup-tex)
 (require 'setup-undo-tree)
 (require 'setup-w3m)
 (require 'setup-yasnippet)
