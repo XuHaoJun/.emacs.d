@@ -74,7 +74,6 @@
    (cons 'solarized-theme melpa)
    (cons 'surround melpa)
    (cons 'switch-window melpa)
-   (cons 'tabbar melpa)
    (cons 'undo-tree melpa)
    (cons 'w3m melpa)
    (cons 'yasnippet melpa)))
@@ -161,8 +160,7 @@
  '(desktop-save-mode 1)
  '(help-at-pt-display-when-idle (quote (flymake-overlay)) nil (help-at-pt))
  '(help-at-pt-timer-delay 0.9)
- '(session-use-package t nil (session))
- '(tabbar-separator (quote (0.5))))
+ '(session-use-package t nil (session)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

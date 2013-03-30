@@ -57,10 +57,6 @@ In Insert state, insert a newline."
 (setq evil-mode-line-format nil)
 (evil-mode t)
 
-;; (require 'tabbar)
-;; (define-key evil-normal-state-map "gt" 'tabbar-forward-tab)
-;; (define-key evil-normal-state-map "gT" 'tabbar-backward-tab)
-
 ;; AceJump is a nice addition to evil's standard motions.
 ;; The following definitions are necessary to define evil motions for ace-jump-mode (version 2).
 ;; ace-jump is actually a series of commands which makes handling by evil
