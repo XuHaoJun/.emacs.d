@@ -12,9 +12,6 @@
 (show-paren-mode t)
 (setq show-paren-style 'parentheses)
 
-;; (require 'rainbow-delimiters)
-;; (global-rainbow-delimiters-mode)
-
 ;; Let term color deal with solarized-dark theme
 ;; (when window-system
 ;;   (setq

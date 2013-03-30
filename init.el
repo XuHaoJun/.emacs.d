@@ -65,7 +65,6 @@
    (cons 'multiple-cursors melpa)
    (cons 'org melpa)
    (cons 'pos-tip melpa)
-   (cons 'rainbow-delimiters melpa)
    (cons 'savekill melpa)
    (cons 'session melpa)
    (cons 'smex melpa)
