@@ -63,6 +63,7 @@
    (cons 'magit melpa)
    (cons 'mark-multiple melpa)
    (cons 'multiple-cursors melpa)
+   (cons 'org melpa)
    (cons 'pos-tip melpa)
    (cons 'rainbow-delimiters melpa)
    (cons 'savekill melpa)
