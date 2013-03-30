@@ -106,11 +106,11 @@
 (require 'auto-complete)
 (eval-after-load 'auto-complete '(require 'setup-auto-complete))
 (eval-after-load 'auto-complete '(require 'setup-auto-complete-clang))
-
 (require 'setup-browse-kill-ring)
 ;; (require 'setup-ecb)
 (require 'setup-evil)
 (require 'setup-flymake)
+(eval-after-load 'flymake '(require 'setup-flymake-tex))
 (require 'setup-ido)
 (require 'setup-helm)
 (require 'setup-ibuffer)
