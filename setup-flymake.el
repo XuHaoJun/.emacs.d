@@ -9,6 +9,6 @@
      '(help-at-pt-display-when-idle '(flymake-overlay)))
 
 ;; Only run flymake if I've not been typing for 5 seconds
-(setq flymake-no-changes-timeout 10)
+(setq flymake-no-changes-timeout 5)
 
 (provide 'setup-flymake)
