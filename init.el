@@ -43,7 +43,7 @@
   (packages-install
    (cons 'ace-jump-mode melpa)
    (cons 'ack gnu)
-   (cons 'auctex melpa)
+   (cons 'auctex gnu)
    (cons 'auto-complete melpa)
    (cons 'auto-complete-clang melpa)
    (cons 'android-mode marmalade)
