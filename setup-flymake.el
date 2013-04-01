@@ -8,7 +8,8 @@
      '(help-at-pt-timer-delay 0.9)
      '(help-at-pt-display-when-idle '(flymake-overlay)))
 
-;; Only run flymake if I've not been typing for 5 seconds
-(setq flymake-no-changes-timeout 5)
+;; Only run flymake if I've not been typing for 60 seconds
+;; more let check after save(C-x C-s).
+(setq flymake-no-changes-timeout 60)
 
 (provide 'setup-flymake)

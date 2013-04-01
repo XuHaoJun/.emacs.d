@@ -7,7 +7,7 @@
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 ;; no splash screen please ... jeez
 (setq inhibit-startup-message t)
-;;; end of need early run in start up
+;;; End of need early run in start up
 
 ;;; setup path
 ;; set path to dependencies
@@ -22,7 +22,7 @@
 (dolist (project (directory-files site-lisp-dir t "\\w+"))
   (when (file-directory-p project)
     (add-to-list 'load-path project)))
-;;; end of setup path
+;;; End of setup path
 
 ;;; setup backup
 (setq version-control t)
@@ -34,7 +34,7 @@
 (setq backup-directory-alist
       `(("." . ,(expand-file-name
                  (concat user-emacs-directory "backups")))))
-;;; end of setup backup
+;;; End of setup backup
 
 ;;; setup packages
 (require 'setup-package)
@@ -81,24 +81,24 @@
   (error
    (package-refresh-contents)
    (init--install-packages)))
-;;; end of setup packages
+;;; End of setup packages
 
 
 ;;; basic settings
 (require 'key-bindings)
 (require 'appearance)
 (require 'sane-defaults) ;; lets start with a smattering of sanity
-;;; end of basic settings
+;;; End of basic settings
 
 ;;; language special setup
 (require 'setup-cc-mode)
-;;; end of language special setup
+;;; End of language special setup
 
 ;;; build-in extensions
 (require 'setup-hippie-expand)
 (require 'setup-recentf)
 (require 'setup-term)
-;;; end of build-in extensions
+;;; End of build-in extensions
 
 ;;; other extensions 
 (require 'auto-complete)
@@ -131,7 +131,7 @@
 (require 'window-numbering)
 (custom-set-faces '(window-numbering-face ((t (:weight bold)))))
 (window-numbering-mode 1)
-;;; end of other extensions 
+;;; End of other extensions 
 
 ;;; Android plugin
 (require 'eclim)
@@ -143,7 +143,7 @@
 (require 'company-emacs-eclim)
 (company-emacs-eclim-setup)
 ;; (global-company-mode t)
-;;; end of Android plugin
+;;; End of Android plugin
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
