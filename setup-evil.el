@@ -1,5 +1,6 @@
 
 (require 'undo-tree)
+(require 'evil)
 
 (setq evil-default-cursor t)
 (setq evil-auto-indent t)
@@ -7,7 +8,6 @@
 (setq evil-move-cursor-back nil)
 (setq evil-cross-lines t)
 
-(require 'evil)
 (evil-set-initial-state 'term-mode 'emacs)
 (evil-set-initial-state 'ansi-term 'emacs)
 
@@ -118,10 +118,10 @@ In Insert state, insert a newline."
 ;;   evil-motion-state-map (kbd "SPC") #'evil-ace-jump-char-mode)
 
 
-(require 'mark-multiple)
-;;Easy access to the mark multiple library when in visual-mode
-(define-key evil-visual-state-map (kbd "M-j") 'mark-next-like-this)
-(define-key evil-visual-state-map (kbd "M-k") 'mark-previous-like-this)
+;; (require 'mark-multiple)
+;; ;;Easy access to the mark multiple library when in visual-mode
+;; (define-key evil-visual-state-map (kbd "M-j") 'mark-next-like-this)
+;; (define-key evil-visual-state-map (kbd "M-k") 'mark-previous-like-this)
 
 ;; emulates surround.vim
 (require 'surround)
