@@ -60,6 +60,7 @@
    (cons 'helm melpa)
    (cons 'helm-ack melpa)
    (cons 'helm-gtags melpa)
+   (cons 'ido-hacks melpa)
    (cons 'ido-ubiquitous melpa)
    (cons 'magit melpa)
    (cons 'pos-tip melpa)
