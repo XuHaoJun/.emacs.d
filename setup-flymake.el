@@ -10,6 +10,6 @@
 
 ;; Only run flymake if I've not been typing for 60 seconds
 ;; more let check after save(C-x C-s).
-(setq flymake-no-changes-timeout 60)
+(setq flymake-no-changes-timeout 3600)
 
 (provide 'setup-flymake)
