@@ -10,7 +10,9 @@
       ido-auto-merge-work-directories-length -1
       ido-create-new-buffer 'always
       ido-use-filename-at-point 'guess
-      ido-max-prospects 8)
+      ido-max-prospects 8
+      ido-default-buffer-method 'selected-window   ;; Allow the same buffer to be open in different frames
+      )
 
 (add-hook
  'ido-setup-hook
