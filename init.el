@@ -108,6 +108,7 @@
 ;; (require 'setup-ecb)
 (require 'setup-evil)
 (require 'setup-flymake)
+(eval-after-load 'flymake '(require 'setup-flymake-clang))
 (eval-after-load 'flymake '(require 'setup-flymake-tex))
 (require 'setup-ido)
 (require 'setup-helm)

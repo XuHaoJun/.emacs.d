@@ -1,5 +1,4 @@
 (require 'flymake)
-(eval-after-load 'flymake '(require 'setup-flymake-clang))
 
 ;;it displays any flymake error for the current line on the minibuffer.
 (eval-after-load 'flymake '(require 'flymake-cursor))
