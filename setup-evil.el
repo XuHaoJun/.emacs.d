@@ -130,5 +130,36 @@ In Insert state, insert a newline."
 ;; (require 'ecb)
 ;; (define-key evil-normal-state-map (kbd "C-w C-e") 'ecb-toggle-ecb-windows) ;;toggle ecb
 
+;; Work with Org-mode
+; Because defalut 'o' and 'O' have 3 spaces on newline.
+; I dislike it,so change it no space.
+(define-key evil-normal-state-map "O" (lambda ()
+                     (interactive)
+                     (end-of-line)
+                     (org-insert-heading)
+                     (evil-append nil)
+                     ))
+
+(defun always-insert-item ()
+     (interactive)
+     (if (not (org-in-item-p))
+       (insert "\n")
+       (org-insert-item)))
+
+(define-key evil-normal-state-map "O" (lambda ()
+                     (interactive)
+                     (end-of-line)
+                     (org-insert-heading)
+                     (evil-append nil)
+                     ))
+
+(define-key evil-normal-state-map "o" (lambda ()
+                     (interactive)
+                     (end-of-line)
+                     (always-insert-item)
+                     (evil-append nil)
+                     ))
+
+
 (provide 'setup-evil)
 
