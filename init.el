@@ -1,4 +1,6 @@
-(server-start)
+(require 'server)
+(unless (server-running-p)
+  (server-start))
 
 ;;; need early run in start up
 ;; turn off mouse interface early in startup to avoid momentary display
