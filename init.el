@@ -66,6 +66,7 @@
    (cons 'pos-tip melpa)
    (cons 'savekill melpa)
    (cons 'session melpa)
+   (cons 'shell-pop melpa)
    (cons 'smex melpa)
    (cons 'smartparens melpa)
    (cons 'smooth-scrolling melpa)
