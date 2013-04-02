@@ -132,6 +132,7 @@ In Insert state, insert a newline."
 ;; Work with Org-mode
 ; Because defalut 'o' and 'O' have 3 spaces on newline.
 ; I dislike it,so change it no space.
+(require 'org)
 (define-key evil-normal-state-map "O" (lambda ()
                      (interactive)
                      (end-of-line)
