@@ -1,4 +1,3 @@
-
 (require 'undo-tree)
 (require 'evil)
 
@@ -160,6 +159,16 @@ In Insert state, insert a newline."
                      (evil-append nil)
                      ))
 
+;; Emacs key 
+(define-key evil-normal-state-map "\C-e" 'evil-end-of-line)
+(define-key evil-motion-state-map "\C-e" 'evil-end-of-line)
+
+;; Evil key
+(evil-define-operator evil-yank-line-end (beg end type register)
+  "Yank to end of line."
+  :motion evil-end-of-line
+  (interactive "<R><x>")
+  (evil-yank beg end type register))
+(define-key evil-normal-state-map "Y" 'evil-yank-line-end)
 
 (provide 'setup-evil)
-
