@@ -3,7 +3,7 @@
 (require 'ido-hacks)
 
 (ido-mode t)
-(ido-hacks-mode 1)
+(ido-hacks-mode t)
 (setq ido-enable-prefix nil
       ido-enable-flex-matching t
       ido-case-fold nil
@@ -81,7 +81,8 @@
 
 ;; Use ido everywhere
 (require 'ido-ubiquitous)
-(ido-ubiquitous-mode 1)
+(ido-everywhere t)
+(ido-ubiquitous-mode t)
 
 ;; Fix ido-ubiquitous for newer packages
 (defmacro ido-ubiquitous-use-new-completing-read (cmd package)
