@@ -54,6 +54,7 @@
    (cons 'dynamic-fonts melpa)
    (cons 'ecb melpa)
    (cons 'emacs-eclim melpa)
+   (cons 'erc-hl-nicks melpa)
    (cons 'evil melpa)
    (cons 'flymake melpa)
    (cons 'flymake-cursor melpa)
@@ -126,6 +127,7 @@
 
 (require 'switch-window)
 (require 'transpose-frame)
+(require 'erc-hl-nicks)
 
 (require 'magit)
 (add-hook 'magit-mode-hook (lambda() (linum-mode -1)))
