@@ -6,6 +6,12 @@
   (run-hooks 'ansi-term-after-hook))
 (ad-activate 'ansi-term)
 
+(defun local-hl-line-mode-off ()
+  (interactive)
+  (make-local-variable 'global-hl-line-mode)
+  (setq global-hl-line-mode nil))
+(add-hook 'term-mode-hook 'local-hl-line-mode-off)
+ 
 (defun my-term-hook ()
   (goto-address-mode))
 (add-hook 'term-mode-hook 'my-term-hook)
