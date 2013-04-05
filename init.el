@@ -60,6 +60,11 @@
    (cons 'flymake-cursor melpa)
    (cons 'fuzzy melpa)
    (cons 'ggtags gnu)
+   (cons 'git-gutter-fringe melpa)
+   (cons 'git-blame melpa)
+   (cons 'git-commit-mode melpa)
+   (cons 'gitignore-mode melpa)
+   (cons 'gitconfig-mode melpa)
    (cons 'helm melpa)
    (cons 'helm-ack melpa)
    (cons 'helm-gtags melpa)
@@ -116,6 +121,7 @@
 (require 'setup-flymake)
 (eval-after-load 'flymake '(require 'setup-flymake-clang))
 (eval-after-load 'flymake '(require 'setup-flymake-tex))
+(require 'setup-git)
 (require 'setup-ido)
 (require 'setup-helm)
 (require 'setup-ibuffer)
@@ -127,9 +133,6 @@
 
 (require 'switch-window)
 (require 'transpose-frame)
-
-(require 'magit)
-(add-hook 'magit-mode-hook (lambda() (linum-mode -1)))
 
 (require 'smartparens-config)
 (smartparens-global-mode)
