@@ -127,7 +127,6 @@
 
 (require 'switch-window)
 (require 'transpose-frame)
-(require 'erc-hl-nicks)
 
 (require 'magit)
 (add-hook 'magit-mode-hook (lambda() (linum-mode -1)))

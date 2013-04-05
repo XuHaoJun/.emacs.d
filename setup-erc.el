@@ -1,4 +1,5 @@
 (require 'erc)
+(require 'erc-hl-nicks)
 
 ;;; Hide spam
 ;Because channel too many people,so someone 'join' 'quit' will let you
