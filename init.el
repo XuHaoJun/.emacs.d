@@ -118,7 +118,6 @@
 (require 'setup-ido)
 (require 'setup-helm)
 (require 'setup-ibuffer)
-(require 'setup-session)
 (require 'setup-shell-pop)
 (require 'setup-tex)
 (require 'setup-undo-tree)
@@ -152,22 +151,27 @@
 ;; (global-company-mode t)
 ;;; End of Android plugin
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(auto-indent-next-pair-timer-geo-mean (quote ((default 0.0005 0))))
- '(desktop-base-file-name ".emacs.desktop")
- '(desktop-dirname "~/.emacs.d/" t)
- '(desktop-path (quote ("~/.emacs.d/")))
- '(desktop-save-mode 1)
- '(help-at-pt-display-when-idle (quote (flymake-overlay)) nil (help-at-pt))
- '(help-at-pt-timer-delay 0.9)
- '(session-use-package t nil (session)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(default ((((class color) (min-colors 89)) (:foreground "#839496" :background "#002b36")))))
+;;; save or load last full emacs status
+;; Restore emacs status after load all my setting and mode.
+(require 'setup-session)
+;;; End of save or load last full emacs status
+
+;; (custom-set-variables
+;;  ;; custom-set-variables was added by Custom.
+;;  ;; If you edit it by hand, you could mess it up, so be careful.
+;;  ;; Your init file should contain only one such instance.
+;;  ;; If there is more than one, they won't work right.
+;;  '(auto-indent-next-pair-timer-geo-mean (quote ((default 0.0005 0))))
+;;  '(desktop-base-file-name ".emacs.desktop")
+;;  '(desktop-dirname "~/.emacs.d/" t)
+;;  '(desktop-path (quote ("~/.emacs.d/")))
+;;  '(desktop-save-mode 1)
+;;  '(help-at-pt-display-when-idle (quote (flymake-overlay)) nil (help-at-pt))
+;;  '(help-at-pt-timer-delay 0.9)
+;;  '(session-use-package t nil (session)))
+;; (custom-set-faces
+;;  ;; custom-set-faces was added by Custom.
+;;  ;; If you edit it by hand, you could mess it up, so be careful.
+;;  ;; Your init file should contain only one such instance.
+;;  ;; If there is more than one, they won't work right.
+;;  '(default ((((class color) (min-colors 89)) (:foreground "#839496" :background "#002b36")))))
