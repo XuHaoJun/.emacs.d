@@ -126,6 +126,7 @@
 (require 'setup-helm)
 (require 'setup-ibuffer)
 (require 'setup-shell-pop)
+(require 'setup-stardict)
 (require 'setup-tex)
 (require 'setup-undo-tree)
 (require 'setup-w3m)
