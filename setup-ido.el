@@ -1,9 +1,14 @@
 ;; Interactively Do Things
 (require 'ido)
 (require 'ido-hacks)
+(require 'ido-vertical-mode)
 
+;;;Main
 (ido-mode t)
 (ido-hacks-mode t)
+(ido-vertical-mode)
+;;; End of Main
+
 (setq ido-enable-prefix nil
       ido-enable-flex-matching t
       ido-case-fold nil
