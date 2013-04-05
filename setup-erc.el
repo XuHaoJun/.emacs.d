@@ -9,4 +9,17 @@
 (setq erc-track-exclude-types '("JOIN" "NICK" "PART" "QUIT" "MODE"  
                                 "324" "329" "332" "333" "353" "477"))
 
+;;; Log save
+(erc-log-mode)
+(setq erc-log-channels t
+      erc-log-channels-directory "~/.emacs.d/.erc.d"
+      erc-log-insert-log-on-open nil
+      erc-log-file-coding-system 'utf-8)
+;; Auto-saving log files on channel activity
+(setq erc-save-buffer-on-part nil
+      erc-save-queries-on-quit nil
+      erc-log-write-after-send t
+      erc-log-write-after-insert t)
+;;; end of Log save
+
 (provide 'setup-erc)
