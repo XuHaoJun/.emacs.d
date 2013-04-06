@@ -108,7 +108,4 @@
 ;; Use C-x C-m to do M-x per Steve Yegge's advice
 (global-set-key (kbd "C-x C-m") 'smex)
 
-(require 'ido-vertical-mode)
-(ido-vertical-mode)
-
 (provide 'setup-ido)
