@@ -8,8 +8,11 @@
 (setq browse-url-browser-function (quote browse-url-generic))
 (setq browse-url-generic-program "firefox")
 
+;;Midle mouse insert X selection by point position.
+(setq mouse-yank-at-point t)
+
 ;;Show line number
-;; (global-linum-mode t)
+(global-linum-mode -1)
 (require 'nlinum)
 (mapcar (lambda (hooksym)
           (add-hook hooksym
@@ -22,9 +25,6 @@
           emacs-lisp-mode-hook
           org-mode-hook
           ))
-
-;;Midle mouse insert X selection by point position.
-(setq mouse-yank-at-point t)
 
 ;;Aviod mouse point when cursor at surround.
 ;(mouse-avoidance-mode 'animate)
