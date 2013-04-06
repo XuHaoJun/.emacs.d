@@ -16,6 +16,8 @@
                     (lambda ()
                       (nlinum-mode))))
         '(cc-mode-hook
+          c-mode-hook
+          c++-mode-hook
           lisp-mode-hook
           emacs-lisp-mode-hook
           org-mode-hook
