@@ -96,6 +96,8 @@
    (init--install-packages)))
 ;;; End of setup packages
 
+(require 'appearance)
+
 ;;; language special setup
 (require 'setup-cc-mode)
 ;;; End of language special setup
@@ -152,11 +154,10 @@
 ;; (global-company-mode t)
 ;;; End of Android plugin
 
-;;; basic settings
+;;; Basic settings
 (require 'key-bindings)
-(require 'appearance)
 (require 'sane-defaults) ;; lets start with a smattering of sanity
-;;; End of basic settings
+;;; End of Basic settings
 
 ;;; save or load last full emacs status
 ;; Restore emacs status after load all my setting and mode.
