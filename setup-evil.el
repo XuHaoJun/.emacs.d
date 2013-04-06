@@ -9,6 +9,7 @@
 
 (evil-set-initial-state 'term-mode 'emacs)
 (evil-set-initial-state 'ansi-term 'emacs)
+(evil-set-initial-state 'dired-mode 'emacs)
 
 ;; Modified version of evil-ret that moves the cursor to the first
 ;; non-blank on the line, like vim.
