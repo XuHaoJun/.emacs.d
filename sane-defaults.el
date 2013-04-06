@@ -9,7 +9,17 @@
 (setq browse-url-generic-program "firefox")
 
 ;;Show line number
-(global-linum-mode t)
+;; (global-linum-mode t)
+(require 'nlinum)
+(mapcar (lambda (hooksym)
+          (add-hook hooksym
+                    (lambda ()
+                      (nlinum-mode))))
+        '(cc-mode-hook
+          lisp-mode-hook
+          emacs-lisp-mode-hook
+          org-mode-hook
+          ))
 
 ;;Midle mouse insert X selection by point position.
 (setq mouse-yank-at-point t)
