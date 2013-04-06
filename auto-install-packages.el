@@ -35,6 +35,7 @@
    (cons 'ido-ubiquitous melpa)
    (cons 'magit melpa)
    (cons 'nlinum melpa)
+   (cons 'openwith melpa)
    (cons 'pos-tip melpa)
    (cons 'savekill melpa)
    (cons 'session melpa)
