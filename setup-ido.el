@@ -1,13 +1,11 @@
 ;; Interactively Do Things
 (require 'ido)
 (require 'ido-hacks)
-(require 'ido-vertical-mode)
 
-;;;Main
+;;; Main mode enable
 (ido-mode t)
 (ido-hacks-mode t)
-(ido-vertical-mode)
-;;; End of Main
+;;; End of Main enable
 
 (setq ido-enable-prefix nil
       ido-enable-flex-matching t
@@ -89,7 +87,7 @@
 (ido-everywhere t)
 (ido-ubiquitous-mode t)
 
-;; Fix ido-ubiquitous for newer packages
+;;Fix ido-ubiquitous for newer packages
 (defmacro ido-ubiquitous-use-new-completing-read (cmd package)
   `(eval-after-load ,package
      '(defadvice ,cmd (around ido-ubiquitous-new activate)
@@ -109,5 +107,8 @@
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 ;; Use C-x C-m to do M-x per Steve Yegge's advice
 (global-set-key (kbd "C-x C-m") 'smex)
+
+(require 'ido-vertical-mode)
+(ido-vertical-mode)
 
 (provide 'setup-ido)
