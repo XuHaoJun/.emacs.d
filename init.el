@@ -1,17 +1,24 @@
+;;;---------------------------------------------------------------------------
+;;; Start emacs daemon
+;;;---------------------------------------------------------------------------
 (require 'server)
 (unless (server-running-p)
   (server-start))
 
-;;; need early run in start up
+;;;---------------------------------------------------------------------------
+;;; Need early run in start up
+;;;---------------------------------------------------------------------------
 ;; turn off mouse interface early in startup to avoid momentary display
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 ;; no splash screen please ... jeez
 (setq inhibit-startup-message t)
-;;; End of need early run in start up
+;;; End of Need early run in start up
 
-;;; setup path
+;;;---------------------------------------------------------------------------
+;;; Setup path
+;;;---------------------------------------------------------------------------
 ;; set path to dependencies
 (setq site-lisp-dir
       (expand-file-name "site-lisp" user-emacs-directory))
@@ -24,91 +31,29 @@
 (dolist (project (directory-files site-lisp-dir t "\\w+"))
   (when (file-directory-p project)
     (add-to-list 'load-path project)))
-;;; End of setup path
+;;; End of Setup path
 
-;;; setup backup
-(setq version-control t)
-(setq kept-new-versions 3)
-(setq delete-old-versions t)
-(setq kept-old-versions 2)
-(setq dired-kept-versions 1)
-;; write backup files to own directory
-(setq backup-directory-alist
-      `(("." . ,(expand-file-name
-                 (concat user-emacs-directory "backups")))))
-;;; End of setup backup
+;;;---------------------------------------------------------------------------
+;;; Setup packages
+;;;---------------------------------------------------------------------------
+(require 'auto-install-packages)
+;;; End of Setup packages
 
-;;; setup packages
-(require 'setup-package)
-;; install extensions if they're missing
-(defun init--install-packages ()
-  (packages-install
-   (cons 'ace-jump-mode melpa)
-   (cons 'ack gnu)
-   (cons 'auctex gnu)
-   (cons 'auto-complete melpa)
-   (cons 'auto-complete-clang melpa)
-   (cons 'android-mode marmalade)
-   (cons 'browse-kill-ring melpa)
-   (cons 'company melpa)
-   (cons 'dired-details melpa)
-   (cons 'dired-details+ melpa)
-   (cons 'dynamic-fonts melpa)
-   (cons 'ecb melpa)
-   (cons 'emacs-eclim melpa)
-   (cons 'erc-hl-nicks melpa)
-   (cons 'evil melpa)
-   (cons 'flymake melpa)
-   (cons 'flymake-cursor melpa)
-   (cons 'fuzzy melpa)
-   (cons 'ggtags gnu)
-   (cons 'git-gutter-fringe melpa)
-   (cons 'git-blame melpa)
-   (cons 'git-commit-mode melpa)
-   (cons 'gitignore-mode melpa)
-   (cons 'gitconfig-mode melpa)
-   (cons 'helm melpa)
-   (cons 'helm-ack melpa)
-   (cons 'helm-gtags melpa)
-   (cons 'ibuffer-vc melpa)
-   (cons 'ido-hacks melpa)
-   (cons 'ido-ubiquitous melpa)
-   (cons 'magit melpa)
-   (cons 'nlinum melpa)
-   (cons 'pos-tip melpa)
-   (cons 'savekill melpa)
-   (cons 'session melpa)
-   (cons 'shell-pop melpa)
-   (cons 'smex melpa)
-   (cons 'smartparens melpa)
-   (cons 'smooth-scrolling melpa)
-   (cons 'solarized-theme melpa)
-   (cons 'surround melpa)
-   (cons 'switch-window melpa)
-   (cons 'undo-tree melpa)
-   (cons 'w3m melpa)
-   (cons 'yasnippet melpa)))
-
-(condition-case nil
-    (init--install-packages)
-  (error
-   (package-refresh-contents)
-   (init--install-packages)))
-;;; End of setup packages
-
+;;;---------------------------------------------------------------------------
+;;; Appearance
+;;;---------------------------------------------------------------------------
 (require 'appearance)
+;;; End of Appearance
 
-;;; language special setup
+;;;---------------------------------------------------------------------------
+;;; Language special setup
+;;;---------------------------------------------------------------------------
 (require 'setup-cc-mode)
-;;; End of language special setup
+;;; End of Language special setup
 
-;;; build-in extensions
-(require 'setup-hippie-expand)
-(require 'setup-recentf)
-(require 'setup-term)
-;;; End of build-in extensions
-
-;;; other extensions 
+;;;---------------------------------------------------------------------------
+;;; Extensions 
+;;;---------------------------------------------------------------------------
 (require 'auto-complete)
 (eval-after-load 'auto-complete '(require 'setup-auto-complete))
 (eval-after-load 'auto-complete '(require 'setup-auto-complete-clang))
@@ -123,10 +68,13 @@
 (require 'setup-git)
 (require 'setup-ido)
 (require 'setup-helm)
+(require 'setup-hippie-expand)
 (require 'setup-ibuffer)
+(require 'setup-recentf)
 (require 'setup-shell-pop)
 (require 'setup-stardict)
 (require 'setup-tex)
+(require 'setup-term)
 (require 'setup-undo-tree)
 (require 'setup-w3m)
 (require 'setup-yasnippet)
@@ -140,9 +88,11 @@
 (require 'window-numbering)
 (custom-set-faces '(window-numbering-face ((t (:weight bold)))))
 (window-numbering-mode 1)
-;;; End of other extensions 
+;;; End of Extensions 
 
+;;;---------------------------------------------------------------------------
 ;;; Android plugin
+;;;---------------------------------------------------------------------------
 (require 'eclim)
 (require 'eclimd)
 ;; (global-eclim-mode)
@@ -154,12 +104,17 @@
 ;; (global-company-mode t)
 ;;; End of Android plugin
 
+;;;---------------------------------------------------------------------------
 ;;; Basic settings
+;;;---------------------------------------------------------------------------
 (require 'key-bindings)
 (require 'sane-defaults) ;; lets start with a smattering of sanity
+(require 'setup-backup)
 ;;; End of Basic settings
 
-;;; save or load last full emacs status
+;;;---------------------------------------------------------------------------
+;;; Save or load last full emacs status
+;;;---------------------------------------------------------------------------
 ;; Restore emacs status after load all my setting and mode.
 (require 'setup-session)
-;;; End of save or load last full emacs status
+;;; End of Save or load last full emacs status
