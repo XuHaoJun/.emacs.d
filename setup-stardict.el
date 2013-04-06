@@ -4,7 +4,7 @@
 ;; 调用 stardict 的命令行接口来查辞典
 ;; 如果选中了 region 就查询 region 的内容，
 ;; 否则就查询当前光标所在的词
-(global-set-key (kbd "C-c C-d") 'kid-star-dict)
+(global-set-key (kbd "C-c d") 'kid-star-dict)
 (defun kid-star-dict ()
   (interactive)
   (let ((begin (point-min))
