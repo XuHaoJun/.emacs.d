@@ -54,9 +54,7 @@
 ;;;---------------------------------------------------------------------------
 ;;; Extensions 
 ;;;---------------------------------------------------------------------------
-(require 'auto-complete)
-(eval-after-load 'auto-complete '(require 'setup-auto-complete))
-(eval-after-load 'auto-complete '(require 'setup-auto-complete-clang))
+(require 'setup-all-auto-complete)
 (require 'setup-browse-kill-ring)
 (require 'setup-dired)
 ;; (require 'setup-ecb)
