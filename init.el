@@ -64,7 +64,6 @@
 (require 'setup-git)
 (require 'setup-ido)
 (require 'setup-helm)
-(require 'setup-hippie-expand)
 (require 'setup-ibuffer)
 (require 'setup-openwith)
 (require 'setup-recentf)
