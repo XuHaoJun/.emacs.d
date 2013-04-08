@@ -85,6 +85,9 @@
 (require 'window-numbering)
 (custom-set-faces '(window-numbering-face ((t (:weight bold)))))
 (window-numbering-mode 1)
+
+(require 'rainbow-delimiters)
+(global-rainbow-delimiters-mode)
 ;;; End of Extensions 
 
 ;;;---------------------------------------------------------------------------
