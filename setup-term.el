@@ -19,8 +19,7 @@
 ;; disable other mirror mode
 (add-hook 'term-mode-hook (lambda()
                             (linum-mode -1)
-                            (yas-minor-mode -1)
-                            (helm-mode -1)))
+                            (yas-minor-mode -1)))
 
 (defadvice term-sentinel (around my-advice-term-sentinel (proc msg) activate) ; ansi-term里exit命令会关闭buffer
     (if (memq (process-status proc) '(signal exit))
