@@ -51,6 +51,7 @@
    (cons 'surround melpa)
    (cons 'switch-window melpa)
    (cons 'undo-tree melpa)
+   (cons 'visual-regexp melpa)
    (cons 'w3m melpa)
    (cons 'yasnippet melpa)))
 
