@@ -1,6 +1,0 @@
-[submodule "site-lisp/ace-jump-mode.git"]
-	path = site-lisp/ace-jump-mode.git
-	url = https://github.com/winterTTr/ace-jump-mode.git
-[submodule "site-lisp/transpose-frame"]
-	path = site-lisp/transpose-frame
-	url = https://github.com/emacsmirror/transpose-frame.git
