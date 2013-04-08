@@ -49,6 +49,7 @@
 ;;; Language special setup
 ;;;---------------------------------------------------------------------------
 (require 'setup-cc-mode)
+(require 'setup-scheme-mode)
 ;;; End of Language special setup
 
 ;;;---------------------------------------------------------------------------

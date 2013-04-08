@@ -38,6 +38,7 @@
    (cons 'openwith melpa)
    (cons 'pos-tip melpa)
    (cons 'savekill melpa)
+   (cons 'scheme-complete melpa)
    (cons 'session melpa)
    (cons 'shell-pop melpa)
    (cons 'smex melpa)
