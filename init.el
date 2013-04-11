@@ -45,6 +45,7 @@
 (require 'appearance)
 ;;; End of Appearance
 
+
 ;;;---------------------------------------------------------------------------
 ;;; Language special setup
 ;;;---------------------------------------------------------------------------
@@ -88,12 +89,14 @@
 (window-numbering-mode 1)
 
 (require 'rainbow-delimiters)
-(global-rainbow-delimiters-mode)
+(add-hook 'scheme-mode-hook 'rainbow-delimiters-mode)
+(add-hook 'emacs-lisp-mode-hook 'rainbow-delimiters-mode)
 ;;; End of Extensions 
 
 ;;;---------------------------------------------------------------------------
 ;;; Android plugin
 ;;;---------------------------------------------------------------------------
+(require 'android-mode)
 (require 'eclim)
 (require 'eclimd)
 ;; (global-eclim-mode)
