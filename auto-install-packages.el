@@ -18,6 +18,7 @@
    (cons 'emacs-eclim melpa)
    (cons 'erc-hl-nicks melpa)
    (cons 'evil melpa)
+   (cons 'evil-leader melpa)
    (cons 'flymake melpa)
    (cons 'flymake-cursor melpa)
    (cons 'fuzzy melpa)

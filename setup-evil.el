@@ -142,4 +142,14 @@ In Insert state, insert a newline."
   (evil-yank beg end type register))
 (define-key evil-normal-state-map "Y" 'evil-yank-line-end)
 
+(require 'evil-leader)
+(evil-leader/set-leader ",")
+
+(evil-leader/set-key
+  "x" 'smex
+  "s" 'save-buffer
+  "f" 'ido-find-file
+  "b" 'switch-to-buffer
+  "k" 'kill-buffer)
+
 (provide 'setup-evil)
