@@ -6,6 +6,7 @@
 (require 'gitignore-mode)
 (require 'gitconfig-mode)
 (require 'yagist)
+(require 'github-browse-file)
 
 (add-hook 'magit-mode-hook (lambda() (linum-mode -1)))
 
