@@ -23,7 +23,6 @@
           c++-mode-hook
           lisp-mode-hook
           emacs-lisp-mode-hook
-          org-mode-hook
           ))
 
 ;;Aviod mouse point when cursor at surround.
