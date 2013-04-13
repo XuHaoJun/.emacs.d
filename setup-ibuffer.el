@@ -1,14 +1,16 @@
 ;;From https://github.com/purcell/emacs.d/blob/master/init-ibuffer.el
 (require 'ibuffer)
 
+(add-hook 'ibuffer-mode-hook 
+	  '(lambda ()
+	     (ibuffer-auto-mode t)))
+
 (defun ibuffer-set-up-preferred-filters ()
   (ibuffer-vc-set-filter-groups-by-vc-root)
   (unless (eq ibuffer-sorting-mode 'filename/process)
     (ibuffer-do-sort-by-filename/process)))
 
 (add-hook 'ibuffer-hook 'ibuffer-set-up-preferred-filters)
-
-
 
 (eval-after-load 'ibuffer
   '(progn
