@@ -146,10 +146,11 @@ In Insert state, insert a newline."
 (evil-leader/set-leader ",")
 
 (evil-leader/set-key
-  "x" 'smex
+  "," 'smex
   "s" 'save-buffer
   "f" 'ido-find-file
   "b" 'switch-to-buffer
+  "B" 'ibuffer
   "k" 'kill-buffer)
 
 (provide 'setup-evil)
