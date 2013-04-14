@@ -149,6 +149,7 @@ In Insert state, insert a newline."
   "," 'smex
   "s" 'save-buffer
   "f" 'ido-find-file
+  "F" 'recentf-ido-find-file
   "d" 'ido-dired
   "b" 'switch-to-buffer
   "B" 'ibuffer
