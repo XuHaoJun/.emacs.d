@@ -39,10 +39,10 @@
    (cons 'ido-hacks melpa)
    (cons 'ido-ubiquitous melpa)
    (cons 'magit melpa)
-   (cons 'nlinum melpa)
+   (cons 'nlinum gnu)
    (cons 'openwith melpa)
    (cons 'pos-tip melpa)
-   (cons 'quack melpa)
+   (cons 'quack marmalade)
    (cons 'rainbow-delimiters melpa)
    (cons 'savekill melpa)
    (cons 'scheme-complete melpa)
@@ -57,7 +57,8 @@
    (cons 'undo-tree melpa)
    (cons 'visual-regexp melpa)
    (cons 'w3m melpa)
-   (cons 'yasnippet melpa)))
+   (cons 'yasnippet melpa)
+   (cons 'yagist melpa)))
 
 (condition-case nil
     (init--install-packages)
