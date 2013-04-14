@@ -51,6 +51,7 @@
 ;;;---------------------------------------------------------------------------
 (require 'setup-cc-mode)
 (require 'setup-scheme-mode)
+(require 'setup-python-mode)
 ;;; End of Language special setup
 
 ;;;---------------------------------------------------------------------------
