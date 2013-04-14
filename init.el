@@ -78,7 +78,6 @@
 (require 'setup-yasnippet)
 
 (require 'switch-window)
-(require 'transpose-frame)
 (require 'visual-regexp)
 
 (require 'smartparens-config)
