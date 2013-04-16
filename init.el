@@ -82,6 +82,7 @@
 (require 'switch-window)
 (require 'visual-regexp)
 (require 'expand-region)
+(require 'color-moccur)
 
 (require 'flex-isearch)
 (global-flex-isearch-mode)

@@ -11,6 +11,7 @@
    (cons 'android-mode melpa)
    (cons 'browse-kill-ring melpa)
    (cons 'company melpa)
+   (cons 'color-moccur melpa)
    (cons 'dired+ melpa)
    (cons 'dired-details melpa)
    (cons 'dired-details+ melpa)
