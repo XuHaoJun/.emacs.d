@@ -149,6 +149,8 @@ In Insert state, insert a newline."
   "," 'smex
   "b" 'ido-switch-buffer
   "B" 'ibuffer
+  "c" 'recompile
+  "C" 'compile
   "d" 'ido-dired
   "e" 'er/expand-region
   "f" 'ido-find-file
