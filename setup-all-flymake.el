@@ -1,7 +1,10 @@
 (require 'flymake)
 
 (require 'setup-flymake)
-(eval-after-load 'flymake '(require 'setup-flymake-clang))
+
+;; (eval-after-load 'flymake '(require 'setup-flymake-clang))
+(add-hook 'c++-mode-hook 'flymake-mode)
+
 (eval-after-load 'flymake '(require 'setup-flymake-tex))
 
 (require 'flymake-python-pyflakes)
