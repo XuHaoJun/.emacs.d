@@ -14,16 +14,16 @@
 ;;Show line number
 (global-linum-mode -1)
 (require 'nlinum)
-(mapcar (lambda (hooksym)
-          (add-hook hooksym
-                    (lambda ()
-                      (nlinum-mode))))
-        '(cc-mode-hook
-          c-mode-hook
-          c++-mode-hook
-          lisp-mode-hook
-          emacs-lisp-mode-hook
-          ))
+;; (mapcar (lambda (hooksym)
+;;           (add-hook hooksym
+;;                     (lambda ()
+;;                       (nlinum-mode))))
+;;         '(cc-mode-hook
+;;           c-mode-hook
+;;           c++-mode-hook
+;;           lisp-mode-hook
+;;           emacs-lisp-mode-hook
+;;           ))
 
 ;;Aviod mouse point when cursor at surround.
 ;(mouse-avoidance-mode 'animate)
