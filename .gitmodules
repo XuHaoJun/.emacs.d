@@ -1,3 +1,6 @@
 [submodule "site-lisp/flymake"]
 	path = site-lisp/flymake
 	url = git://github.com/illusori/emacs-flymake.git
+[submodule "site-lisp/emacs-clang-complete-async"]
+	path = site-lisp/emacs-clang-complete-async
+	url = git://github.com/Golevka/emacs-clang-complete-async.git
