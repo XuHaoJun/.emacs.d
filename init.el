@@ -83,7 +83,8 @@
 (require 'visual-regexp)
 
 (require 'smartparens-config)
-(smartparens-global-mode)
+(add-hook 'scheme-mode-hook 'smartparens-mode)
+(add-hook 'emacs-lisp-mode-hook 'smartparens-mode)
 
 (require 'window-numbering)
 (custom-set-faces '(window-numbering-face ((t (:weight bold)))))
