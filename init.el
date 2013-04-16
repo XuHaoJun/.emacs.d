@@ -81,6 +81,7 @@
 
 (require 'switch-window)
 (require 'visual-regexp)
+(require 'expand-region)
 
 (require 'smartparens-config)
 (add-hook 'scheme-mode-hook 'smartparens-mode)

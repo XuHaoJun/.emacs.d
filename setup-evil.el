@@ -144,15 +144,18 @@ In Insert state, insert a newline."
 
 (require 'evil-leader)
 (evil-leader/set-leader ",")
-
 (evil-leader/set-key
   "," 'smex
-  "s" 'save-buffer
+  "b" 'ido-switch-buffer
+  "B" 'ibuffer
+  "d" 'ido-dired
+  "e" 'er/expand-region
   "f" 'ido-find-file
   "F" 'recentf-ido-find-file
-  "d" 'ido-dired
-  "b" 'switch-to-buffer
-  "B" 'ibuffer
-  "k" 'kill-buffer)
+  "g" 'magit-status
+  "k" 'kill-buffer
+  "K" 'kill-buffer-and-window
+  "s" 'save-buffer)
+
 
 (provide 'setup-evil)
