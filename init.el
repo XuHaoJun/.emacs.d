@@ -64,6 +64,7 @@
 (require 'setup-erc)
 (require 'setup-evil)
 (require 'setup-all-flymake)
+(require 'setup-global)
 (require 'setup-git)
 (require 'setup-ido)
 (require 'setup-helm)
