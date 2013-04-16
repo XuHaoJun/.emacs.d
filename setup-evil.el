@@ -156,6 +156,8 @@ In Insert state, insert a newline."
   "f" 'ido-find-file
   "F" 'recentf-ido-find-file
   "g" 'magit-status
+  "i" 'flex-isearch-forward
+  "I" 'flex-isearch-backward
   "k" 'kill-buffer
   "K" 'kill-buffer-and-window
   "r" 'vr/replace

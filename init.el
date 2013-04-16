@@ -83,6 +83,9 @@
 (require 'visual-regexp)
 (require 'expand-region)
 
+(require 'flex-isearch)
+(global-flex-isearch-mode)
+
 (require 'smartparens-config)
 (add-hook 'scheme-mode-hook 'smartparens-mode)
 (add-hook 'emacs-lisp-mode-hook 'smartparens-mode)

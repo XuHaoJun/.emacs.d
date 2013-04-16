@@ -22,6 +22,7 @@
    (cons 'evil melpa)
    (cons 'evil-leader melpa)
    (cons 'expand-region melpa)
+   (cons 'flex-isearch melpa)
    (cons 'flymake melpa)
    (cons 'flymake-cursor melpa)
    (cons 'flymake-python-pyflakes melpa)
