@@ -133,6 +133,7 @@ In Insert state, insert a newline."
 ;; Emacs key 
 (define-key evil-normal-state-map "\C-e" 'evil-end-of-line)
 (define-key evil-motion-state-map "\C-e" 'evil-end-of-line)
+(define-key evil-insert-state-map "\C-e" 'evil-end-of-line)
 
 ;; Evil key
 (evil-define-operator evil-yank-line-end (beg end type register)
@@ -155,6 +156,8 @@ In Insert state, insert a newline."
   "g" 'magit-status
   "k" 'kill-buffer
   "K" 'kill-buffer-and-window
+  "r" 'vr/replace
+  "R" 'vr/query-replace
   "s" 'save-buffer
   "t" 'gtags-find-tag
   "T" 'gtags-find-symbol)
