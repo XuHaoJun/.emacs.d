@@ -155,7 +155,9 @@ In Insert state, insert a newline."
   "g" 'magit-status
   "k" 'kill-buffer
   "K" 'kill-buffer-and-window
-  "s" 'save-buffer)
+  "s" 'save-buffer
+  "t" 'gtags-find-tag
+  "T" 'gtags-find-symbol)
 
 
 (provide 'setup-evil)
