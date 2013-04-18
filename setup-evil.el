@@ -147,6 +147,10 @@ In Insert state, insert a newline."
 (evil-leader/set-leader ",")
 (evil-leader/set-key
   "," 'smex
+  "0" 'delete-window
+  "1" 'delete-other-windows
+  "2" 'split-window-below
+  "3" 'split-window-right
   "b" 'ido-switch-buffer
   "B" 'ibuffer
   "c" 'recompile
@@ -156,6 +160,7 @@ In Insert state, insert a newline."
   "f" 'ido-find-file
   "F" 'recentf-ido-find-file
   "g" 'magit-status
+  "G" 'magit-log
   "i" 'flex-isearch-forward
   "I" 'flex-isearch-backward
   "k" 'kill-buffer
@@ -163,6 +168,7 @@ In Insert state, insert a newline."
   "r" 'vr/replace
   "R" 'vr/query-replace
   "s" 'save-buffer
+  "S" 'save-some-buffers
   "t" 'gtags-find-tag
   "T" 'gtags-find-symbol)
 
