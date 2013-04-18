@@ -70,6 +70,7 @@
 (require 'setup-helm)
 (require 'setup-ibuffer)
 (require 'setup-openwith)
+(require 'setup-multi-term)
 (require 'setup-recentf)
 (require 'setup-shell-pop)
 (require 'setup-stardict)

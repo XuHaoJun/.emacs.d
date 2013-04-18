@@ -46,6 +46,7 @@
    (cons 'ido-yes-or-no marmalade)
    (cons 'jedi melpa)
    (cons 'magit melpa)
+   (cons 'multi-term melpa)
    (cons 'nlinum gnu)
    (cons 'openwith melpa)
    (cons 'pos-tip melpa)
