@@ -1,6 +1,7 @@
 
 (require 'cc-mode)
 
+(require 'google-c-style)
 (add-hook 'c-mode-common-hook 'google-set-c-style)
 ;; (setq c-default-style
 ;;       '((java-mode . "java")
