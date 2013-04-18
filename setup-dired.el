@@ -1,8 +1,8 @@
 (require 'dired)
 
 ;; Recursive do copy or delete.
-(setq dired-recursive-deletes t)
-(setq dired-recursive-copies t)
+(setq dired-recursive-copies (quote always))
+(setq dired-recursive-deletes (quote always))
 
 ;; Extends functionalities provided by GNU Emacs's dired.el
 (require 'dired+)
