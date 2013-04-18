@@ -108,4 +108,7 @@
 ;; Use C-x C-m to do M-x per Steve Yegge's advice
 (global-set-key (kbd "C-x C-m") 'smex)
 
+(require 'ido-yes-or-no)
+(ido-yes-or-no-mode t)
+
 (provide 'setup-ido)
