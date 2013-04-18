@@ -1,10 +1,12 @@
 
 (require 'cc-mode)
-(setq c-default-style
-      '((java-mode . "java")
-        (awk-mode . "awk")
-        (c++-mode . "ellemtel")
-        (other . "k&r")))
+
+(add-hook 'c-mode-common-hook 'google-set-c-style)
+;; (setq c-default-style
+;;       '((java-mode . "java")
+;;         (awk-mode . "awk")
+;;         (c++-mode . "ellemtel")
+;;         (other . "k&r")))
 
 ;;for work with auto-indent mode
 (add-hook 'c-mode-common-hook
