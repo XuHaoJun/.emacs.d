@@ -27,6 +27,7 @@
    (cons 'flymake melpa)
    (cons 'flymake-cursor melpa)
    (cons 'flymake-python-pyflakes melpa)
+   (cons 'flymake-shell melpa)
    (cons 'fuzzy melpa)
    (cons 'geiser marmalade)
    (cons 'ggtags gnu)

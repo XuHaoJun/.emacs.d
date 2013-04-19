@@ -10,4 +10,7 @@
 (require 'flymake-python-pyflakes)
 (add-hook 'python-mode-hook 'flymake-python-pyflakes-load)
 
+(require 'flymake-shell)
+(add-hook 'sh-set-shell-hook 'flymake-shell-load)
+
 (provide 'setup-all-flymake)
