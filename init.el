@@ -107,7 +107,7 @@
 ;;; Android plugin
 ;;;---------------------------------------------------------------------------
 (require 'android-mode)
-(require 'eclim)
+(require 'setup-eclim)
 (require 'eclimd)
 (require 'ac-emacs-eclim-source)
 (ac-emacs-eclim-config)
