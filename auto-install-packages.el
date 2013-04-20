@@ -10,6 +10,7 @@
    ;; (cons 'auto-complete-clang melpa)
    (cons 'android-mode melpa)
    (cons 'browse-kill-ring melpa)
+   (cons 'c-eldoc melpa)
    (cons 'company melpa)
    (cons 'color-moccur melpa)
    (cons 'dired+ melpa)
