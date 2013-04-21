@@ -67,7 +67,7 @@
 (require 'setup-c-eldoc)
 (require 'setup-erc)
 (require 'setup-evil)
-(require 'setup-all-flymake)
+(require 'setup-flymake)
 (require 'setup-global)
 (require 'setup-git)
 (require 'setup-ido)
