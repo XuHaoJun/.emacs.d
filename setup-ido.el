@@ -125,4 +125,21 @@
                                               (buffer-name buf)))))
                                    (buffer-list)))))))
 
+(defun ido-for-mode(prompt the-mode)
+  (switch-to-buffer
+   (ido-completing-read prompt
+                        (save-excursion
+                          (delq
+                           nil
+                           (mapcar (lambda (buf)
+                                     (when (buffer-live-p buf)
+                                       (with-current-buffer buf
+                                         (and (eq major-mode the-mode)
+                                              (buffer-name buf)))))
+                                   (buffer-list)))))))
+
+(defun ido-term-buffer()
+  (interactive)
+  (ido-for-mode "Term:" 'term-mode))
+
 (provide 'setup-ido)
