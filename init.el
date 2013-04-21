@@ -87,6 +87,7 @@
 (require 'visual-regexp)
 (require 'expand-region)
 (require 'color-moccur)
+(require 'moccur-edit)
 
 (require 'flex-isearch)
 (global-flex-isearch-mode)
