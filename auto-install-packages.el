@@ -8,7 +8,6 @@
    (cons 'auctex gnu)
    (cons 'auto-complete melpa)
    (cons 'autopair melpa)
-   ;; (cons 'auto-complete-clang melpa)
    (cons 'android-mode melpa)
    (cons 'browse-kill-ring melpa)
    (cons 'c-eldoc melpa)
@@ -69,6 +68,9 @@
    (cons 'undo-tree melpa)
    (cons 'visual-regexp melpa)
    (cons 'w3m melpa)
+   (cons 'wgrep melpa)
+   (cons 'wgrep-ack melpa)
+   (cons 'wgrep-helm melpa)
    (cons 'yasnippet melpa)
    (cons 'yagist melpa)))
 

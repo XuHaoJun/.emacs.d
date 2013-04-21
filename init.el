@@ -82,6 +82,7 @@
 (require 'setup-term)
 (require 'setup-undo-tree)
 (require 'setup-w3m)
+(require 'setup-wgrep)
 (require 'setup-yasnippet)
 
 (require 'switch-window)
