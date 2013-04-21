@@ -4,6 +4,7 @@
 (require 'server)
 (unless (server-running-p)
   (server-start))
+;;; End of Start emacs daemon
 
 ;;;---------------------------------------------------------------------------
 ;;; Need early run in start up
@@ -15,6 +16,7 @@
 ;; no splash screen please ... jeez
 (setq inhibit-startup-message t)
 ;;; End of Need early run in start up
+
 
 ;;;---------------------------------------------------------------------------
 ;;; Setup path
@@ -33,11 +35,13 @@
     (add-to-list 'load-path project)))
 ;;; End of Setup path
 
+
 ;;;---------------------------------------------------------------------------
 ;;; Setup packages
 ;;;---------------------------------------------------------------------------
 (require 'auto-install-packages)
 ;;; End of Setup packages
+
 
 ;;;---------------------------------------------------------------------------
 ;;; Appearance
@@ -53,6 +57,7 @@
 (require 'setup-scheme-mode)
 (require 'setup-python-mode)
 ;;; End of Language special setup
+
 
 ;;;---------------------------------------------------------------------------
 ;;; Extensions 
@@ -107,6 +112,7 @@
 (add-hook 'emacs-lisp-mode-hook 'rainbow-delimiters-mode)
 ;;; End of Extensions 
 
+
 ;;;---------------------------------------------------------------------------
 ;;; Android plugin
 ;;;---------------------------------------------------------------------------
@@ -121,6 +127,7 @@
 ;; (global-company-mode t)
 ;;; End of Android plugin
 
+
 ;;;---------------------------------------------------------------------------
 ;;; Basic settings
 ;;;---------------------------------------------------------------------------
@@ -129,6 +136,7 @@
 (require 'setup-backup)
 (require 'setup-compile)
 ;;; End of Basic settings
+
 
 ;;;---------------------------------------------------------------------------
 ;;; Save or load last full emacs status
