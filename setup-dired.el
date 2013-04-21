@@ -33,4 +33,7 @@
             (setq dired-omit-files "^#\\|^\\..*") ; omit all hidden file which starts with `.'
             (dired-omit-mode 1)))                 ; initially omit unintrested files
 
+(require 'wdired)
+(define-key dired-mode-map "\C-c\C-i" 'wdired-change-to-wdired-mode)
+
 (provide 'setup-dired)
