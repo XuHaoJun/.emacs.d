@@ -42,6 +42,7 @@
    (cons 'google-c-style melpa)
    (cons 'helm melpa)
    (cons 'helm-ack melpa)
+   (cons 'helm-c-moccur melpa)
    (cons 'helm-gtags melpa)
    (cons 'ibuffer-vc melpa)
    (cons 'ido-hacks melpa)
