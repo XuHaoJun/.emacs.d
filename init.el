@@ -124,6 +124,7 @@
 (require 'key-bindings)
 (require 'sane-defaults) ;; lets start with a smattering of sanity
 (require 'setup-backup)
+(require 'setup-compile)
 ;;; End of Basic settings
 
 ;;;---------------------------------------------------------------------------
