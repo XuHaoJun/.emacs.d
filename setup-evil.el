@@ -147,6 +147,7 @@ In Insert state, insert a newline."
 (evil-leader/set-leader ",")
 (evil-leader/set-key
   "," 'smex
+  "#" 'rgr/ido-erc-buffer
   "0" 'delete-window
   "1" 'delete-other-windows
   "2" 'split-window-below

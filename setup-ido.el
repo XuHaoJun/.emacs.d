@@ -111,4 +111,18 @@
 (require 'ido-yes-or-no)
 (ido-yes-or-no-mode t)
 
+(defun rgr/ido-erc-buffer()
+  (interactive)
+  (switch-to-buffer
+   (ido-completing-read "Channel:" 
+                        (save-excursion
+                          (delq
+                           nil
+                           (mapcar (lambda (buf)
+                                     (when (buffer-live-p buf)
+                                       (with-current-buffer buf
+                                         (and (eq major-mode 'erc-mode)
+                                              (buffer-name buf)))))
+                                   (buffer-list)))))))
+
 (provide 'setup-ido)
