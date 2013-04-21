@@ -4,7 +4,7 @@
 (defun init--install-packages ()
   (packages-install
    (cons 'ace-jump-mode melpa)
-   (cons 'ack gnu)
+   (cons 'ack-and-a-half melpa)
    (cons 'auctex gnu)
    (cons 'auto-complete melpa)
    (cons 'autopair melpa)
