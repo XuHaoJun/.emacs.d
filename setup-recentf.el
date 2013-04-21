@@ -1,8 +1,11 @@
 (require 'recentf)
 
-;; Save a list of recent files visited. (open recent file with C-x f)
+;; (setq recentf-auto-cleanup 10)
+(setq recentf-exclude '(".recentf"))
+(setq recentf-max-saved-items 2000)
+;; (setq recentf-auto-save-timer
+;;       (run-with-idle-timer 300 t 'recentf-save-list))
 (recentf-mode 1)
-(setq recentf-max-saved-items 25) ;; just 20 is too recent
 
 (defun recentf-ido-find-file ()
   "Find a recent file using Ido."
@@ -22,7 +25,11 @@
     (when filename
       (find-file (cdr (assoc filename
 			     file-assoc-list))))))
-(global-set-key (kbd "C-x f") 'recentf-ido-find-file)
+
+;; ido select for short view
+(global-set-key (kbd "C-x F") 'recentf-ido-find-file)
+;; helm select for verbose view
+(global-set-key (kbd "C-x f") 'helm-recentf)
 
 
 (provide 'setup-recentf)
