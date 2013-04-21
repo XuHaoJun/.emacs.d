@@ -58,7 +58,7 @@
 ;;; Extensions 
 ;;;---------------------------------------------------------------------------
 (require 'setup-ack-and-a-half)
-(require 'setup-all-auto-complete)
+(require 'setup-auto-complete)
 (require 'setup-autopair)
 (require 'setup-browse-kill-ring)
 (require 'setup-dired)
