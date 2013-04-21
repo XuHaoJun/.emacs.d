@@ -58,6 +58,7 @@
 ;;; Extensions 
 ;;;---------------------------------------------------------------------------
 (require 'setup-all-auto-complete)
+(require 'setup-autopair)
 (require 'setup-browse-kill-ring)
 (require 'setup-dired)
 ;; (require 'setup-ecb)

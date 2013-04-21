@@ -7,6 +7,7 @@
    (cons 'ack gnu)
    (cons 'auctex gnu)
    (cons 'auto-complete melpa)
+   (cons 'autopair melpa)
    ;; (cons 'auto-complete-clang melpa)
    (cons 'android-mode melpa)
    (cons 'browse-kill-ring melpa)
