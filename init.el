@@ -60,7 +60,7 @@
 
 
 ;;;---------------------------------------------------------------------------
-;;; Extensions 
+;;; Extensions
 ;;;---------------------------------------------------------------------------
 (require 'setup-ack-and-a-half)
 (require 'setup-auto-complete)
@@ -110,7 +110,12 @@
 (require 'rainbow-delimiters)
 (add-hook 'scheme-mode-hook 'rainbow-delimiters-mode)
 (add-hook 'emacs-lisp-mode-hook 'rainbow-delimiters-mode)
-;;; End of Extensions 
+
+(require 'indent-file)
+(add-hook 'emacs-lisp-mode-hook 'indent-file-when-save)
+(add-hook 'scheme-mode-hook 'indent-file-when-save)
+(add-hook 'c-mode-common-hook 'indent-file-when-save)
+;;; End of Extensions
 
 
 ;;;---------------------------------------------------------------------------

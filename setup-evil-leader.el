@@ -8,6 +8,7 @@
   "%" 'ido-term-buffer
   "<" 'winner-undo
   ">" 'winner-redo
+  "=" 'indent-whole-buffer
   "0" 'delete-window
   "1" 'delete-other-windows
   "2" 'split-window-below
