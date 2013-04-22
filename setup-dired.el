@@ -28,10 +28,10 @@
                 (dired-single-buffer "..")))))
 
 ;; Hide dotfiles and . like 'ls'
-(add-hook 'dired-mode-hook
-          (lambda ()
-            (setq dired-omit-files "^#\\|^\\..*") ; omit all hidden file which starts with `.'
-            (dired-omit-mode 1)))                 ; initially omit unintrested files
+(require 'dired-x)
+(setq-default dired-omit-files-p t) ; this is buffer-local variable
+(setq dired-omit-files
+      (concat dired-omit-files "\\|^\\..+$"))
 
 (require 'wdired)
 (define-key dired-mode-map "\C-c\C-i" 'wdired-change-to-wdired-mode)
