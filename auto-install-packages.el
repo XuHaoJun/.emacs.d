@@ -5,6 +5,7 @@
   (packages-install
    (cons 'ace-jump-mode melpa)
    (cons 'ack-and-a-half melpa)
+   (cons 'ag melpa)
    (cons 'auctex gnu)
    (cons 'auto-complete melpa)
    (cons 'autopair melpa)
@@ -41,6 +42,7 @@
    (cons 'google-c-style melpa)
    (cons 'helm melpa)
    (cons 'helm-ack melpa)
+   (cons 'helm-ag melpa)
    (cons 'helm-c-moccur melpa)
    (cons 'helm-gtags melpa)
    (cons 'ibuffer-vc melpa)

@@ -95,6 +95,7 @@
 (require 'expand-region)
 (require 'color-moccur)
 (require 'moccur-edit)
+(when (executable-find "ag") (require 'ag))
 
 (require 'flex-isearch)
 (global-flex-isearch-mode)

@@ -1,4 +1,6 @@
 (require 'helm-config)
+(require 'helm-ack)
+(require 'helm-ag)
 ;; (helm-mode 1)
 
 (require 'helm-c-moccur)
