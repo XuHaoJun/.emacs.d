@@ -20,6 +20,7 @@
    (cons 'dired-single melpa)
    (cons 'dynamic-fonts melpa)
    (cons 'ecb melpa)
+   (cons 'eldoc-extension melpa)
    (cons 'emacs-eclim melpa)
    (cons 'erc-hl-nicks melpa)
    (cons 'evil melpa)
