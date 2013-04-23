@@ -16,10 +16,12 @@
 (require 'gtags)
 (setq c-mode-hook
       '(lambda ()
-         (gtags-mode 1)));get into gtags-mode whenever you get into c-mode
+         (when (executable-find "gtags")
+           (gtags-mode 1))));get into gtags-mode whenever you get into c-mode
 (setq c++-mode-hook
       '(lambda ()
-         (gtags-mode 1)));get into gtags-mode whenever you get into c-mode
+         (when (executable-find "gtags")
+           (gtags-mode 1))));get into gtags-mode whenever you get into c-mode
 
 
 (provide 'setup-cc-mode)
