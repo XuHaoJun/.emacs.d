@@ -95,7 +95,6 @@
 (require 'expand-region)
 (require 'color-moccur)
 (require 'moccur-edit)
-(when (executable-find "ag") (require 'ag))
 
 (require 'flex-isearch)
 (global-flex-isearch-mode)
@@ -111,6 +110,9 @@
 (require 'rainbow-delimiters)
 (add-hook 'scheme-mode-hook 'rainbow-delimiters-mode)
 (add-hook 'emacs-lisp-mode-hook 'rainbow-delimiters-mode)
+
+(when (executable-find "ag") (require 'ag))
+(add-hook 'ag-mode-hook 'wgrep-ack-and-a-half-setup)
 
 (require 'indent-file)
 (add-hook 'emacs-lisp-mode-hook 'indent-file-when-save)
