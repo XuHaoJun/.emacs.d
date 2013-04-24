@@ -26,7 +26,7 @@
 ;;           ))
 
 ;;Aviod mouse point when cursor at surround.
-;(mouse-avoidance-mode 'animate)
+;;(mouse-avoidance-mode 'animate)
 
 ;; mouse auto focus other window with my thinkpad trackpoint
 (setq mouse-autoselect-window t)
@@ -41,7 +41,9 @@
 
 (setq tab-width 4)
 
-(setq require-final-newline t) 
+(setq require-final-newline t)
+
+(setq large-file-warning-threshold nil)
 ;;---------------------------------------
 
 
