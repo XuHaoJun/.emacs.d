@@ -1,4 +1,3 @@
-
 (require 'cc-mode)
 
 (require 'google-c-style)
@@ -13,15 +12,13 @@
 (add-hook 'c-mode-common-hook
           (lambda () (setq indent-tabs-mode t)))
 
-(require 'gtags)
+(when (executable-find "gtags") (require 'gtags))
 (setq c-mode-hook
       '(lambda ()
-         (when (executable-find "gtags")
-           (gtags-mode 1))));get into gtags-mode whenever you get into c-mode
+         (gtags-mode 1)));get into gtags-mode whenever you get into c-mode
 (setq c++-mode-hook
       '(lambda ()
-         (when (executable-find "gtags")
-           (gtags-mode 1))));get into gtags-mode whenever you get into c-mode
+         (gtags-mode 1)));get into gtags-mode whenever you get into c-mode
 
 
 (provide 'setup-cc-mode)
