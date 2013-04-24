@@ -15,6 +15,6 @@
   (when (gtags-root-dir)
     (gtags-update)))
 
-(add-hook 'after-save-hook #'gtags-update-hook)
+(when (executable-find "global") (add-hook 'after-save-hook #'gtags-update-hook))
 
 (provide 'setup-global)
