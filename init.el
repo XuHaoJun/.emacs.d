@@ -112,6 +112,7 @@
 (add-hook 'emacs-lisp-mode-hook 'rainbow-delimiters-mode)
 
 (when (executable-find "ag") (require 'ag))
+(setq ag-highlight-search t)
 (add-hook 'ag-mode-hook 'wgrep-ack-and-a-half-setup)
 
 (require 'indent-file)
