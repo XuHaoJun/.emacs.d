@@ -67,7 +67,6 @@
    (cons 'slime melpa)
    (cons 'smex melpa)
    (cons 'smartparens melpa)
-   (cons 'smooth-scrolling melpa)
    (cons 'solarized-theme melpa)
    (cons 'surround melpa)
    (cons 'switch-window melpa)
