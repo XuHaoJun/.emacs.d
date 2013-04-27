@@ -10,7 +10,8 @@
   (interactive)
   (term-send-raw-string "\C-_"))
 (setq term-bind-key-alist
-      (append '(("C-c C-s" . term-stop-subjob)
+      (append '(("C-h" . term-send-backspace)
+                ("C-c C-s" . term-stop-subjob)
                 ("C-/" . term-send-undo))
               term-bind-key-alist))
 
