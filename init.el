@@ -102,14 +102,6 @@
 (add-hook 'scheme-mode-hook 'smartparens-mode)
 (add-hook 'emacs-lisp-mode-hook 'smartparens-mode)
 
-(require 'window-numbering)
-(custom-set-faces '(window-numbering-face ((t (:weight bold)))))
-(window-numbering-mode 1)
-
-(require 'rainbow-delimiters)
-(add-hook 'scheme-mode-hook 'rainbow-delimiters-mode)
-(add-hook 'emacs-lisp-mode-hook 'rainbow-delimiters-mode)
-
 (when (executable-find "ag") (require 'ag))
 (setq ag-highlight-search t)
 (add-hook 'ag-mode-hook 'wgrep-ack-and-a-half-setup)
