@@ -49,6 +49,7 @@
    (cons 'helm-gtags melpa)
    (cons 'ibuffer-vc melpa)
    (cons 'ido-hacks melpa)
+   (cons 'ido-sort-mtime melpa)
    (cons 'ido-ubiquitous melpa)
    (cons 'ido-yes-or-no marmalade)
    (cons 'jedi melpa)
