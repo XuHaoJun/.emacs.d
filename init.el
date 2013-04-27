@@ -78,6 +78,7 @@
 (require 'setup-ido)
 (require 'setup-helm)
 (require 'setup-ibuffer)
+(require 'setup-newsticker)
 (require 'setup-openwith)
 (require 'setup-recentf)
 (require 'setup-shell-pop)
