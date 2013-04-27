@@ -3,6 +3,7 @@
 ;; install extensions if they're missing
 (defun init--install-packages ()
   (packages-install
+   (cons 'ac-slime melpa)
    (cons 'ace-jump-mode melpa)
    (cons 'ack-and-a-half melpa)
    (cons 'ag melpa)
@@ -62,6 +63,7 @@
    (cons 'scheme-complete melpa)
    (cons 'session melpa)
    (cons 'shell-pop melpa)
+   (cons 'slime melpa)
    (cons 'smex melpa)
    (cons 'smartparens melpa)
    (cons 'smooth-scrolling melpa)

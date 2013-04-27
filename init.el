@@ -95,12 +95,17 @@
 (require 'color-moccur)
 (require 'moccur-edit)
 
+(require 'slime)
+(setq inferior-lisp-program "/usr/bin/sbcl")
+(slime-setup)
+
 (require 'flex-isearch)
 (global-flex-isearch-mode)
 
 (require 'smartparens-config)
 (add-hook 'scheme-mode-hook 'smartparens-mode)
 (add-hook 'emacs-lisp-mode-hook 'smartparens-mode)
+(add-hook 'lisp-mode-hook 'smartparens-mode)
 
 (when (executable-find "ag") (require 'ag))
 (setq ag-highlight-search t)
@@ -109,6 +114,7 @@
 (require 'indent-file)
 (add-hook 'emacs-lisp-mode-hook 'indent-file-when-save)
 (add-hook 'scheme-mode-hook 'indent-file-when-save)
+(add-hook 'lisp-mode-hook 'indent-file-when-save)
 (add-hook 'c-mode-common-hook 'indent-file-when-save)
 ;;; End of Extensions
 
