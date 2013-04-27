@@ -19,6 +19,7 @@
   "C" 'compile
   "d" 'ido-dired
   "e" 'er/expand-region
+  "E" 'er/contract-region
   "f" 'ido-find-file
   "F" 'recentf-ido-find-file
   "g" 'magit-status
