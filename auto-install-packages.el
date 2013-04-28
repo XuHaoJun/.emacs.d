@@ -1,88 +1,34 @@
-(require 'setup-package)
+(require 'package)
 
-;; install extensions if they're missing
-(defun init--install-packages ()
-  (packages-install
-   (cons 'ac-slime melpa)
-   (cons 'ace-jump-mode melpa)
-   (cons 'ack-and-a-half melpa)
-   (cons 'ag melpa)
-   (cons 'auctex gnu)
-   (cons 'auto-complete melpa)
-   (cons 'autopair melpa)
-   (cons 'android-mode melpa)
-   (cons 'browse-kill-ring melpa)
-   (cons 'c-eldoc melpa)
-   (cons 'company melpa)
-   (cons 'color-moccur melpa)
-   (cons 'dired+ melpa)
-   (cons 'dired-details melpa)
-   (cons 'dired-details+ melpa)
-   (cons 'dired-single melpa)
-   (cons 'dynamic-fonts melpa)
-   (cons 'ecb melpa)
-   (cons 'eldoc-extension melpa)
-   (cons 'emacs-eclim melpa)
-   (cons 'erc-hl-nicks melpa)
-   (cons 'evil melpa)
-   (cons 'evil-leader melpa)
-   (cons 'expand-region melpa)
-   (cons 'flex-isearch melpa)
-   (cons 'flymake melpa)
-   (cons 'flymake-cursor melpa)
-   (cons 'flymake-python-pyflakes melpa)
-   (cons 'flymake-shell melpa)
-   (cons 'fuzzy melpa)
-   (cons 'geiser marmalade)
-   (cons 'ggtags gnu)
-   (cons 'git-blame melpa)
-   (cons 'git-commit-mode melpa)
-   (cons 'git-gutter-fringe melpa)
-   (cons 'gitconfig-mode melpa)
-   (cons 'github-browse-file melpa)
-   (cons 'gitignore-mode melpa)
-   (cons 'google-c-style melpa)
-   (cons 'helm melpa)
-   (cons 'helm-ack melpa)
-   (cons 'helm-ag melpa)
-   (cons 'helm-c-moccur melpa)
-   (cons 'helm-gtags melpa)
-   (cons 'ibuffer-vc melpa)
-   (cons 'ido-hacks melpa)
-   (cons 'ido-sort-mtime melpa)
-   (cons 'ido-ubiquitous melpa)
-   (cons 'ido-yes-or-no marmalade)
-   (cons 'jedi melpa)
-   (cons 'magit melpa)
-   (cons 'multi-term melpa)
-   (cons 'nlinum gnu)
-   (cons 'openwith melpa)
-   (cons 'pos-tip melpa)
-   (cons 'quack marmalade)
-   (cons 'rainbow-delimiters melpa)
-   (cons 'savekill melpa)
-   (cons 'scheme-complete melpa)
-   (cons 'session melpa)
-   (cons 'shell-pop melpa)
-   (cons 'slime melpa)
-   (cons 'smex melpa)
-   (cons 'smartparens melpa)
-   (cons 'solarized-theme melpa)
-   (cons 'surround melpa)
-   (cons 'switch-window melpa)
-   (cons 'undo-tree melpa)
-   (cons 'visual-regexp melpa)
-   (cons 'w3m melpa)
-   (cons 'wgrep melpa)
-   (cons 'wgrep-ack melpa)
-   (cons 'wgrep-helm melpa)
-   (cons 'yasnippet melpa)
-   (cons 'yagist melpa)))
+(defvar pkg-lst
+  '(ac-slime ace-jump-mode ack-and-a-half ag auctex auto-complete autopair android-mode
+             browse-kill-ring
+             c-eldoc company color-moccur
+             dired+ dired-details dired-details+ dired-single dynamic-fonts
+             ecb eldoc-extension emacs-eclim erc-hl-nicks evil evil-leader expand-region
+             flex-isearch flymake flymake-cursor flymake-python-pyflakes flymake-shell fuzzy
+             geiser ggtags git-blame git-commit-mode git-gutter-fringe
+             gitconfig-mode github-browse-file gitignore-mode google-c-style
+             helm helm-ack helm-ag helm-c-moccur helm-gtags
+             ibuffer-vc ido-hacks ido-sort-mtime ido-ubiquitous ido-yes-or-no
+             jedi
+             magit multi-term
+             nlinum
+             openwith
+             pos-tip
+             quack
+             rainbow-delimiters
+             savekill scheme-complete session shell-pop slime smex smartparens
+             solarized-theme surround switch-window
+             undo-tree
+             visual-regexp
+             w3m wgrep wgrep-ack wgrep-helm
+             yasnippet yagist))
 
-(condition-case nil
-    (init--install-packages)
-  (error
-   (package-refresh-contents)
-   (init--install-packages)))
+
+;; install the missing packages
+(dolist (package pkg-lst)
+  (when (not (package-installed-p package))
+    (package-install package)))
 
 (provide 'auto-install-packages)
