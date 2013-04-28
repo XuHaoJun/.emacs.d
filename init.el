@@ -56,49 +56,27 @@
 (require 'setup-cc-mode)
 (require 'setup-scheme-mode)
 (require 'setup-python-mode)
+(require 'setup-tex)
 ;;; End of Language special setup
 
 
 ;;;---------------------------------------------------------------------------
 ;;; Extensions
 ;;;---------------------------------------------------------------------------
+;;--------------
+;;   Edit
+;;--------------
+(require 'setup-evil)
+(require 'setup-undo-tree)
 (require 'setup-ack-and-a-half)
-(require 'setup-auto-complete)
 (require 'setup-autopair)
 (require 'setup-browse-kill-ring)
-(require 'setup-dired)
-;; (require 'setup-ecb)
-(require 'setup-eldoc)
-(require 'setup-c-eldoc)
-(require 'setup-erc)
-(require 'setup-evil)
-(require 'setup-flymake)
-(require 'setup-global)
-(require 'setup-git)
-(require 'setup-ido)
-(require 'setup-helm)
-(require 'setup-ibuffer)
-(require 'setup-newsticker)
-(require 'setup-openwith)
-(require 'setup-recentf)
-(require 'setup-shell-pop)
-(require 'setup-stardict)
-(require 'setup-tex)
-(require 'setup-term)
-(require 'setup-undo-tree)
-(require 'setup-w3m)
 (require 'setup-wgrep)
-(require 'setup-yasnippet)
 
-(require 'switch-window)
 (require 'visual-regexp)
 (require 'expand-region)
 (require 'color-moccur)
 (require 'moccur-edit)
-
-(require 'slime)
-(setq inferior-lisp-program "/usr/bin/sbcl")
-(slime-setup)
 
 (require 'flex-isearch)
 (global-flex-isearch-mode)
@@ -108,15 +86,58 @@
 (add-hook 'emacs-lisp-mode-hook 'smartparens-mode)
 (add-hook 'lisp-mode-hook 'smartparens-mode)
 
-(when (executable-find "ag") (require 'ag))
-(setq ag-highlight-search t)
-(add-hook 'ag-mode-hook 'wgrep-ack-and-a-half-setup)
-
 (require 'indent-file)
 (add-hook 'emacs-lisp-mode-hook 'indent-file-when-save)
 (add-hook 'scheme-mode-hook 'indent-file-when-save)
 (add-hook 'lisp-mode-hook 'indent-file-when-save)
 (add-hook 'c-mode-common-hook 'indent-file-when-save)
+
+(when (executable-find "ag") (require 'ag))
+(setq ag-highlight-search t)
+(add-hook 'ag-mode-hook 'wgrep-ack-and-a-half-setup)
+;; End of Edit
+
+;;--------------
+;;   Programming
+;;--------------
+(require 'setup-auto-complete)
+(require 'setup-compile)
+(require 'setup-flymake)
+(require 'setup-eldoc)
+(require 'setup-c-eldoc)
+(require 'setup-yasnippet)
+(require 'setup-global)
+(require 'setup-git)
+;; (require 'setup-ecb)
+
+(require 'slime)
+(setq inferior-lisp-program "/usr/bin/sbcl")
+(slime-setup)
+;; End of Programming
+
+;;--------------
+;;   File and Buffer
+;;--------------
+(require 'setup-ido)
+(require 'setup-ibuffer)
+(require 'setup-recentf)
+(require 'setup-dired)
+(require 'setup-helm)
+(require 'setup-openwith)
+
+(require 'switch-window)
+;; End of File and Buffer
+
+;;--------------
+;;   LIFE
+;;--------------
+(require 'setup-term)
+(require 'setup-shell-pop)
+(require 'setup-erc)
+(require 'setup-stardict)
+(require 'setup-w3m)
+(require 'setup-newsticker)
+;; End of Life
 ;;; End of Extensions
 
 
@@ -141,7 +162,6 @@
 (require 'key-bindings)
 (require 'sane-defaults) ;; lets start with a smattering of sanity
 (require 'setup-backup)
-(require 'setup-compile)
 ;;; End of Basic settings
 
 
