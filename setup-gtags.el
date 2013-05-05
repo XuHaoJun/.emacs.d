@@ -1,4 +1,4 @@
-(require 'ggtags)
+(require 'gtags)
 
 (defun gtags-root-dir ()
   "Returns GTAGS root directory or nil if doesn't exist."
@@ -17,4 +17,4 @@
 
 (when (executable-find "global") (add-hook 'after-save-hook #'gtags-update-hook))
 
-(provide 'setup-global)
+(provide 'setup-gtags)

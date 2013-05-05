@@ -107,7 +107,7 @@
 (require 'setup-eldoc)
 (require 'setup-c-eldoc)
 (require 'setup-yasnippet)
-(require 'setup-global)
+(require 'setup-gtags)
 (require 'setup-git)
 ;; (require 'setup-ecb)
 

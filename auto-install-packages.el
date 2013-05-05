@@ -7,7 +7,7 @@
              dired+ dired-details dired-details+ dired-single dynamic-fonts
              ecb eldoc-extension emacs-eclim erc-hl-nicks evil evil-leader expand-region
              flex-isearch flymake flymake-cursor flymake-python-pyflakes flymake-shell fuzzy
-             geiser gtags ggtags git-blame git-commit-mode git-gutter-fringe
+             geiser gtags git-blame git-commit-mode git-gutter-fringe
              gitconfig-mode github-browse-file gitignore-mode google-c-style
              helm helm-ack helm-ag helm-c-moccur helm-gtags
              ibuffer-vc ido-hacks ido-sort-mtime ido-ubiquitous ido-yes-or-no
