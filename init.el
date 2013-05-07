@@ -125,6 +125,7 @@
 (require 'setup-dired)
 (require 'setup-helm)
 (require 'setup-openwith)
+(require 'setup-popwin)
 
 (require 'switch-window)
 ;; End of File and Buffer
