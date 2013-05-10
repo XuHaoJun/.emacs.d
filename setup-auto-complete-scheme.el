@@ -12,4 +12,4 @@
              (make-local-variable 'ac-sources)
              (setq ac-sources (append ac-sources '(ac-source-scheme)))))
 
-(provide 'auto-complete-scheme)
+(provide 'setup-auto-complete-scheme)
