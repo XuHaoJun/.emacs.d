@@ -91,7 +91,7 @@
 (add-hook 'emacs-lisp-mode-hook 'indent-file-when-save)
 (add-hook 'scheme-mode-hook 'indent-file-when-save)
 (add-hook 'lisp-mode-hook 'indent-file-when-save)
-(add-hook 'c-mode-common-hook 'indent-file-when-save)
+;; (add-hook 'c-mode-common-hook 'indent-file-when-save)
 
 (when (executable-find "ag") (require 'ag))
 (setq ag-highlight-search t)
