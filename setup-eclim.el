@@ -2,11 +2,11 @@
 (global-eclim-mode)
 
 ;; Variables
-(setq eclim-auto-save t
-      eclimd-wait-for-process nil
-      eclimd-default-workspace "~/workspace"
-      help-at-pt-display-when-idle t
-      help-at-pt-timer-delay 0.1)
+(setq ;; eclim-auto-save t
+ eclimd-wait-for-process nil
+ eclimd-default-workspace "~/workspace"
+ help-at-pt-display-when-idle t
+ help-at-pt-timer-delay 0.1)
 
 ;; Call the help framework with the settings above & activate
 ;; eclim-mode
