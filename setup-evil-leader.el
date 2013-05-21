@@ -1,5 +1,6 @@
-(require 'evil)
 (require 'evil-leader)
+
+(global-evil-leader-mode)
 
 (evil-leader/set-leader ",")
 (evil-leader/set-key
@@ -31,8 +32,11 @@
   "r" 'vr/replace
   "R" 'vr/query-replace
   "s" 'save-buffer
-  "S" 'save-some-buffers
-  "t" 'gtags-find-tag
-  "T" 'gtags-find-symbol)
+  "S" 'save-some-buffers)
+
+(dolist (my-mode '(c-mode c++-mode))
+  (evil-leader/set-key-for-mode my-mode
+    "t" 'gtags-find-tag
+    "T" 'gtags-find-symbol))
 
 (provide 'setup-evil-leader)
