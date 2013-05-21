@@ -87,10 +87,10 @@
 (add-hook 'emacs-lisp-mode-hook 'smartparens-mode)
 (add-hook 'lisp-mode-hook 'smartparens-mode)
 
-(require 'indent-file)
-(add-hook 'emacs-lisp-mode-hook 'indent-file-when-save)
-(add-hook 'scheme-mode-hook 'indent-file-when-save)
-(add-hook 'lisp-mode-hook 'indent-file-when-save)
+;; (require 'indent-file)
+;; (add-hook 'emacs-lisp-mode-hook 'indent-file-when-save)
+;; (add-hook 'scheme-mode-hook 'indent-file-when-save)
+;; (add-hook 'lisp-mode-hook 'indent-file-when-save)
 ;; (add-hook 'c-mode-common-hook 'indent-file-when-save)
 
 (when (executable-find "ag") (require 'ag))
