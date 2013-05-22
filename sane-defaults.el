@@ -11,6 +11,9 @@
 ;;Midle mouse insert X selection by point position.
 (setq mouse-yank-at-point t)
 
+;; Clear scratch buffer
+(setq initial-scratch-message "")
+
 ;;Show line number
 (global-linum-mode -1)
 (require 'nlinum)
