@@ -6,6 +6,7 @@
 (setq evil-move-cursor-back nil)
 (setq evil-cross-lines t)
 (setq evil-mode-line-format nil)
+(setq evil-want-visual-char-semi-exclusive t)
 
 (evil-set-initial-state 'term-mode 'emacs)
 (evil-set-initial-state 'ansi-term 'emacs)
