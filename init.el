@@ -109,6 +109,7 @@
 (require 'setup-yasnippet)
 (require 'setup-gtags)
 (require 'setup-git)
+(require 'setup-auto-indentation)
 ;; (require 'setup-ecb)
 
 (require 'slime)
