@@ -1,5 +1,6 @@
 (require 'recentf)
 
+(setq recentf-save-file (concat user-emacs-directory ".recentf"))
 ;; (setq recentf-auto-cleanup 10)
 (setq recentf-exclude '(".recentf"))
 (setq recentf-max-saved-items 2000)

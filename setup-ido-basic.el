@@ -8,7 +8,7 @@
       ido-use-filename-at-point 'guess
       ido-max-prospects 8
       ido-default-buffer-method 'selected-window   ;; Allow the same buffer to be open in different frames
-      )
+      ido-save-directory-list-file (concat user-emacs-directory ".ido.last"))
 
 (add-hook
  'ido-setup-hook
