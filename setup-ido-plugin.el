@@ -7,8 +7,8 @@
 
 
 (require 'smex) ; Use smex on M-x with ido style
-(smex-initialize)
 (require 'setup-smex-basic)
+(smex-initialize)
 
 
 ;; Use ido everywhere
