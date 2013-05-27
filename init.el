@@ -6,6 +6,7 @@
   (server-start))
 ;;; End of Start emacs daemon
 
+
 ;;;---------------------------------------------------------------------------
 ;;; Need early run in start up
 ;;;---------------------------------------------------------------------------
@@ -132,7 +133,7 @@
 ;; End of File and Buffer
 
 ;;--------------
-;;   LIFE
+;;   Life
 ;;--------------
 (require 'setup-term)
 (require 'setup-shell-pop)
@@ -141,8 +142,6 @@
 (require 'setup-w3m)
 (require 'setup-newsticker)
 ;; End of Life
-;;; End of Extensions
-
 
 ;;;---------------------------------------------------------------------------
 ;;; Android plugin
@@ -157,6 +156,7 @@
 (company-emacs-eclim-setup)
 ;; (global-company-mode t)
 ;;; End of Android plugin
+;;; End of Extensions
 
 
 ;;;---------------------------------------------------------------------------
