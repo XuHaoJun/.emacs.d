@@ -11,4 +11,4 @@
 (ido-ubiquitous-use-new-completing-read yas/expand 'yasnippet)
 (ido-ubiquitous-use-new-completing-read yas/visit-snippet-file 'yasnippet)
 
-(provide 'ido-ubiquitous-basic)
+(provide 'setup-ido-ubiquitous-basic)

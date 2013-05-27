@@ -15,7 +15,7 @@
 (require 'ido-ubiquitous)
 (ido-everywhere t)
 (ido-ubiquitous-mode t)
-(require 'ido-ubiquitous-basic)
+(require 'setup-ido-ubiquitous-basic)
 
 
 (require 'ido-yes-or-no)
