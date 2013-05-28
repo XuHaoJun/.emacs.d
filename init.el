@@ -70,6 +70,7 @@
 ;;--------------
 (require 'setup-evil)
 (require 'setup-undo-tree)
+(require 'setup-smartparens)
 (require 'setup-ack-and-a-half)
 (require 'setup-ag)
 (require 'setup-autopair)
@@ -83,11 +84,6 @@
 
 (require 'flex-isearch)
 (global-flex-isearch-mode)
-
-(require 'smartparens-config)
-(add-hook 'scheme-mode-hook 'smartparens-mode)
-(add-hook 'emacs-lisp-mode-hook 'smartparens-mode)
-(add-hook 'lisp-mode-hook 'smartparens-mode)
 
 ;; (require 'indent-file)
 ;; (add-hook 'emacs-lisp-mode-hook 'indent-file-when-save)
