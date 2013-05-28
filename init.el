@@ -71,6 +71,7 @@
 (require 'setup-evil)
 (require 'setup-undo-tree)
 (require 'setup-ack-and-a-half)
+(require 'setup-ag)
 (require 'setup-autopair)
 (require 'setup-browse-kill-ring)
 (require 'setup-wgrep)
@@ -94,9 +95,6 @@
 ;; (add-hook 'lisp-mode-hook 'indent-file-when-save)
 ;; (add-hook 'c-mode-common-hook 'indent-file-when-save)
 
-(when (executable-find "ag") (require 'ag))
-(setq ag-highlight-search t)
-(add-hook 'ag-mode-hook 'wgrep-ack-and-a-half-setup)
 ;; End of Edit
 
 ;;--------------
