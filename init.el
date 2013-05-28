@@ -76,14 +76,12 @@
 (require 'setup-autopair)
 (require 'setup-browse-kill-ring)
 (require 'setup-wgrep)
+(require 'setup-flex-isearch)
 
 (require 'visual-regexp)
 (require 'expand-region)
 (require 'color-moccur)
 (require 'moccur-edit)
-
-(require 'flex-isearch)
-(global-flex-isearch-mode)
 
 ;; (require 'indent-file)
 ;; (add-hook 'emacs-lisp-mode-hook 'indent-file-when-save)
