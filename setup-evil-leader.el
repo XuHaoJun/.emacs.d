@@ -26,8 +26,6 @@
   "F" 'recentf-ido-find-file
   "g" 'magit-status
   "G" 'magit-log
-  "i" 'flex-isearch-forward
-  "I" 'flex-isearch-backward
   "k" 'kill-buffer
   "K" 'kill-buffer-and-window
   "r" 'vr/replace
