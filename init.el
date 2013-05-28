@@ -97,8 +97,9 @@
 ;;   Programming
 ;;--------------
 (require 'setup-auto-complete)
-(require 'setup-compile)
 (require 'setup-flymake)
+(require 'setup-compile)
+(require 'setup-slime)
 (require 'setup-eldoc)
 (require 'setup-c-eldoc)
 (require 'setup-yasnippet)
@@ -107,9 +108,6 @@
 (require 'setup-auto-indentation)
 ;; (require 'setup-ecb)
 
-(require 'slime)
-(setq inferior-lisp-program "/usr/bin/sbcl")
-(slime-setup)
 ;; End of Programming
 
 ;;--------------
