@@ -52,8 +52,6 @@
 ;;; End of Appearance
 
 
-
-
 ;;;---------------------------------------------------------------------------
 ;;; Extensions
 ;;;---------------------------------------------------------------------------
@@ -86,9 +84,9 @@
 
 ;; End of Edit
 
-;;;---------------------------------------------------------------------------
-;;;   Programming
-;;;---------------------------------------------------------------------------
+;;----------------
+;;   Programming
+;;----------------
 (add-to-list 'load-path (concat user-emacs-directory "prog"))
 
 (add-to-list 'load-path (concat user-emacs-directory "prog/auto-complete"))
@@ -114,7 +112,7 @@
 (require 'setup-python-mode)
 (require 'setup-tex)
 ;; End of Language special setup
-;;; End of Programming
+;; End of Programming
 
 
 ;;--------------
@@ -148,9 +146,9 @@
 (require 'setup-newsticker)
 ;; End of Misc
 
-;;;---------------------------------------------------------------------------
-;;; Android plugin
-;;;---------------------------------------------------------------------------
+;;-----------------
+;; Android plugin
+;;-----------------
 (require 'setup-android-mode)
 (require 'setup-eclim)
 (require 'eclimd)
@@ -160,7 +158,7 @@
 (require 'company-emacs-eclim)
 (company-emacs-eclim-setup)
 ;; (global-company-mode t)
-;;; End of Android plugin
+;; End of Android plugin
 ;;; End of Extensions
 
 
