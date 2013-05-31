@@ -16,4 +16,4 @@
 ;; (define-key evil-visual-state-map (kbd "M-j") 'mark-next-like-this)
 ;; (define-key evil-visual-state-map (kbd "M-k") 'mark-previous-like-this)
 
-(provide 'setup-evil)
+(provide 'setup-evil-init)

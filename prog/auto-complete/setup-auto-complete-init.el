@@ -10,5 +10,4 @@
 (eval-after-load 'scheme-mode '(require 'setup-auto-complete-scheme))
 
 
-(provide 'setup-auto-complete)
-
+(provide 'setup-auto-complete-init)

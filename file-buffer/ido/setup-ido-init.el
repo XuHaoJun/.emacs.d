@@ -6,4 +6,4 @@
 (require 'setup-ido-extra)
 (require 'setup-ido-plugin)
 
-(provide 'setup-ido)
+(provide 'setup-ido-init)

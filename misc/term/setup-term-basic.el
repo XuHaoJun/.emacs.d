@@ -1,4 +1,5 @@
 (require 'term)
+(require 'setup-multi-term)
 (defvar my-term-shell "/bin/zsh") ; 执行ansi-term时不询问采用的shell
 
 (defadvice ansi-term (after ansi-term-after-advice (arg))

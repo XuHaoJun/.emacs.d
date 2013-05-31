@@ -52,14 +52,6 @@
 ;;; End of Appearance
 
 
-;;;---------------------------------------------------------------------------
-;;; Language special setup
-;;;---------------------------------------------------------------------------
-(require 'setup-cc-mode)
-(require 'setup-scheme-mode)
-(require 'setup-python-mode)
-(require 'setup-tex)
-;;; End of Language special setup
 
 
 ;;;---------------------------------------------------------------------------
@@ -68,7 +60,10 @@
 ;;--------------
 ;;   Edit
 ;;--------------
-(require 'setup-evil)
+(add-to-list 'load-path (concat user-emacs-directory "edit"))
+
+(add-to-list 'load-path (concat user-emacs-directory "edit/evil"))
+(require 'setup-evil-init)
 (require 'setup-undo-tree)
 (require 'setup-smartparens)
 (require 'setup-ack-and-a-half)
@@ -91,11 +86,15 @@
 
 ;; End of Edit
 
-;;--------------
-;;   Programming
-;;--------------
-(require 'setup-auto-complete)
-(require 'setup-flymake)
+;;;---------------------------------------------------------------------------
+;;;   Programming
+;;;---------------------------------------------------------------------------
+(add-to-list 'load-path (concat user-emacs-directory "prog"))
+
+(add-to-list 'load-path (concat user-emacs-directory "prog/auto-complete"))
+(require 'setup-auto-complete-init)
+(add-to-list 'load-path (concat user-emacs-directory "prog/flymake"))
+(require 'setup-flymake-init)
 (require 'setup-compile)
 (require 'setup-slime)
 (require 'setup-eldoc)
@@ -106,12 +105,25 @@
 (require 'setup-auto-indentation)
 ;; (require 'setup-ecb)
 
-;; End of Programming
+;;-----------
+;; Language special setup
+;;-----------
+(add-to-list 'load-path (concat user-emacs-directory "prog/lng"))
+(require 'setup-cc-mode)
+(require 'setup-scheme-mode)
+(require 'setup-python-mode)
+(require 'setup-tex)
+;; End of Language special setup
+;;; End of Programming
+
 
 ;;--------------
 ;;   File and Buffer
 ;;--------------
-(require 'setup-ido)
+(add-to-list 'load-path (concat user-emacs-directory "file-buffer"))
+
+(add-to-list 'load-path (concat user-emacs-directory "file-buffer/ido"))
+(require 'setup-ido-init)
 (require 'setup-ibuffer)
 (require 'setup-recentf)
 (require 'setup-dired)
@@ -123,15 +135,18 @@
 ;; End of File and Buffer
 
 ;;--------------
-;;   Life
+;;   Misc
 ;;--------------
-(require 'setup-term)
+(add-to-list 'load-path (concat user-emacs-directory "misc"))
+
+(add-to-list 'load-path (concat user-emacs-directory "misc/term"))
+(require 'setup-term-init)
 (require 'setup-shell-pop)
 (require 'setup-erc)
 (require 'setup-stardict)
 (require 'setup-w3m)
 (require 'setup-newsticker)
-;; End of Life
+;; End of Misc
 
 ;;;---------------------------------------------------------------------------
 ;;; Android plugin

@@ -13,4 +13,4 @@
 (require 'flymake-shell)
 (add-hook 'sh-set-shell-hook 'flymake-shell-load)
 
-(provide 'setup-flymake)
+(provide 'setup-flymake-init)
