@@ -16,7 +16,7 @@
 ;;; Log save
 (erc-log-mode)
 (setq erc-log-channels t
-      erc-log-channels-directory "~/.emacs.d/.erc.d"
+      erc-log-channels-directory (concat user-emacs-directory ".var/log/.erc.d")
       erc-log-insert-log-on-open nil
       erc-log-file-coding-system 'utf-8)
 ;; auto-saving log files on channel activity

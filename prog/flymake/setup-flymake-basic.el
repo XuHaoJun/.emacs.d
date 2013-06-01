@@ -16,7 +16,7 @@
 ;; Nope, I want my copies in the system temp dir.
 (setq flymake-run-in-place nil)
 ;; This lets me say where my temp dir is.
-(setq temporary-file-directory "~/.emacs.d/tmp/")
+(setq temporary-file-directory (concat user-emacs-directory ".var/cache"))
 ;; I want to see all errors for the line.
 (setq flymake-number-of-errors-to-display nil)
 

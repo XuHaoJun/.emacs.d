@@ -6,5 +6,5 @@
 ;; write backup files to own directory
 (setq backup-directory-alist
       `(("." . ,(expand-file-name
-                 (concat user-emacs-directory "backups")))))
+                 (concat user-emacs-directory ".var/backup")))))
 (provide 'setup-backup)
