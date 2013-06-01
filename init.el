@@ -112,6 +112,13 @@
 (require 'setup-python-mode)
 (require 'setup-tex)
 ;; End of Language special setup
+
+;;-----------------
+;; Android plugin
+;;-----------------
+(add-to-list 'load-path (concat user-emacs-directory "prog/android"))
+(require 'setup-android-init)
+;; End of Android plugin
 ;; End of Programming
 
 
@@ -146,19 +153,6 @@
 (require 'setup-newsticker)
 ;; End of Misc
 
-;;-----------------
-;; Android plugin
-;;-----------------
-(require 'setup-android-mode)
-(require 'setup-eclim)
-(require 'eclimd)
-(require 'ac-emacs-eclim-source)
-(ac-emacs-eclim-config)
-(require 'company)
-(require 'company-emacs-eclim)
-(company-emacs-eclim-setup)
-;; (global-company-mode t)
-;; End of Android plugin
 ;;; End of Extensions
 
 
