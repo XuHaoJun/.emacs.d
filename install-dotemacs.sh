@@ -21,8 +21,9 @@ function die ()
 # Important function
 function check_dotemacs ()
 {
-    test "[ -e $HOME/{.emacs,.emacs.d} ]" &&
-    die "Faild, because have .emacs.d or .emacs on your home path"
+    if [ -e $HOME/{.emacs,.emacs.d} ];then
+        die "Faild, because have .emacs.d or .emacs on your home path"
+    fi
 }
 
 
