@@ -14,12 +14,12 @@
       (mapcar(lambda (item)(concat "-I" item))
              (split-string
               "
- /usr/lib/gcc/x86_64-unknown-linux-gnu/4.8.0/../../../../include/c++/4.8.0
- /usr/lib/gcc/x86_64-unknown-linux-gnu/4.8.0/../../../../include/c++/4.8.0/x86_64-unknown-linux-gnu
- /usr/lib/gcc/x86_64-unknown-linux-gnu/4.8.0/../../../../include/c++/4.8.0/backward
- /usr/lib/gcc/x86_64-unknown-linux-gnu/4.8.0/include
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.8.1/../../../../include/c++/4.8.1
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.8.1/../../../../include/c++/4.8.1/x86_64-unknown-linux-gnu
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.8.1/../../../../include/c++/4.8.1/backward
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.8.1/include
  /usr/local/include
- /usr/lib/gcc/x86_64-unknown-linux-gnu/4.8.0/include-fixed
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.8.1/include-fixed
  /usr/include
  /usr/include/SDL/SDL.h
  /usr/include/SDL/SDL_image.h
