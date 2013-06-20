@@ -26,6 +26,7 @@
   "F" 'recentf-ido-find-file
   "g" 'magit-status
   "G" 'magit-log
+  "j" 'ace-jump-buffer
   "k" 'kill-buffer
   "K" 'kill-buffer-and-window
   "r" 'vr/replace
