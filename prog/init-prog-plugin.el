@@ -10,11 +10,13 @@
 (add-to-list 'load-path (concat user-emacs-directory "prog/flymake"))
 (require 'setup-flymake-init)
 
+(add-to-list 'load-path (concat user-emacs-directory "prog/yasnippet"))
+(require 'setup-yasnippet)
+
 (require 'setup-compile)
 (require 'setup-slime)
 (require 'setup-eldoc)
 (require 'setup-c-eldoc)
-(require 'setup-yasnippet)
 (require 'setup-gtags)
 (require 'setup-git)
 (require 'setup-auto-indentation)

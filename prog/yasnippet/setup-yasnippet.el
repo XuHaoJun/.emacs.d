@@ -1,7 +1,7 @@
 (require 'yasnippet)
 
 ;; Use only own snippets, do not use bundled ones
-(setq yas/snippet-dirs '("~/.emacs.d/snippets"))
+(setq yas/snippet-dirs '("~/.emacs.d/prog/yasnippet/snippets"))
 (yas/global-mode 1)
 (yas/minor-mode-on)
 
