@@ -8,18 +8,6 @@
 
 
 ;;;---------------------------------------------------------------------------
-;;; Need early run in start up
-;;;---------------------------------------------------------------------------
-;; turn off mouse interface early in startup to avoid momentary display
-(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
-(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
-(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
-;; no splash screen please ... jeez
-(setq inhibit-startup-message t)
-;;; End of Need early run in start up
-
-
-;;;---------------------------------------------------------------------------
 ;;; Setup path
 ;;;---------------------------------------------------------------------------
 ;; set path to dependencies
@@ -53,108 +41,36 @@
 
 
 ;;;---------------------------------------------------------------------------
-;;; Extensions
+;;; Plugins
 ;;;---------------------------------------------------------------------------
 ;;--------------
 ;;   Edit
 ;;--------------
 (add-to-list 'load-path (concat user-emacs-directory "edit"))
-
-(add-to-list 'load-path (concat user-emacs-directory "edit/evil"))
-(require 'setup-evil-init)
-(require 'setup-undo-tree)
-(require 'setup-ace-jump-buffer)
-(require 'setup-smartparens)
-(require 'setup-ack-and-a-half)
-(require 'setup-ag)
-(require 'setup-autopair)
-(require 'setup-browse-kill-ring)
-(require 'setup-wgrep)
-(require 'setup-flex-isearch)
-
-(require 'visual-regexp)
-(require 'expand-region)
-(require 'color-moccur)
-(require 'moccur-edit)
-
-;; (require 'indent-file)
-;; (add-hook 'emacs-lisp-mode-hook 'indent-file-when-save)
-;; (add-hook 'scheme-mode-hook 'indent-file-when-save)
-;; (add-hook 'lisp-mode-hook 'indent-file-when-save)
-;; (add-hook 'c-mode-common-hook 'indent-file-when-save)
-
+(require 'init-edit-plugin)
 ;; End of Edit
 
 ;;----------------
 ;;   Programming
 ;;----------------
 (add-to-list 'load-path (concat user-emacs-directory "prog"))
-
-(add-to-list 'load-path (concat user-emacs-directory "prog/auto-complete"))
-(require 'setup-auto-complete-init)
-(add-to-list 'load-path (concat user-emacs-directory "prog/flymake"))
-(require 'setup-flymake-init)
-(require 'setup-compile)
-(require 'setup-slime)
-(require 'setup-eldoc)
-(require 'setup-c-eldoc)
-(require 'setup-yasnippet)
-(require 'setup-gtags)
-(require 'setup-git)
-(require 'setup-auto-indentation)
-;; (require 'setup-ecb)
-
-;;-----------
-;; Language special setup
-;;-----------
-(add-to-list 'load-path (concat user-emacs-directory "prog/lng"))
-(require 'setup-cc-mode)
-(require 'setup-scheme-mode)
-(require 'setup-python-mode)
-(require 'setup-tex)
-;; End of Language special setup
-
-;;-----------------
-;; Android plugin
-;;-----------------
-(add-to-list 'load-path (concat user-emacs-directory "prog/android"))
-(require 'setup-android-init)
-;; End of Android plugin
+(require 'init-prog-plugin)
 ;; End of Programming
-
 
 ;;--------------
 ;;   File and Buffer
 ;;--------------
 (add-to-list 'load-path (concat user-emacs-directory "file-buffer"))
-
-(add-to-list 'load-path (concat user-emacs-directory "file-buffer/ido"))
-(require 'setup-ido-init)
-(require 'setup-ibuffer)
-(require 'setup-recentf)
-(require 'setup-dired)
-(require 'setup-helm)
-(require 'setup-openwith)
-(require 'setup-popwin)
-
-(require 'switch-window)
+(require 'init-file-buffer-plugin)
 ;; End of File and Buffer
 
 ;;--------------
 ;;   Misc
 ;;--------------
 (add-to-list 'load-path (concat user-emacs-directory "misc"))
-
-(add-to-list 'load-path (concat user-emacs-directory "misc/term"))
-(require 'setup-term-init)
-(require 'setup-shell-pop)
-(require 'setup-erc)
-(require 'setup-stardict)
-(require 'setup-w3m)
-(require 'setup-newsticker)
+(require 'init-misc-plugin)
 ;; End of Misc
-
-;;; End of Extensions
+;;; End of Plugin
 
 
 ;;;---------------------------------------------------------------------------
