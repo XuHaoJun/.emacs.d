@@ -15,7 +15,7 @@
              magit multi-term
              nlinum
              openwith
-             pos-tip popwin
+             pkgbuild-mode pos-tip popwin
              quack
              rainbow-delimiters
              savekill scheme-complete session shell-pop slime smex smartparens

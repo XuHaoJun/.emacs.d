@@ -2,5 +2,6 @@
 (require 'setup-scheme-mode)
 (require 'setup-python-mode)
 (require 'setup-tex)
+(require 'setup-pkgbuild-mode)
 
 (provide 'setup-lng-init)
