@@ -2,7 +2,8 @@
 (global-eclim-mode)
 
 ;; Variables
-(setq ;; eclim-auto-save t
+(setq 
+ eclim-auto-save nil
  eclimd-wait-for-process nil
  eclimd-default-workspace "~/workspace"
  help-at-pt-display-when-idle t

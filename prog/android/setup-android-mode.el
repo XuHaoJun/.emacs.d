@@ -1,5 +1,8 @@
 (require 'android-mode)
 
+(custom-set-variables
+ '(android-mode-sdk-dir "/opt/android-sdk"))
+
 ;; it like ant debug && ant installd && adb shell am start ....
 (defun android-ant-my ()
   (interactive)
