@@ -2,7 +2,6 @@
 (require 'setup-ido-init)
 
 (require 'setup-ibuffer)
-(require 'setup-recentf)
 (require 'setup-dired)
 (require 'setup-helm)
 (require 'setup-openwith)
