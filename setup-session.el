@@ -1,13 +1,12 @@
-;; save a list of open files in ~/.emacs.desktop
-;; save the desktop file automatically if it already exists
-;;(setq desktop-save 'if-exists)
-
 (require 'saveplace)
 (setq-default save-place t)
 (setq save-place-file (expand-file-name ".places" user-emacs-directory))
 
 (require 'savekill)
 
+;; save a list of open files in ~/.emacs.desktop
+;; save the desktop file automatically if it already exists
+;;(setq desktop-save 'if-exists)
 (require 'desktop)
 (custom-set-variables
  '(desktop-base-file-name ".emacs.desktop")
@@ -53,5 +52,12 @@ Also returns nil if pid is nil."
   (when (not (emacs-process-p ad-return-value))
     (setq ad-return-value nil)))
 ;;; desktop-override-stale-locks.el ends here
+
+(require 'frame-restore)
+(frame-restore)
+
+(require 'revive)
+(add-hook 'kill-emacs-hook 'save-current-configuration)
+(resume)
 
 (provide 'setup-session)
