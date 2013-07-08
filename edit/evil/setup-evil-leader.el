@@ -25,6 +25,9 @@
   "f" 'ido-find-file
   "F" 'recentf-ido-find-file
   "g" 'magit-status
+  "hg" 'helm-do-grep
+  "hf" 'helm-find-files
+  "ho" 'helm-c-moccur-dired-do-moccur-by-moccur
   "G" 'magit-log
   "j" 'ace-jump-buffer
   "k" 'kill-buffer
