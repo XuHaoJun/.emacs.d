@@ -27,7 +27,7 @@
   "g" 'magit-status
   "hg" 'helm-do-grep
   "hf" 'helm-find-files
-  "ho" 'helm-c-moccur-dired-do-moccur-by-moccur
+  "hm" 'helm-c-moccur-occur-by-moccur
   "G" 'magit-log
   "j" 'ace-jump-buffer
   "k" 'kill-buffer
