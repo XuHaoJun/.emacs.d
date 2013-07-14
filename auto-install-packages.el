@@ -5,7 +5,7 @@
              browse-kill-ring
              c-eldoc company color-moccur
              dired+ dired-details dired-details+ dired-single dynamic-fonts
-             ecb eldoc-extension emacs-eclim erc-hl-nicks evil evil-leader expand-region
+             eldoc-extension emacs-eclim erc-hl-nicks evil evil-leader expand-region
              flex-isearch flymake flymake-cursor flymake-python-pyflakes flymake-shell fuzzy frame-restore
              geiser git-blame git-commit-mode git-gutter-fringe
              gitconfig-mode github-browse-file gitignore-mode google-c-style
