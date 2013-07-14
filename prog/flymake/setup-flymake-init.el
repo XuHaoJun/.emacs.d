@@ -13,4 +13,6 @@
 (require 'flymake-shell)
 (add-hook 'sh-set-shell-hook 'flymake-shell-load)
 
+(require 'helm-flymake)
+
 (provide 'setup-flymake-init)
