@@ -12,6 +12,10 @@
 ;; Font
 (require 'dynamic-fonts)
 (dynamic-fonts-setup)
+(set-default-font "Anonymous Pro")
+(set-face-attribute 'default nil :font "Anonymous Pro" :height 140)
+(set-face-font 'default "Anonymous Pro")
+
 
 (require 'window-numbering)
 (custom-set-faces '(window-numbering-face ((t (:weight bold)))))
