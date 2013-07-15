@@ -6,5 +6,6 @@
 (require 'setup-stardict)
 (require 'setup-w3m)
 (require 'setup-newsticker)
+(require 'setup-org)
 
 (provide 'init-misc-plugin)
