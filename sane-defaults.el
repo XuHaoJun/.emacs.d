@@ -56,6 +56,8 @@
 (setq require-final-newline t)
 
 (setq large-file-warning-threshold nil)
+
+(setq default-major-mode 'text-mode)
 ;;---------------------------------------
 
 
