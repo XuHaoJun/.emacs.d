@@ -4,7 +4,7 @@
   '(ac-slime ace-jump-mode ace-jump-buffer ack-and-a-half ag auctex auto-complete autopair android-mode
              browse-kill-ring
              c-eldoc company color-moccur
-             dired+ dired-details dired-details+ dired-single dynamic-fonts
+             dired+ dired-details dired-details+ dired-single dynamic-fonts diminish
              eldoc-extension emacs-eclim erc-hl-nicks evil evil-leader expand-region
              flex-isearch flymake flymake-cursor flymake-python-pyflakes flymake-shell fuzzy frame-restore
              geiser git-blame git-commit-mode git-gutter-fringe google-this
