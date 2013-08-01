@@ -7,5 +7,6 @@
 (require 'setup-w3m)
 (require 'setup-newsticker)
 (require 'setup-org)
+(require 'setup-google-this)
 
 (provide 'init-misc-plugin)
