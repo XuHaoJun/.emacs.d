@@ -27,8 +27,9 @@
 
 
 ;; install the missing packages
-(dolist (package pkg-lst)
-  (when (not (package-installed-p package))
-    (package-install package)))
+(defun auto-install-pacs ()
+  (dolist (package pkg-lst)
+    (when (not (package-installed-p package))
+      (package-install package))))
 
 (provide 'auto-install-packages)

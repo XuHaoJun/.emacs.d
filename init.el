@@ -30,6 +30,7 @@
 ;;;---------------------------------------------------------------------------
 (require 'setup-package)
 (require 'auto-install-packages)
+(auto-install-pacs)
 ;;; End of Setup packages
 
 
