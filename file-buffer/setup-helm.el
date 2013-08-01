@@ -1,3 +1,4 @@
+(eval-after-load 'ido-mode (require 'helm-mode))
 (require 'helm-config)
 (require 'helm-ack)
 (require 'helm-ag)
