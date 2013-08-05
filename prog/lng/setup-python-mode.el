@@ -4,6 +4,7 @@
 (setq python-python-command "/usr/bin/python")
 ;; (setq-default py-indent-offset 2)
 
+;; need install jedi and epc from pip
 (require 'jedi)
 (autoload 'jedi:setup "jedi" nil t)
 (setq jedi:server-command
