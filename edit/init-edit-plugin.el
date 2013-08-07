@@ -1,5 +1,6 @@
 (add-to-list 'load-path (concat user-emacs-directory "edit/evil"))
 (require 'setup-evil-init)
+
 (require 'setup-undo-tree)
 (require 'setup-ace-jump-buffer)
 (require 'setup-smartparens)
