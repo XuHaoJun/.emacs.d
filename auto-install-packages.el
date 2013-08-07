@@ -6,7 +6,7 @@
              c-eldoc company color-moccur
              dired+ dired-details dired-details+ dired-single dynamic-fonts diminish
              eldoc-extension emacs-eclim erc-hl-nicks evil evil-leader expand-region
-             flex-isearch flymake flymake-cursor flymake-python-pyflakes flymake-shell fuzzy frame-restore
+             flex-isearch flymake flymake-cursor flymake-python-pyflakes flymake-shell fuzzy
              geiser git-blame git-commit-mode git-gutter-fringe google-this
              gitconfig-mode github-browse-file gitignore-mode google-c-style
              helm helm-ack helm-ag helm-c-moccur helm-gtags helm-flymake htmlize

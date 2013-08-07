@@ -14,7 +14,7 @@
  '(desktop-base-file-name ".emacs.desktop")
  '(desktop-dirname "~/.emacs.d/" t)
  '(desktop-path (quote ("~/.emacs.d/")))
- '(desktop-save-mode 1))
+ '(desktop-save-mode t))
 ;; save a bunch of variables to the desktop file
 ;; for lists specify the len of the maximal saved data also
 (setq desktop-globals-to-save
@@ -54,9 +54,6 @@ Also returns nil if pid is nil."
   (when (not (emacs-process-p ad-return-value))
     (setq ad-return-value nil)))
 ;;; desktop-override-stale-locks.el ends here
-
-(require 'frame-restore)
-(frame-restore)
 
 (require 'revive)
 (add-hook 'kill-emacs-hook 'save-current-configuration)
