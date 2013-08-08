@@ -9,7 +9,8 @@
                                                      rspec-mode      python-mode
                                                      c-mode          c++-mode
                                                      objc-mode       latex-mode
-                                                     plain-tex-mode lisp-interaction-mode))
+                                                     plain-tex-mode lisp-interaction-mode
+                                                     web-mode html-mode))
                 (let ((mark-even-if-inactive transient-mark-mode))
                   (indent-region (region-beginning) (region-end) nil))))))
 
