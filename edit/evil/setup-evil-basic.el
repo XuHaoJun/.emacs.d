@@ -12,6 +12,23 @@
 (evil-set-initial-state 'ansi-term 'emacs)
 (evil-set-initial-state 'dired-mode 'emacs)
 
+(add-hook 'prog-mode-hook
+          (lambda ()
+
+            (defun get-current-line-text ()
+              (progn
+                (let (p1 p2 myLine)
+                  (setq p1 (line-beginning-position) )
+                  (setq p2 (line-end-position) )
+                  (setq myLine (buffer-substring-no-properties p1 p2)))))
+
+            (eval-after-load 'evil-mode
+              (defadvice evil-insert (after evil-insert-state activate)
+                (when (and evil-auto-indent
+                           (or (string-match "[[:space:]]+" (get-current-line-text))
+                               (string-match "^$" (get-current-line-text))))
+                  (indent-according-to-mode))))))
+
 ;; Modified version of evil-ret that moves the cursor to the first
 ;; non-blank on the line, like vim.
 (evil-define-motion rob/evil-ret (count)
