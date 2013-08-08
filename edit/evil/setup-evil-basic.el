@@ -29,48 +29,23 @@
                                (string-match "^$" (get-current-line-text))))
                   (indent-according-to-mode))))))
 
-;; Modified version of evil-ret that moves the cursor to the first
-;; non-blank on the line, like vim.
-(evil-define-motion rob/evil-ret (count)
-  "Move the cursor COUNT lines down.
-If point is on a widget or a button, click on it.
-In Insert state, insert a newline."
-  :type line
-  (let* ((field  (get-char-property (point) 'field))
-         (button (get-char-property (point) 'button))
-         (doc    (get-char-property (point) 'widget-doc))
-         (widget (or field button doc)))
-    (cond
-     ((and widget
-           (fboundp 'widget-type)
-           (fboundp 'widget-button-press)
-           (or (and (symbolp widget)
-                    (get widget 'widget-type))
-               (and (consp widget)
-                    (get (widget-type widget) 'widget-type))))
-      (when (evil-operator-state-p)
-        (setq evil-inhibit-operator t))
-      (when (fboundp 'widget-button-press)
-        (widget-button-press (point))))
-     ((and (fboundp 'button-at)
-           (fboundp 'push-button)
-           (button-at (point)))
-      (when (evil-operator-state-p)
-        (setq evil-inhibit-operator t))
-      (push-button))
-     ((or (evil-emacs-state-p)
-          (and (evil-insert-state-p)
-               (not buffer-read-only)))
-      (if (not evil-auto-indent)
-          (newline count)
-        (delete-horizontal-space t)
-        (newline count)
-        (indent-according-to-mode)))
-     (t
-      (evil-next-line count)
-      (evil-first-non-blank)))))
+(defvar electrify-return-match
+  "[\]}\)\"]<"
+  "If this regexp matches the text after the cursor, do an \"electric\"
+  return.")
 
-(define-key evil-motion-state-map (kbd "RET") 'rob/evil-ret)
+(defun electrify-return-if-match (arg)
+  "If the text after the cursor matches `electrify-return-match' then
+  open and indent an empty line between the cursor and the text.  Move the
+  cursor to the new line."
+  (interactive "P")
+  (let ((case-fold-search nil))
+    (if (looking-at electrify-return-match)
+        (save-excursion (newline-and-indent)))
+    (newline arg)
+    (indent-according-to-mode)))
+
+(define-key evil-insert-state-map (kbd "RET") 'electrify-return-if-match)
 
 ;; Emacs key 
 (define-key evil-normal-state-map "\C-e" 'evil-end-of-line)
