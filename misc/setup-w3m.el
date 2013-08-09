@@ -18,6 +18,14 @@
 ;;设定w3m运行的参数，分别为使用cookie和使用框架
 (setq w3m-command-arguments '("-cookie" "-F"))
 
+(setq w3m-coding-system 'utf-8
+      w3m-file-coding-system 'utf-8
+      w3m-file-name-coding-system 'utf-8
+      w3m-input-coding-system 'utf-8
+      w3m-output-coding-system 'utf-8
+      w3m-terminal-coding-system 'utf-8)
+
+
 ;; 使用w3m作为默认浏览器
 ;; (setq browse-url-browser-function 'w3m-browse-url)
 ;; (setq w3m-view-this-url-new-session-in-background t)
@@ -42,6 +50,4 @@
     (set-buffer-multibyte t))
   (set-buffer-modified-p nil))
 
-(setq w3m-input-coding-system 'utf-8
-      w3m-output-coding-system 'utf-8)
 (provide 'setup-w3m)
