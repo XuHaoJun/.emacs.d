@@ -28,6 +28,7 @@
   "hg" 'helm-do-grep
   "hf" 'helm-find-files
   "hm" 'helm-c-moccur-occur-by-moccur
+  "i" 'indent-on-window
   "G" 'magit-log
   "j" 'ace-jump-buffer
   "k" 'kill-buffer

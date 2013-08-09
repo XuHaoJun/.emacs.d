@@ -16,7 +16,8 @@
 (require 'color-moccur)
 (require 'moccur-edit)
 
-;; (require 'indent-file)
+(require 'indent-file)
+(require 'util-indent)
 ;; (add-hook 'emacs-lisp-mode-hook 'indent-file-when-save)
 ;; (add-hook 'scheme-mode-hook 'indent-file-when-save)
 ;; (add-hook 'lisp-mode-hook 'indent-file-when-save)
