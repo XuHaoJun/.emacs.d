@@ -9,13 +9,6 @@
 (add-to-list 'auto-mode-alist '("\\.erb$"       . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?$"     . web-mode))
 
-;; Use emmet replace yasnippet
-(require 'emmet-mode)
-(add-hook 'web-mode-hook
-          (lambda ()
-            (emmet-mode t)
-            (yas-minor-mode -1)))
-
 ;; Emmet
 (add-hook 'emmet-mode-hook
           (lambda ()
