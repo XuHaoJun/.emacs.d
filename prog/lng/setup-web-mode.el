@@ -16,10 +16,14 @@
             (emmet-mode t)
             (yas-minor-mode -1)))
 
-;; Sync emmet indent tab with web-mode
+;; Emmet
 (add-hook 'emmet-mode-hook
           (lambda ()
-            (setq emmet-indentation web-mode-markup-indent-offset)))
+            ;; Sync emmet indent tab with web-mode
+            (setq emmet-indentation web-mode-markup-indent-offset)
+            ;; Use emmet-expand-yas not emmet-expand-line,because expand-line
+            ;; not work with tab
+            (define-key emmet-mode-keymap (kbd "<C-return>") 'emmet-expand-yas)))
 
 ;;Evil-mode keybindings
 (add-hook 'web-mode-hook
