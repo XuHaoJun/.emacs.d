@@ -5,7 +5,7 @@
 
 (add-hook 'css-mode-hook
           (lambda ()
-            (rainbow-mode)
-            (autopair-mode)))
+            (progn (rainbow-mode)
+                   (autopair-mode))))
 
 (provide 'setup-css-mode)
