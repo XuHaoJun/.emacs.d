@@ -5,8 +5,10 @@
 (evil-leader/set-leader ",")
 (evil-leader/set-key
   "," 'smex
-  "#" 'rgr/ido-erc-buffer
-  "%" 'ido-term-buffer
+  "#" 'wg/ido-erc-buffer
+  "%" 'wg/ido-term-buffer
+  "ww" 'wg/ido-for-all-mode
+  "wi" 'wg/ido-for-this-mode
   "<" 'winner-undo
   ">" 'winner-redo
   "+" 'balance-windows

@@ -56,37 +56,54 @@
 
 (global-set-key "\C-ci" 'ido-goto-symbol) ; or any key you see fit
 
-
-(defun rgr/ido-erc-buffer()
+(defun wg/ido-for-mode (your-mode)
   (interactive)
-  (switch-to-buffer
-   (ido-completing-read "Channel:"
-                        (save-excursion
-                          (delq
-                           nil
-                           (mapcar (lambda (buf)
-                                     (when (buffer-live-p buf)
-                                       (with-current-buffer buf
-                                         (and (eq major-mode 'erc-mode)
-                                              (buffer-name buf)))))
-                                   (buffer-list)))))))
+  (let
+      ((the-mode your-mode))
+    (switch-to-buffer
+     (ido-completing-read
+      (format "Buffers of %s: " the-mode)
+      (save-excursion
+        (delq
+         nil
+         (mapcar
+          (lambda
+            (buf)
+            (when
+                (buffer-live-p buf)
+              (with-current-buffer buf
+                (and
+                 (eq major-mode the-mode)
+                 (buffer-name buf)))))
+          (buffer-list))))))))
 
-(defun ido-for-mode(prompt the-mode)
-  (switch-to-buffer
-   (ido-completing-read prompt
-                        (save-excursion
-                          (delq
-                           nil
-                           (mapcar (lambda (buf)
-                                     (when (buffer-live-p buf)
-                                       (with-current-buffer buf
-                                         (and (eq major-mode the-mode)
-                                              (buffer-name buf)))))
-                                   (buffer-list)))))))
-
-
-(defun ido-term-buffer()
+(defun wg/ido-for-this-mode ()
   (interactive)
-  (ido-for-mode "Term:" 'term-mode))
+  (wg/ido-for-mode major-mode))
+
+(defun buffer-mode (buffer-or-name)
+  (with-current-buffer buffer-or-name major-mode))
+
+(defun buffer-all-major-mode ()
+  (delete-dups (mapcar 'buffer-mode (buffer-list))))
+
+(defun ido-buffer-major-mode ()
+  (ido-completing-read
+   "Major-mode:"
+   (mapcar
+    (lambda (x) (symbol-name x))
+    (buffer-all-major-mode))))
+
+(defun wg/ido-for-all-mode ()
+  (interactive)
+  (wg/ido-for-mode (intern (ido-buffer-major-mode))))
+
+(defun wg/ido-term-buffer ()
+  (interactive)
+  (wg/ido-for-mode 'term-mode))
+
+(defun wg/ido-erc-buffer ()
+  (interactive)
+  (wg/ido-for-mode 'erc-mode))
 
 (provide 'setup-ido-extra)
