@@ -47,6 +47,7 @@
 
 (dolist (my-mode '(ruby-mode web-mode))
   (evil-leader/set-key-for-mode my-mode
-    "hp" 'helm-rails-all))
+    "hp" 'helm-rails-all
+    "hy" 'yari-helm))
 
 (provide 'setup-evil-leader)

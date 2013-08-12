@@ -23,7 +23,7 @@
              undo-tree
              visual-regexp
              w3m wgrep wgrep-ack wgrep-helm web-mode
-             yasnippet yagist))
+             yasnippet yagist yari))
 
 
 ;; install the missing packages

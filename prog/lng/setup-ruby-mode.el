@@ -10,4 +10,6 @@
             (add-to-list 'ac-sources 'ac-source-rsense-method)
             (add-to-list 'ac-sources 'ac-source-rsense-constant)))
 
+(require 'yari)
+
 (provide 'setup-ruby-mode)
