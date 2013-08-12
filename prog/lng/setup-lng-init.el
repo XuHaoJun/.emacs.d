@@ -3,6 +3,7 @@
 (require 'setup-python-mode)
 (require 'setup-web-mode)
 (require 'setup-css-mode)
+(require 'setup-ruby-mode)
 (require 'setup-tex)
 (require 'setup-pkgbuild-mode)
 
