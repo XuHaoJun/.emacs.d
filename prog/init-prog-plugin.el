@@ -20,6 +20,7 @@
 (require 'setup-gtags)
 (require 'setup-git)
 (require 'setup-auto-indentation)
+(require 'setup-projectile)
 ;; (require 'setup-ecb)
 
 (provide 'init-prog-plugin)

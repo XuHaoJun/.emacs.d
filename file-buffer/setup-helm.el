@@ -3,6 +3,7 @@
 (require 'helm-ack)
 (require 'helm-ag)
 (require 'helm-rails)
+(require 'helm-projectile)
 ;; (helm-mode 1)
 
 (global-set-key (kbd "C-x B") 'helm-mini)

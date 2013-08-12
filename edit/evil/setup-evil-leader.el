@@ -35,6 +35,11 @@
   "j"  'ace-jump-buffer
   "k"  'kill-buffer
   "K"  'kill-buffer-and-window
+  "pp" 'helm-projectile
+  "pg" 'projectile-ack
+  "pb" 'projectile-switch-project
+  "pm" 'projectile-multi-occur
+  "pr" 'projectile-replace
   "r"  'vr/replace
   "R"  'vr/query-replace
   "s"  'save-buffer
