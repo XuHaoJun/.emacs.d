@@ -45,4 +45,8 @@
     "t" 'gtags-find-tag
     "T" 'gtags-find-symbol))
 
+(dolist (my-mode '(ruby-mode web-mode))
+  (evil-leader/set-key-for-mode my-mode
+    "hp" 'helm-rails-all))
+
 (provide 'setup-evil-leader)

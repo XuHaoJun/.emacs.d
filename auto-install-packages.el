@@ -9,7 +9,7 @@
              flex-isearch flymake flymake-cursor flymake-python-pyflakes flymake-shell fuzzy flycheck
              geiser git-blame git-commit-mode git-gutter-fringe google-this
              gitconfig-mode github-browse-file gitignore-mode google-c-style
-             helm helm-ack helm-ag helm-c-moccur helm-gtags helm-flymake htmlize
+             helm helm-ack helm-ag helm-c-moccur helm-gtags helm-flymake helm-rails htmlize
              ibuffer-vc ido-hacks ido-sort-mtime ido-ubiquitous ido-yes-or-no
              jedi
              magit multi-term
