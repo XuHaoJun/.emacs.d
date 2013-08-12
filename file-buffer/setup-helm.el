@@ -2,6 +2,7 @@
 (require 'helm-config)
 (require 'helm-ack)
 (require 'helm-ag)
+(require 'helm-rails)
 ;; (helm-mode 1)
 
 (global-set-key (kbd "C-x B") 'helm-mini)
