@@ -1,8 +1,6 @@
 ;; Theme
 (require 'solarized-dark-theme)
-(eval-after-load 'solarized-dark-theme
-  '(custom-set-faces
-    '(mode-line-inactive ((t (:box (:line-width 1 :color "#073662" :style unspecified)))))))
+
 
 ;;blink disable
 (blink-cursor-mode (- (*) (*) (*)))
