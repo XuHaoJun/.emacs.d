@@ -52,14 +52,18 @@
   "s"  'save-buffer
   "S"  'save-some-buffers)
 
-(dolist (my-mode '(c-mode c++-mode))
-  (evil-leader/set-key-for-mode my-mode
-    "t" 'gtags-find-tag
-    "T" 'gtags-find-symbol))
+(defmacro evil-leader/set-key-for-modes (mode key def &rest bindings)
+  `(dolist (my-mode ,mode)
+     (evil-leader/set-key-for-mode my-mode ,key ,def ,@bindings)))
 
-(dolist (my-mode '(ruby-mode web-mode))
-  (evil-leader/set-key-for-mode my-mode
-    "hp" 'helm-rails-all
-    "hy" 'yari-helm))
+(evil-leader/set-key-for-modes
+ '(c-mode c++-mode)
+ "t" 'gtags-find-tag
+ "T" 'gtags-find-symbol)
+
+(evil-leader/set-key-for-modes
+ '(ruby-mode web-mode)
+ "hp" 'helm-rails-all
+ "hy" 'yari-helm)
 
 (provide 'setup-evil-leader)
