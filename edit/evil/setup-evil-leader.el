@@ -41,7 +41,8 @@
   "ni" 'iedit-mode
   "nd" 'iedit-dwim
   "nq" 'widen
-  "pp" 'helm-projectile
+  "pp" 'projectile-find-file
+  "ph" 'helm-projectile
   "pg" 'projectile-ack
   "pb" 'projectile-switch-to-buffer
   "po" 'projectile-switch-project

@@ -18,6 +18,10 @@
 (require 'setup-ido-ubiquitous-basic)
 
 
+(require 'flx-ido)
+(flx-ido-mode 1)
+
+
 (require 'ido-yes-or-no)
 (ido-yes-or-no-mode t)
 
