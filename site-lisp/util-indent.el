@@ -1,4 +1,4 @@
-(defun indent-on-window ()
+(defun indent-on-page ()
   "indent whole buffer and untabify it"
   (interactive)
   (delete-trailing-whitespace)

@@ -10,6 +10,7 @@
 (require 'setup-browse-kill-ring)
 (require 'setup-wgrep)
 (require 'setup-flex-isearch)
+(require 'setup-iedit)
 
 (require 'visual-regexp)
 (require 'expand-region)

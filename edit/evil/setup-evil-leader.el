@@ -30,14 +30,21 @@
   "hg" 'helm-do-grep
   "hf" 'helm-find-files
   "hm" 'helm-c-moccur-occur-by-moccur
-  "i"  'indent-on-window
+  "i"  'indent-on-page
   "G"  'magit-log
   "j"  'ace-jump-buffer
   "k"  'kill-buffer
   "K"  'kill-buffer-and-window
+  "nr" 'narrow-to-region
+  "nf" 'narrow-to-defun
+  "np" 'narrow-to-page
+  "ni" 'iedit-mode
+  "nd" 'iedit-dwim
+  "nq" 'widen
   "pp" 'helm-projectile
   "pg" 'projectile-ack
-  "pb" 'projectile-switch-project
+  "pb" 'projectile-switch-buffer
+  "pr" 'projectile-switch-project
   "pm" 'projectile-multi-occur
   "pr" 'projectile-replace
   "r"  'vr/replace
