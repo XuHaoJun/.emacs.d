@@ -62,6 +62,9 @@
 (setq large-file-warning-threshold nil)
 
 (setq default-major-mode 'text-mode)
+
+;; Delete trailing whitespace on save
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
 ;;---------------------------------------
 
 
