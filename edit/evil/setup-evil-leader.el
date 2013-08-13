@@ -43,7 +43,7 @@
   "nq" 'widen
   "pp" 'helm-projectile
   "pg" 'projectile-ack
-  "pb" 'projectile-switch-buffer
+  "pb" 'projectile-switch-to-buffer
   "po" 'projectile-switch-project
   "pm" 'projectile-multi-occur
   "pr" 'projectile-replace
