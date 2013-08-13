@@ -44,7 +44,7 @@
   "pp" 'helm-projectile
   "pg" 'projectile-ack
   "pb" 'projectile-switch-buffer
-  "pr" 'projectile-switch-project
+  "po" 'projectile-switch-project
   "pm" 'projectile-multi-occur
   "pr" 'projectile-replace
   "r"  'vr/replace
