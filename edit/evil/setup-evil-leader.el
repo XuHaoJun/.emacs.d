@@ -66,5 +66,8 @@
  '(ruby-mode web-mode)
  "hp" 'helm-rails-all
  "hy" 'yari-helm)
+(evil-leader/set-key-for-mode
+  'ruby-mode
+  "hi" 'my-ruby-proc)
 
 (provide 'setup-evil-leader)

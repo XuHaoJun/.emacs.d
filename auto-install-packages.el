@@ -17,7 +17,7 @@
              openwith
              pkgbuild-mode pos-tip popwin projectile
              quack
-             rainbow-delimiters revive rainbow-mode rsense
+             rainbow-delimiters revive rainbow-mode ruby-electric ruby-dev robe
              savekill scheme-complete session shell-pop slime smex smartparens
              solarized-theme surround switch-window
              undo-tree

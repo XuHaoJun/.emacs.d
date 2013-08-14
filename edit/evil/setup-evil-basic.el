@@ -11,6 +11,7 @@
 (evil-set-initial-state 'term-mode 'emacs)
 (evil-set-initial-state 'ansi-term 'emacs)
 (evil-set-initial-state 'dired-mode 'emacs)
+(evil-set-initial-state 'inf-ruby-mode 'emacs)
 
 (add-hook 'prog-mode-hook
           (lambda ()
@@ -47,7 +48,7 @@
 
 (define-key evil-insert-state-map (kbd "RET") 'electrify-return-if-match)
 
-;; Emacs key 
+;; Emacs key
 (define-key evil-normal-state-map "\C-e" 'evil-end-of-line)
 (define-key evil-motion-state-map "\C-e" 'evil-end-of-line)
 (define-key evil-insert-state-map "\C-e" 'evil-end-of-line)
