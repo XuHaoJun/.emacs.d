@@ -1,3 +1,6 @@
+;; If you want use syntax check or style check gem install rubocop
+;; and enable flycheck mode
+
 (require 'ruby-mode)
 
 (dolist (file-pattern '("Rakefile\\'" "\\.rake\\'" "Gemfile\\'"))
