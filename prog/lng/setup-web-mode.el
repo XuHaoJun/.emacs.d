@@ -18,9 +18,11 @@
             ;; not work with tab
             (define-key emmet-mode-keymap (kbd "<C-return>") 'emmet-expand-yas)))
 
-;;Evil-mode keybindings
 (add-hook 'web-mode-hook
           (lambda ()
+            ;;Enable emmet-mode
+            (emmet-mode)
+            ;;Evil-mode keybindings
             (define-key evil-motion-state-local-map (kbd "%") 'web-mode-tag-match)
             (define-key evil-normal-state-local-map (kbd "%") 'web-mode-tag-match)))
 
