@@ -14,7 +14,7 @@
              jedi
              magit multi-term
              nlinum
-             openwith
+             openwith org org-octopress
              pkgbuild-mode pos-tip popwin projectile
              quack
              rainbow-delimiters revive rainbow-mode ruby-electric ruby-dev robe
