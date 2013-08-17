@@ -122,7 +122,7 @@
 (setq column-number-mode t)
 
 ;; Lines should be 80 characters wide, not 72
-(setq fill-column 70)
+(setq-default fill-column 80)
 
 ;; Undo/redo window configuration with C-c <left>/<right>
 (require 'winner)

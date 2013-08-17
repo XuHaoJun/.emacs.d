@@ -1,3 +1,15 @@
+(setq org-startup-indented t)
+(setq org-startup-folded t)
+(setq org-hide-leading-stars t)
+(add-hook 'org-mode-hook 'auto-fill-mode)
+
+(require 'org-octopress)
+(setq org-octopress-directory-top       "~/current/octopress/source")
+(setq org-octopress-directory-posts     "~/current/octopress/source/_posts")
+(setq org-octopress-directory-org-top   "~/current/octopress/source")
+(setq org-octopress-directory-org-posts "~/current/octopress/source/blog")
+(setq org-octopress-setup-file          "~/.emacs.d/misc/org-mode/setupfile-sample.org")
+
 ;;From http://wenshanren.org/?p=334
 (defun org-insert-src-block (src-code-type)
   "Insert a `SRC-CODE-TYPE' type source code block in org-mode."
@@ -16,12 +28,5 @@
     (insert "#+END_SRC\n")
     (previous-line 2)
     (org-edit-src-code)))
-
-(require 'org-octopress)
-(setq org-octopress-directory-top       "~/current/octopress/source")
-(setq org-octopress-directory-posts     "~/current/octopress/source/_posts")
-(setq org-octopress-directory-org-top   "~/current/octopress/source")
-(setq org-octopress-directory-org-posts "~/current/octopress/source/blog")
-(setq org-octopress-setup-file          "~/.emacs.d/misc/org-mode/setupfile-sample.org")
 
 (provide 'setup-org)
