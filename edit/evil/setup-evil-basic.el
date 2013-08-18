@@ -64,4 +64,9 @@
   (evil-yank beg end type register))
 (define-key evil-normal-state-map "Y" 'evil-yank-line-end)
 
+(require 'evil-numbers)
+
+(define-key evil-normal-state-map (kbd "C-c +") 'evil-numbers/inc-at-pt)
+(define-key evil-normal-state-map (kbd "C-c -") 'evil-numbers/dec-at-pt)
+
 (provide 'setup-evil-basic)
