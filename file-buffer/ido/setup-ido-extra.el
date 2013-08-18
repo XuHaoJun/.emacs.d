@@ -106,4 +106,8 @@
   (interactive)
   (wg/ido-for-mode 'erc-mode))
 
+(defun wg/ido-dired-buffer ()
+  (interactive)
+  (wg/ido-for-mode 'dired-mode))
+
 (provide 'setup-ido-extra)

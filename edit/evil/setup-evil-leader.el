@@ -8,6 +8,7 @@
   "#"  'wg/ido-erc-buffer
   "%"  'wg/ido-term-buffer
   "ww" 'wg/ido-for-all-mode
+  "wd" 'wg/ido-dired-buffer
   "wi" 'wg/ido-for-this-mode
   "<"  'winner-undo
   ">"  'winner-redo
@@ -68,6 +69,6 @@
  "hy" 'yari-helm)
 (evil-leader/set-key-for-mode
   'ruby-mode
-  "hi" 'my-ruby-proc)
+  "hi" 'my-ruby-start)
 
 (provide 'setup-evil-leader)
