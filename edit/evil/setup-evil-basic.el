@@ -8,10 +8,12 @@
 (setq evil-mode-line-format nil)
 (setq evil-want-visual-char-semi-exclusive t)
 
-(evil-set-initial-state 'term-mode 'emacs)
-(evil-set-initial-state 'ansi-term 'emacs)
-(evil-set-initial-state 'dired-mode 'emacs)
-(evil-set-initial-state 'inf-ruby-mode 'emacs)
+(evil-set-initial-state 'term-mode       'emacs)
+(evil-set-initial-state 'ansi-term       'emacs)
+(evil-set-initial-state 'inf-ruby-mode   'emacs)
+;; For dired use v/q
+(evil-set-initial-state 'dired-mode      'emacs)
+(evil-set-initial-state 'conf-space-mode 'emacs)
 
 (add-hook 'prog-mode-hook
           (lambda ()
@@ -46,7 +48,8 @@
     (newline arg)
     (indent-according-to-mode)))
 
-(define-key evil-insert-state-map (kbd "RET") 'electrify-return-if-match)
+(add-hook 'prog-mode-hook
+          (lambda () (define-key evil-insert-state-local-map (kbd "RET") 'electrify-return-if-match)))
 
 ;; Emacs key
 (define-key evil-normal-state-map "\C-e" 'evil-end-of-line)
