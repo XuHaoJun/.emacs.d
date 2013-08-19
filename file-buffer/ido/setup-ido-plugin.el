@@ -1,7 +1,3 @@
-(require 'ido-hacks)
-(ido-hacks-mode t)
-
-
 (require 'ido-sort-mtime)
 (ido-sort-mtime-mode 1)
 
