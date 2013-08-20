@@ -21,23 +21,10 @@
 (require 'ruby-electric)
 (add-hook 'ruby-mode-hook 'ruby-electric-mode)
 
-(require 'ruby-dev)
-(add-hook 'ruby-mode-hook 'turn-on-ruby-dev)
-
-
-(defun my-ruby-proc ()
+(defun my-ruby-start ()
   (interactive)
-  (ruby-dev)
-  (inf-ruby))
-
-
-;; Depend on extern program rsense.
-;; (when (executable-find "rsense")
-;;   (setq rsense-home "/opt/rsense-0.3")
-;;   (require 'rsense)
-;;   (add-hook 'ruby-mode-hook
-;;             (lambda ()
-;;               (add-to-list 'ac-sources 'ac-source-rsense-method)
-;;               (add-to-list 'ac-sources 'ac-source-rsense-constant))))
+  (progn
+    (inf-ruby)
+    (robe-start)))
 
 (provide 'setup-ruby-mode)
