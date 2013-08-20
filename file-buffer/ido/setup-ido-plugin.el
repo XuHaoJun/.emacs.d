@@ -21,4 +21,13 @@
 (require 'ido-yes-or-no)
 (ido-yes-or-no-mode t)
 
+
+(require 'ido-preview)
+(add-hook 'ido-setup-hook
+  (lambda()
+    (define-key ido-completion-map (kbd "C-M-p") (lookup-key ido-completion-map (kbd "C-p")))
+    (define-key ido-completion-map (kbd "C-M-n") (lookup-key ido-completion-map (kbd "C-n"))) ; currently, this makes nothing. Maybe they'll make C-n key lately.
+    (define-key ido-completion-map (kbd "C-p") 'ido-preview-backward)
+    (define-key ido-completion-map (kbd "C-n") 'ido-preview-forward)))
+
 (provide 'setup-ido-plugin)
