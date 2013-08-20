@@ -15,7 +15,7 @@
              magit multi-term
              nlinum
              openwith org org-octopress
-             pkgbuild-mode pos-tip popwin projectile
+             pkgbuild-mode pos-tip popwin projectile pangu-spacing
              quack
              rainbow-delimiters revive rainbow-mode ruby-electric ruby-block robe
              savekill scheme-complete session shell-pop slime smex smartparens

@@ -24,6 +24,12 @@
   '(add-to-list 'org-export-filter-final-output-functions
                 'han/org-html-delete-extra-space))
 
+(add-hook 'org-mode-hook
+          (lambda ()
+            (require 'pangu-spacing)
+            (pangu-spacing-mode)
+            (set (make-local-variable 'pangu-spacing-real-insert-separtor) t)))
+
 ;;From http://wenshanren.org/?p=334
 (defun org-insert-src-block (src-code-type)
   "Insert a `SRC-CODE-TYPE' type source code block in org-mode."
