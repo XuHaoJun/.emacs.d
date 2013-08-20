@@ -24,6 +24,10 @@
 (require 'ruby-block)
 (add-hook 'ruby-mode-hook 'ruby-block-mode)
 
+(require 'inf-ruby)
+(setq inf-ruby-implementations
+      '(("ruby" . "irb --inf-ruby-mode -r irb/completion -U")))
+
 (defun my-ruby-start ()
   (interactive)
   (progn
