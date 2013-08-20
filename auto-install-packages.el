@@ -17,7 +17,7 @@
              openwith org org-octopress
              pkgbuild-mode pos-tip popwin projectile
              quack
-             rainbow-delimiters revive rainbow-mode ruby-electric robe
+             rainbow-delimiters revive rainbow-mode ruby-electric ruby-block robe
              savekill scheme-complete session shell-pop slime smex smartparens
              solarized-theme surround switch-window
              undo-tree

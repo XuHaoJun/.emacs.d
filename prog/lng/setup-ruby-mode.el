@@ -21,6 +21,9 @@
 (require 'ruby-electric)
 (add-hook 'ruby-mode-hook 'ruby-electric-mode)
 
+(require 'ruby-block)
+(add-hook 'ruby-mode-hook 'ruby-block-mode)
+
 (defun my-ruby-start ()
   (interactive)
   (progn
