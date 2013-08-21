@@ -11,13 +11,6 @@
 
 (require 'yari)
 
-(require 'robe)
-(add-hook 'ruby-mode-hook 'robe-mode)
-(eval-after-load 'robe
-  '(add-hook 'robe-mode-hook
-             (lambda ()
-               (add-to-list 'ac-sources 'ac-source-robe))))
-
 (require 'ruby-electric)
 (add-hook 'ruby-mode-hook 'ruby-electric-mode)
 
@@ -26,12 +19,15 @@
 
 (require 'inf-ruby)
 (setq inf-ruby-implementations
-      '(("ruby" . "irb --inf-ruby-mode -r irb/completion -U")))
+      '(("ruby" . "irb --prompt-mode inf-ruby -r irb/completion -U")))
 
-(defun my-ruby-start ()
-  (interactive)
-  (progn
-    (inf-ruby)
-    (robe-start)))
+;; ruby #{rsense-home}/etc/config.rb ~/.rsense"
+;; to generate config file (for use ruby2.0)
+(when (executable-find "rsense")
+  (setq rsense-home "/opt/rsense-0.3")
+  (require 'rsense)
+  (add-hook 'ruby-mode-hook
+            (lambda ()
+              (add-to-list 'ac-sources 'ac-source-rsense))))
 
 (provide 'setup-ruby-mode)
