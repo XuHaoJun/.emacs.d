@@ -26,10 +26,13 @@
 
 
 ;;;---------------------------------------------------------------------------
-;;; Appearance
+;;; Basic settings
 ;;;---------------------------------------------------------------------------
 (require 'appearance)
-;;; End of Appearance
+(require 'key-bindings)
+(require 'sane-defaults) ;; lets start with a smattering of sanity
+(require 'setup-backup)
+;;; End of Basic settings
 
 
 ;;;---------------------------------------------------------------------------
@@ -63,15 +66,6 @@
 (require 'init-misc-plugin)
 ;; End of Misc
 ;;; End of Plugin
-
-
-;;;---------------------------------------------------------------------------
-;;; Basic settings
-;;;---------------------------------------------------------------------------
-(require 'key-bindings)
-(require 'sane-defaults) ;; lets start with a smattering of sanity
-(require 'setup-backup)
-;;; End of Basic settings
 
 
 ;;;---------------------------------------------------------------------------
