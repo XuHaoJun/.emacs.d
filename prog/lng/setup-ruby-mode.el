@@ -19,24 +19,24 @@
 
 (require 'inf-ruby)
 (setq inf-ruby-implementations
-      '(("ruby" . "irb --prompt-mode inf-ruby -r irb/completion -U")))
+      '(("ruby" . "irb --prompt my-default -r irb/completion")))
 
-;; ruby #{rsense-home}/etc/config.rb ~/.rsense"
-;; to generate config file (for use ruby2.0)
-(when (executable-find "rsense")
-  (setq rsense-home "/opt/rsense-0.3")
-  (require 'rsense)
-  (add-hook 'ruby-mode-hook
-            (lambda ()
-              (add-to-list 'ac-sources 'ac-source-rsense))))
+;; Use .irbrc and set default's :PROMPT_S => nil,
+;; then it can work on my robe and correctly output prompt
+(require 'robe)
+(add-hook 'ruby-mode-hook 'robe-mode)
+(eval-after-load 'robe
+  '(add-hook 'robe-mode-hook
+             (lambda ()
+               (add-to-list 'ac-sources 'ac-source-robe))))
 
-(add-hook 'ruby-mode-hook
-          (lambda ()
-            (if (fboundp 'rsense-jump-to-definition)
-                (progn
-                  (define-key evil-motion-state-local-map (kbd "gd") 'rsense-jump-to-definition)
-                  (define-key evil-normal-state-local-map (kbd "gd") 'rsense-jump-to-definition)
-                  (define-key evil-motion-state-local-map (kbd "gD") 'evil-goto-definition)
-                  (define-key evil-normal-state-local-map (kbd "gD") 'evil-goto-definition)))))
+;; ;; ruby #{rsense-home}/etc/config.rb ~/.rsense"
+;; ;; to generate config file (for use ruby2.0)
+;; (when (executable-find "rsense")
+;;   (setq rsense-home "/opt/rsense-0.3")
+;;   (require 'rsense)
+;;   (add-hook 'ruby-mode-hook
+;;             (lambda ()
+;;               (add-to-list 'ac-sources 'ac-source-rsense))))
 
 (provide 'setup-ruby-mode)
