@@ -13,6 +13,8 @@
 
 (require 'ruby-electric)
 (add-hook 'ruby-mode-hook 'ruby-electric-mode)
+(add-hook 'ruby-mode-hook
+          (lambda () (define-key evil-insert-state-local-map (kbd "RET") 'ruby-electric-return)))
 
 (require 'ruby-block)
 (add-hook 'ruby-mode-hook 'ruby-block-mode)
