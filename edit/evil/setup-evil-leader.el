@@ -71,4 +71,10 @@
   'ruby-mode
   "hi" 'my-ruby-start)
 
+(evil-leader/set-key-for-mode 'ruby-mode
+  "m" 'ruby-send-block)
+  ;; "mm" 'ruby-send-block
+  ;; "mr" 'ruby-send-region
+  ;; "mi" 'inf-ruby
+
 (provide 'setup-evil-leader)
