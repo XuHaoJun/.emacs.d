@@ -30,4 +30,13 @@
             (lambda ()
               (add-to-list 'ac-sources 'ac-source-rsense))))
 
+(add-hook 'ruby-mode-hook
+          (lambda ()
+            (if (fboundp 'rsense-jump-to-definition)
+                (progn
+                  (define-key evil-motion-state-local-map (kbd "gd") 'rsense-jump-to-definition)
+                  (define-key evil-normal-state-local-map (kbd "gd") 'rsense-jump-to-definition)
+                  (define-key evil-motion-state-local-map (kbd "gD") 'evil-goto-definition)
+                  (define-key evil-normal-state-local-map (kbd "gD") 'evil-goto-definition)))))
+
 (provide 'setup-ruby-mode)
