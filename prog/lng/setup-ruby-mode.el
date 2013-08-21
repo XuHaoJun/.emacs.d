@@ -1,6 +1,7 @@
 ;; If you want use syntax check or style check gem install rubocop
 ;; and enable flycheck mode
 
+
 (require 'ruby-mode)
 
 (dolist (file-pattern '("Rakefile\\'" "\\.rake\\'" "Gemfile\\'"))
@@ -8,6 +9,13 @@
 
 ;; Let emacs find my local gem in my home.
 (setenv "GEM_HOME" (expand-file-name "~/.gem"))
+
+(add-hook 'ruby-mode-hook
+          (lambda ()
+            (define-key evil-normal-state-local-map (kbd "[[") 'ruby-beginning-of-block)
+            (define-key evil-normal-state-local-map (kbd "]]") 'ruby-end-of-block)
+            (define-key evil-motion-state-local-map (kbd "]]") 'ruby-end-of-block)
+            (define-key evil-motion-state-local-map (kbd "]]") 'ruby-end-of-block)))
 
 (require 'yari)
 
