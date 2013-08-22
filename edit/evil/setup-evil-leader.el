@@ -33,7 +33,6 @@
   "hm" 'helm-c-moccur-occur-by-moccur
   "i"  'indent-on-page
   "G"  'magit-log
-  "j"  'ace-jump-buffer
   "k"  'kill-buffer
   "K"  'kill-buffer-and-window
   "nr" 'narrow-to-region
