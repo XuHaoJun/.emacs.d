@@ -5,6 +5,7 @@
 (setq save-place-file (expand-file-name ".places" user-emacs-directory))
 
 (require 'savekill)
+(setq save-kill-file-name (expand-file-name "~/.emacs.d/.var/cache/kill-ring-saved.el"))
 
 ;; save a list of open files in ~/.emacs.desktop
 ;; save the desktop file automatically if it already exists
