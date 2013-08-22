@@ -17,6 +17,12 @@
             (define-key evil-motion-state-local-map (kbd "]]") 'ruby-end-of-block)
             (define-key evil-motion-state-local-map (kbd "]]") 'ruby-end-of-block)))
 
+(defun ruby-send-region-or-block (start end)
+  (interactive "r")
+  (if mark-active
+      (ruby-send-region start end)
+    (ruby-send-block)))
+
 (require 'yari)
 
 (require 'ruby-electric)
