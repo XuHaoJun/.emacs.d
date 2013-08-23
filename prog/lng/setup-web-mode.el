@@ -21,10 +21,7 @@
 (add-hook 'web-mode-hook
           (lambda ()
             ;;Enable emmet-mode
-            (emmet-mode)
-            ;;Evil-mode keybindings
-            (define-key evil-motion-state-local-map (kbd "%") 'web-mode-tag-match)
-            (define-key evil-normal-state-local-map (kbd "%") 'web-mode-tag-match)))
+            (emmet-mode)))
 
 ;;Enable auto-complete-mode on web-mode
 (add-to-list 'ac-modes 'web-mode)
