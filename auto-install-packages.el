@@ -3,7 +3,7 @@
 (defvar pkg-lst
   '(ac-slime ace-jump-mode ack-and-a-half ag auctex auto-complete autopair android-mode
              browse-kill-ring
-             c-eldoc company color-moccur
+             c-eldoc company color-moccur css-eldoc
              dired+ dired-details dired-details+ dired-single dynamic-fonts diminish
              eldoc-extension emacs-eclim erc-hl-nicks evil evil-leader evil-numbers expand-region emmet-mode
              flex-isearch flymake flymake-cursor flymake-python-pyflakes flymake-shell fuzzy flycheck flx flx-ido

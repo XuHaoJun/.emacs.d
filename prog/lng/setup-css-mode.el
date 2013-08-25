@@ -1,3 +1,5 @@
+;; Depend on auto-complete rainbow-mode autopair-mode css-eldoc
+
 (add-hook 'css-mode-hook
           (lambda ()
             (make-local-variable 'ac-fuzzy-enable)
@@ -5,7 +7,9 @@
 
 (add-hook 'css-mode-hook
           (lambda ()
-            (progn (rainbow-mode)
-                   (autopair-mode))))
+            (rainbow-mode)
+            (autopair-mode)))
+
+(css-eldoc-enable)
 
 (provide 'setup-css-mode)
