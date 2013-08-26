@@ -17,6 +17,13 @@
   (if mark-active
       (ruby-send-region start end)
     (ruby-send-block)))
+(defun ruby-send-current-line ()
+  (interactive)
+  (save-excursion
+    (end-of-line)
+    (let ((end (point)))
+      (beginning-of-line)
+      (ruby-send-region (point) end))))
 
 ;; Bind on evil
 (add-hook 'ruby-mode-hook
