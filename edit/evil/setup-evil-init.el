@@ -8,6 +8,8 @@
 (require 'surround)
 (global-surround-mode 1)
 
+(require 'evil-ruby-block-object)
+
 ;; (require 'ecb)
 ;; (define-key evil-normal-state-map (kbd "C-w C-e") 'ecb-toggle-ecb-windows) ;;toggle ecb
 
