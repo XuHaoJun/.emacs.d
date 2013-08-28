@@ -13,6 +13,7 @@
 (add-to-list 'load-path (concat user-emacs-directory "prog/yasnippet"))
 (require 'setup-yasnippet)
 
+(require 'setup-company)
 (require 'setup-compile)
 (require 'setup-slime)
 (require 'setup-eldoc)

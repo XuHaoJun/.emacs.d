@@ -3,9 +3,8 @@
 (require 'eclimd)
 (require 'ac-emacs-eclim-source)
 (ac-emacs-eclim-config)
-(require 'company)
+
 (require 'company-emacs-eclim)
 (company-emacs-eclim-setup)
-;; (global-company-mode t)
 
 (provide 'setup-android-init)
