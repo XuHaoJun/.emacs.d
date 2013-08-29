@@ -1,7 +1,10 @@
+;;;  Require package:
+;;; (robe yari ruby-electric ruby-block inf-ruby evil auto-complete)
+;;; Useage:
+;;;  M-x inf-ruby to connect irb,and it will provide REPL environment,
+;;; it easy to send your code to the irb.
 ;;;  If you want use syntax check or style check gem install rubocop
 ;;; and enable flycheck mode.
-;;;  The file depend on (robe yari ruby-electric ruby-block inf-ruby
-;;; evil auto-complete) .
 
 (require 'ruby-mode)
 (require 'yari) ; Yet Another RI interface
