@@ -66,15 +66,11 @@
  '(ruby-mode web-mode)
  "hp" 'helm-rails-all
  "hy" 'yari-helm)
-(evil-leader/set-key-for-mode
-  'ruby-mode
-  "hi" 'my-ruby-start)
 
 (evil-leader/set-key-for-mode 'ruby-mode
-  "m" 'ruby-send-region-or-block
-  "M" 'ruby-send-current-line)
-  ;; "mm" 'ruby-send-block
-  ;; "mr" 'ruby-send-region
-  ;; "mi" 'inf-ruby
+  "mm" 'ruby-send-block
+  "ml" 'ruby-send-current-line
+  "mr" 'ruby-send-region
+  "mi" 'inf-ruby)
 
 (provide 'setup-evil-leader)
