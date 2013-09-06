@@ -73,4 +73,7 @@
   "mr" 'ruby-send-region
   "mi" 'inf-ruby)
 
+(evil-leader/set-key-for-mode 'haskell-mode
+  "mm" 'inferior-haskell-load-file)
+
 (provide 'setup-evil-leader)
