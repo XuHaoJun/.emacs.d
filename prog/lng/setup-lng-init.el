@@ -5,6 +5,7 @@
 (require 'setup-css-mode)
 (require 'setup-ruby-mode)
 (require 'setup-tex)
+(require 'setup-haskell)
 (require 'setup-pkgbuild-mode)
 
 (provide 'setup-lng-init)
