@@ -20,6 +20,7 @@
              window-numbering
              savekill session shell-pop slime smex smartparens
              solarized-theme surround switch-window
+             tronesque-theme
              undo-tree
              visual-regexp
              w3m wgrep wgrep-ack wgrep-helm web-mode

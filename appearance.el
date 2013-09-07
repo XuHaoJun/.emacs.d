@@ -1,5 +1,7 @@
 ;; Theme
-(require 'solarized-dark-theme)
+(if window-system
+    (require 'solarized-dark-theme)
+  (require 'tronesque-theme))
 
 
 ;;blink disable
