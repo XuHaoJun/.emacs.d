@@ -1,4 +1,4 @@
-(require 'smex)
+;;; Require package: (smex)
 
 (setq smex-save-file (concat user-emacs-directory ".smex-items"))
 

@@ -1,4 +1,4 @@
-(require 'ido-ubiquitous)
+;;; Require package: (ido-ubiquitous)
 
 ;;Fix ido-ubiquitous for newer packages
 (defmacro ido-ubiquitous-use-new-completing-read (cmd package)
