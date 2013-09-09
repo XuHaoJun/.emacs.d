@@ -6,6 +6,7 @@
             (setq truncate-lines nil)))
 (add-hook 'org-mode-hook 'auto-fill-mode)
 
+;; If you can't use it, try re-install org(8.x) and org-octopress.
 (require 'org-octopress)
 (setq org-octopress-directory-top       "~/current/octopress/source")
 (setq org-octopress-directory-posts     "~/current/octopress/source/_posts")
