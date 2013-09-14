@@ -19,7 +19,7 @@
              rainbow-delimiters revive rainbow-mode ruby-electric ruby-block robe
              window-numbering
              savekill session shell-pop slime smex smartparens
-             solarized-theme surround switch-window
+             solarized-theme surround switch-window scss-mode
              tronesque-theme
              undo-tree
              visual-regexp
