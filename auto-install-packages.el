@@ -1,7 +1,7 @@
 (require 'package)
 
 (defvar pkg-lst
-  '(ac-slime ace-jump-mode ack-and-a-half ag auctex auto-complete autopair android-mode
+  '(ac-slime ace-jump-mode ack-and-a-half ag auctex auto-complete autopair android-mode anzu
              browse-kill-ring
              c-eldoc company color-moccur css-eldoc
              dired+ dired-details dired-details+ dired-single dynamic-fonts diminish

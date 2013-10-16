@@ -10,6 +10,7 @@
 (require 'setup-wgrep)
 (require 'setup-flex-isearch)
 (require 'setup-iedit)
+(require 'setup-anzu)
 
 (require 'visual-regexp)
 (require 'expand-region)
