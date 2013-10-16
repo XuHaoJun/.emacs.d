@@ -1,4 +1,4 @@
-(require 'autopair)
+;;; Require package: (autopair)
 
 (add-hook 'c-mode-common-hook 
           #'(lambda () (autopair-mode)))
