@@ -35,7 +35,15 @@
 
 
 (require 'ruby-electric)
+(defun ruby-insert-end ()
+  "Insert \"end\" at point and reindent current line."
+  (interactive)
+  (insert "end")
+  (ruby-indent-line t)
+  (end-of-line))
+
 (add-hook 'ruby-mode-hook 'ruby-electric-mode)
+
 ;; Bind on evil
 (add-hook 'ruby-mode-hook
           (lambda () (define-key evil-insert-state-local-map (kbd "RET") 'ruby-electric-return)))
