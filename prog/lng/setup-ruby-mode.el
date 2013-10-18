@@ -26,12 +26,23 @@
       (beginning-of-line)
       (ruby-send-region (point) end))))
 ;; Bind on evil
+(evil-define-motion evil-ruby-jump-item (count)
+  :jump t
+  :type inclusive
+  (cond ((string-match ruby-block-beg-re (current-word))
+         (ruby-end-of-block count))
+        ((string-match ruby-block-end-re (current-word))
+         (ruby-beginning-of-block count))
+        (t
+         (evil-jump-item count))))
 (add-hook 'ruby-mode-hook
           (lambda ()
             (define-key evil-normal-state-local-map (kbd "[[") 'ruby-beginning-of-block)
             (define-key evil-normal-state-local-map (kbd "]]") 'ruby-end-of-block)
             (define-key evil-motion-state-local-map (kbd "]]") 'ruby-end-of-block)
-            (define-key evil-motion-state-local-map (kbd "]]") 'ruby-end-of-block)))
+            (define-key evil-motion-state-local-map (kbd "]]") 'ruby-end-of-block)
+            (define-key evil-normal-state-local-map "%" 'evil-ruby-jump-item)
+            (define-key evil-motion-state-local-map "%" 'evil-ruby-jump-item)))
 
 
 (require 'ruby-electric)
@@ -61,7 +72,6 @@
   '(add-hook 'robe-mode-hook
              (lambda ()
                (add-to-list 'ac-sources 'ac-source-robe))))
-
 
 ;; ;; ruby #{rsense-home}/etc/config.rb ~/.rsense"
 ;; ;; to generate config file (for use ruby2.0)
