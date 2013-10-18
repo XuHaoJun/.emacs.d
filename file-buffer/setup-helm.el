@@ -6,6 +6,8 @@
 (require 'helm-projectile)
 ;; (helm-mode 1)
 
+(setq helm-samewindow nil)
+
 (global-set-key (kbd "C-x B") 'helm-mini)
 
 (require 'helm-c-moccur)
