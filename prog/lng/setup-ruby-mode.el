@@ -41,32 +41,7 @@
   (insert "end")
   (ruby-indent-line t)
   (end-of-line))
-
 (add-hook 'ruby-mode-hook 'ruby-electric-mode)
-
-;; Bind on evil
-(add-hook 'ruby-mode-hook
-          (lambda () (define-key evil-insert-state-local-map (kbd "RET") 'ruby-electric-return)))
-;; Change from source Version: 20130127.1902
-(defun ruby-electric-space (arg)
-  (interactive "P")
-  (self-insert-command (prefix-numeric-value arg))
-  (cond ((ruby-electric-space-can-be-expanded-p)
-         (save-excursion
-           (ruby-indent-line t)
-           (newline)
-           (ruby-electric-insert-end)))
-        ((ruby-electric-space-can-be-indent-p) (ruby-indent-line t))))
-
-(defun ruby-electric-space-can-be-indent-p ()
-  (and (ruby-electric-code-at-point-p)
-       (ruby-electric-matching-word-p)))
-
-(defun ruby-electric-matching-word-p ()
-  (save-excursion
-    (backward-word)
-    (string-match "\\(\\<else\\>\\|\\<elsif\\>\\)" (current-word))))
-
 
 (require 'ruby-block)
 (add-hook 'ruby-mode-hook 'ruby-block-mode)
