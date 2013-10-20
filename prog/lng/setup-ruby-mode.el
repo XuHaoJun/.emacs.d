@@ -1,12 +1,19 @@
 ;;;  Require package:
-;;; (robe yari ruby-electric ruby-block inf-ruby evil auto-complete)
+;;; (robe yari ruby-electric ruby-block inf-ruby evil auto-complete rinari)
 ;;; Useage:
 ;;;  M-x inf-ruby to connect irb,and it will provide REPL environment,
-;;; it easy to send your code to the irb.
+;;; it easy to send your code to the irb and can use M-x robe-start for
+;;; code navigation and auto-complete.
+;;;
 ;;;  If you want use syntax check or style check gem install rubocop
 ;;; and enable flycheck mode.
+;;;
+;;;  If you are a rails develper,rinari package provide very useful functions to develop
+;;; and can use M-x rinari-console work with robe to get code navigation and auto-complete,
+;;; but you need add two gems pry and pry-doc to your Gemfile.
 
 (require 'ruby-mode)
+(global-rinari-mode t) ; For ruby on rails
 (require 'yari) ; Yet Another RI interface
 (dolist (file-pattern '("Rakefile\\'" "\\.rake\\'" "Gemfile\\'"))
   (add-to-list 'auto-mode-alist (cons file-pattern '(. ruby-mode))))
