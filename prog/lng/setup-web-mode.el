@@ -1,5 +1,5 @@
-;;; Depend on evil and emmet
-;;; I use <tab> key to complete code and <C-RET> to gen snippet by emmet.
+;;; Require package: (evil emmet)
+;;; Use <tab> key to complete code and <C-RET> to gen snippet by emmet.
 (require 'web-mode)
 
 (add-to-list 'auto-mode-alist '("\\.phtml$"     . web-mode))
