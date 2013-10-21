@@ -1,4 +1,4 @@
-;; Depend on auto-complete rainbow-mode autopair-mode css-eldoc
+;;; Require package: (auto-complete rainbow-mode autopair-mode css-eldoc helm-css-scss)
 
 (add-hook 'css-mode-hook
           (lambda ()
