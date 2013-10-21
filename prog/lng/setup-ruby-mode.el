@@ -49,7 +49,8 @@
             (define-key evil-motion-state-local-map (kbd "]]") 'ruby-end-of-block)
             (define-key evil-motion-state-local-map (kbd "]]") 'ruby-end-of-block)
             (define-key evil-normal-state-local-map "%" 'evil-ruby-jump-item)
-            (define-key evil-motion-state-local-map "%" 'evil-ruby-jump-item)))
+            (define-key evil-motion-state-local-map "%" 'evil-ruby-jump-item)
+            (define-key evil-motion-state-local-map "gd" 'robe-jump)))
 
 
 (require 'ruby-electric)
