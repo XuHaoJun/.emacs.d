@@ -71,7 +71,8 @@
   "mm" 'ruby-send-block
   "ml" 'ruby-send-current-line
   "mr" 'ruby-send-region
-  "mi" 'inf-ruby)
+  "mi" 'inf-ruby
+  "md" 'robe-doc)
 
 (evil-leader/set-key-for-mode 'haskell-mode
   "mm" 'inferior-haskell-load-file)
