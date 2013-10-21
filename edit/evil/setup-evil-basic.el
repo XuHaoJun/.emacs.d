@@ -51,6 +51,17 @@
 (add-hook 'prog-mode-hook
           (lambda () (define-key evil-insert-state-local-map (kbd "RET") 'electrify-return-if-match)))
 
+;; Keep cursor position and insert newline.
+(defun open-line-below (n)
+  (interactive "*p")
+  (save-excursion
+    (evil-end-of-line)
+    (open-line n)))
+(add-hook 'prog-mode-hook
+          (lambda ()
+            (define-key evil-insert-state-local-map (kbd "S-<return>") 'open-line-below)
+            (define-key evil-normal-state-local-map (kbd "S-<return>") 'open-line-below)))
+
 ;; Emacs key
 (define-key evil-normal-state-map "\C-e" 'evil-end-of-line)
 (define-key evil-motion-state-map "\C-e" 'evil-end-of-line)
