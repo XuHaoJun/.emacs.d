@@ -8,5 +8,6 @@
 (require 'setup-tex)
 (require 'setup-haskell)
 (require 'setup-pkgbuild-mode)
+(require 'setup-coffee-mode)
 
 (provide 'setup-lng-init)
