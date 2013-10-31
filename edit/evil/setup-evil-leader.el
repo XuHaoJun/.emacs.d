@@ -31,6 +31,7 @@
   "hg" 'helm-do-grep
   "hf" 'helm-find-files
   "hm" 'helm-M-x
+  "hs" 'helm-swoop
   "i"  'indent-on-page
   "G"  'magit-log
   "k"  'kill-buffer
