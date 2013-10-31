@@ -30,7 +30,7 @@
   "g"  'magit-status
   "hg" 'helm-do-grep
   "hf" 'helm-find-files
-  "hm" 'helm-c-moccur-occur-by-moccur
+  "hm" 'helm-M-x
   "i"  'indent-on-page
   "G"  'magit-log
   "k"  'kill-buffer
@@ -64,8 +64,16 @@
 
 (evil-leader/set-key-for-modes
  '(ruby-mode web-mode)
- "hp" 'helm-rails-all
- "hy" 'yari-helm)
+ "hra" 'helm-rails-all
+ "hrm" 'helm-rails-models
+ "hrv" 'helm-rails-views
+ "hrc" 'helm-rails-controllers
+ "hrj" 'helm-rails-javascripts
+ "hrs" 'helm-rails-stylesheets
+ "hrl" 'helm-rails-helpers
+ "hro" 'rinari-find-configuration
+ "hrl" 'rinari-find-lib
+ "hry" 'yari-helm)
 
 (evil-leader/set-key-for-mode 'ruby-mode
   "mm" 'ruby-send-block
