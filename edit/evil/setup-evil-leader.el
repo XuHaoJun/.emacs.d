@@ -79,6 +79,7 @@
   "mm" 'ruby-send-block
   "ml" 'ruby-send-current-line
   "mr" 'ruby-send-region
+  "mb" 'ruby-send-buffer
   "mi" 'inf-ruby
   "md" 'robe-doc)
 

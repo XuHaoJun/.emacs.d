@@ -69,6 +69,10 @@
 (require 'inf-ruby)
 (setq inf-ruby-implementations
       '(("ruby" . "irb --prompt my-default -r irb/completion")))
+(defun ruby-send-buffer ()
+  (interactive)
+  (save-excursion
+    (ruby-send-region (point-min) (point-max))))
 
 
 ;; Use .irbrc and set default's :PROMPT_S => nil,
