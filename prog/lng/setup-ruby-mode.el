@@ -69,6 +69,10 @@
 (require 'inf-ruby)
 (setq inf-ruby-implementations
       '(("ruby" . "irb --prompt my-default -r irb/completion")))
+(require 'ac-inf-ruby) ;; when not installed via package.el
+(eval-after-load 'auto-complete
+  '(add-to-list 'ac-modes 'inf-ruby-mode))
+(add-hook 'inf-ruby-mode-hook 'ac-inf-ruby-enable)
 (defun ruby-send-buffer ()
   (interactive)
   (save-excursion

@@ -1,7 +1,7 @@
 (require 'package)
 
 (defvar pkg-lst
-  '(ac-slime ace-jump-mode ack-and-a-half ag auctex auto-complete autopair android-mode anzu
+  '(ac-slime ace-jump-mode ack-and-a-half ag auctex auto-complete autopair android-mode anzu ac-inf-ruby
              browse-kill-ring
              c-eldoc company color-moccur css-eldoc coffee-mode
              dired+ dired-details dired-details+ dired-single dynamic-fonts diminish
@@ -11,7 +11,7 @@
              gitconfig-mode github-browse-file gitignore-mode google-c-style
              helm helm-ack helm-ag helm-c-moccur helm-gtags helm-flymake helm-rails helm-projectile helm-css-scss helm-swoop
              htmlize haskell-mode
-             ibuffer-vc ido-sort-mtime ido-ubiquitous ido-yes-or-no iedit
+             ibuffer-vc ido-sort-mtime ido-ubiquitous ido-yes-or-no iedit inf-ruby
              jedi
              magit multi-term
              nlinum
