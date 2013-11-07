@@ -14,12 +14,10 @@
 
 ;; Font
 (require 'dynamic-fonts)
+(setq-default dynamic-fonts-preferred-monospace-point-size 16)
+(setq-default dynamic-fonts-preferred-proportional-point-size 16)
+(setq-default dynamic-fonts-preferred-monospace-fonts (cons "Anonymous Pro" (delq  "Anonymous Pro" dynamic-fonts-preferred-monospace-fonts)))
 (dynamic-fonts-setup)
-(if window-system
-    (progn
-      (set-default-font "Anonymous Pro")
-      (set-face-attribute 'default nil :font "Anonymous Pro" :height 140)
-      (set-face-font 'default "Anonymous Pro")))
 
 
 (require 'window-numbering)
