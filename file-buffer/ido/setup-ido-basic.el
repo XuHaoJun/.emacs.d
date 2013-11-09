@@ -8,7 +8,8 @@
       ido-max-prospects 10
       ido-default-buffer-method 'selected-window   ;; Allow the same buffer to be open in different frames
       ido-use-virtual-buffers t
-      ido-save-directory-list-file (concat user-emacs-directory ".ido.last"))
+      ido-save-directory-list-file (concat user-emacs-directory ".ido.last")
+      ido-use-faces nil)
 
 (add-hook
  'ido-setup-hook

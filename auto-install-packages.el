@@ -11,7 +11,7 @@
              gitconfig-mode github-browse-file gitignore-mode google-c-style
              helm helm-ack helm-ag helm-c-moccur helm-gtags helm-flymake helm-rails helm-projectile helm-css-scss helm-swoop
              htmlize haskell-mode
-             ibuffer-vc ido-sort-mtime ido-ubiquitous ido-yes-or-no iedit inf-ruby
+             ibuffer-vc ido-sort-mtime ido-ubiquitous ido-yes-or-no ido-vertical-mode iedit inf-ruby
              jedi
              magit multi-term
              nlinum

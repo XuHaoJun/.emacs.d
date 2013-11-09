@@ -1,6 +1,6 @@
 ;;; Require package:
 ;;; (ido-sort-mtime smex ido-ubiquitous ido-yes-or-no ido-preview
-;;; flx-ido)
+;;; flx-ido ido-vertical-mode)
 ;;; Require site-lisp:
 ;;; (ido-preview)
 
@@ -30,5 +30,7 @@
     (define-key ido-completion-map (kbd "C-M-n") (lookup-key ido-completion-map (kbd "C-n"))) ; currently, this makes nothing. Maybe they'll make C-n key lately.
     (define-key ido-completion-map (kbd "C-p") 'ido-preview-backward)
     (define-key ido-completion-map (kbd "C-n") 'ido-preview-forward)))
+
+(ido-vertical-mode t)
 
 (provide 'setup-ido-plugin)
