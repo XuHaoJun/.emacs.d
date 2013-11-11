@@ -4,7 +4,7 @@
 
 (evil-leader/set-leader ",")
 (evil-leader/set-key
-  ","  'helm-M-x
+  ","  'smex
   "#"  'wg/ido-erc-buffer
   "%"  'wg/ido-term-buffer
   "ww" 'wg/ido-for-all-mode
