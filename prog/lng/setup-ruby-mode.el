@@ -67,7 +67,11 @@
 
 
 (require 'inf-ruby)
+(setq inf-ruby-implementations
+      (delq (assoc "ruby" inf-ruby-implementations) inf-ruby-implementations))
+(add-to-list 'inf-ruby-implementations '("ruby"     . "irbb --inf-ruby-mode -r irb/completion"))
 (add-hook 'inf-ruby-mode-hook (lambda () (setq evil-auto-indent nil)))
+(add-hook 'ruby-mode-hook 'inf-ruby-minor-mode)
 (require 'ac-inf-ruby) ;; when not installed via package.el
 (eval-after-load 'auto-complete
   '(add-to-list 'ac-modes 'inf-ruby-mode))
