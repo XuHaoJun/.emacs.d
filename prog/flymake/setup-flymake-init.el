@@ -5,7 +5,7 @@
 ;; (eval-after-load 'flymake '(require 'setup-flymake-clang))
 (add-hook 'c++-mode-hook 'flymake-mode)
 
-(require 'setup-flymake-tex)
+;; (require 'setup-flymake-tex)
 
 (require 'helm-flymake)
 
