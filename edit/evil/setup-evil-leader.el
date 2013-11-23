@@ -83,6 +83,11 @@
   "mi" 'inf-ruby
   "md" 'robe-doc)
 
+(evil-leader/set-key-for-mode 'emacs-lisp-mode
+  "mm" 'eval-defun
+  "mb" 'eval-buffer
+  "ms" 'eval-last-sexp)
+
 (evil-leader/set-key-for-mode 'haskell-mode
   "mm" 'inferior-haskell-load-file)
 
