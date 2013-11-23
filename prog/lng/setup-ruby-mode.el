@@ -20,11 +20,11 @@
 ;; Let emacs find my local gem in my home.
 (setenv "GEM_HOME" (expand-file-name "~/.gem"))
 ;; I bind it on evil-leader see setup-evil-leader.el file
-(defun ruby-send-region-or-block (start end)
+(defun ruby-send-region-or-mystuff (start end)
   (interactive "r")
   (if mark-active
       (ruby-send-region start end)
-    (ruby-send-block)))
+    (ruby-send-mystuff)))
 (defun ruby-send-current-line ()
   (interactive)
   (save-excursion
@@ -32,6 +32,12 @@
     (let ((end (point)))
       (beginning-of-line)
       (ruby-send-region (point) end))))
+(defun ruby-send-mystuff ()
+  (interactive)
+  (save-excursion
+    (forward-paragraph)
+    (ruby-beginning-of-block)
+    (ruby-send-block)))
 ;; Bind on evil
 (evil-define-motion evil-ruby-jump-item (count)
   :jump t

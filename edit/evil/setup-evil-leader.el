@@ -77,9 +77,8 @@
  "hry" 'yari-helm)
 
 (evil-leader/set-key-for-mode 'ruby-mode
-  "mm" 'ruby-send-block
+  "mm" 'ruby-send-region-or-mystuff
   "ml" 'ruby-send-current-line
-  "mr" 'ruby-send-region
   "mb" 'ruby-send-buffer
   "mi" 'inf-ruby
   "md" 'robe-doc)
