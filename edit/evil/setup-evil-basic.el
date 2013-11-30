@@ -26,10 +26,11 @@
 
             (eval-after-load 'evil-mode
               (defadvice evil-insert (after evil-insert-state activate)
-                (when (and evil-auto-indent
-                           (or (string-match "[[:space:]]+" (get-current-line-text))
-                               (string-match "^$" (get-current-line-text))))
-                  (indent-according-to-mode))))))
+                (when (derived-mode-p 'prog-mode)
+                  (when (and evil-auto-indent
+                             (or (string-match "[[:space:]]+" (get-current-line-text))
+                                 (string-match "^$" (get-current-line-text))))
+                    (indent-according-to-mode)))))))
 
 (defvar electrify-return-match
   "[\]}\)\"]<"
