@@ -2,6 +2,7 @@
 (require 'setup-evil-basic)
 (require 'setup-evil-leader)
 (require 'setup-evil-acejump)
+(require 'setup-evil-matchit)
 (evil-mode t)
 
 ;; emulates surround.vim
