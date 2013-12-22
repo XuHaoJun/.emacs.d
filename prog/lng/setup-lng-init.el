@@ -9,5 +9,6 @@
 (require 'setup-haskell)
 (require 'setup-pkgbuild-mode)
 (require 'setup-coffee-mode)
+(require 'setup-js2-mode)
 
 (provide 'setup-lng-init)

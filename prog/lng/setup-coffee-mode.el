@@ -1,5 +1,6 @@
 (require 'ac-coffee)
 (custom-set-variables '(coffee-tab-width 2))
+
 (add-hook 'coffee-mode-hook (lambda ()
                               (define-key evil-insert-state-local-map (kbd "RET") 'coffee-newline-and-indent)
                               (setq evil-auto-indent nil)
@@ -27,5 +28,23 @@
                               (define-key evil-normal-state-local-map "o" 'evil-coffee-open-below)
                               (define-key evil-normal-state-local-map "O" 'evil-coffee-open-above)
                               (define-key evil-normal-state-local-map "i" 'evil-coffee-insert)))
+
+(add-hook 'coffee-mode-hook
+          (lambda ()
+            (slime-js-minor-mode 1)))
+
+(defun slime-js-coffee-eval-current ()
+  (interactive)
+  (coffee-compile-region (point) (mark))
+  (switch-to-buffer coffee-compiled-buffer-name)
+  (slime-js-eval-buffer)
+  (kill-buffer coffee-compiled-buffer-name))
+
+(defun slime-js-coffee-eval-buffer ()
+  (interactive)
+  (coffee-compile-buffer)
+  (switch-to-buffer coffee-compiled-buffer-name)
+  (slime-js-eval-buffer)
+  (kill-buffer coffee-compiled-buffer-name))
 
 (provide 'setup-coffee-mode)

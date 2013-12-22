@@ -1,7 +1,7 @@
 (require 'package)
 
 (defvar pkg-lst
-  '(ac-slime ace-jump-mode ack-and-a-half ag auctex auto-complete autopair android-mode anzu ac-inf-ruby
+  '(ac-slime ace-jump-mode ack-and-a-half ag auctex auto-complete autopair android-mode anzu ac-inf-ruby ac-js2
              browse-kill-ring
              c-eldoc company color-moccur css-eldoc coffee-mode
              dired+ dired-details dired-details+ dired-single dynamic-fonts diminish
@@ -13,7 +13,7 @@
              helm helm-ack helm-ag helm-c-moccur helm-gtags helm-flymake helm-rails helm-projectile helm-css-scss helm-swoop
              htmlize haskell-mode
              ibuffer-vc ido-sort-mtime ido-ubiquitous ido-yes-or-no ido-vertical-mode iedit inf-ruby
-             jedi
+             jedi js2-mode
              magit multi-term
              nlinum
              openwith org org-octopress
@@ -21,7 +21,7 @@
              rainbow-delimiters revive rainbow-mode ruby-electric ruby-block robe rinari
              window-numbering
              savekill session shell-pop slime smex smartparens
-             solarized-theme surround switch-window scss-mode
+             solarized-theme surround switch-window scss-mode slime-js
              tronesque-theme
              undo-tree
              visual-regexp
