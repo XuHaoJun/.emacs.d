@@ -22,6 +22,7 @@
 (require 'setup-git)
 (require 'setup-auto-indentation)
 (require 'setup-projectile)
+;; (require 'setup-smart-operator)
 ;; (require 'setup-ecb)
 
 (provide 'init-prog-plugin)

@@ -1,7 +1,8 @@
 (require 'package)
 
 (defvar pkg-lst
-  '(ac-slime ace-jump-mode ack-and-a-half ag auctex auto-complete autopair android-mode anzu ac-inf-ruby ac-js2
+  '(ac-slime ace-jump-mode ack-and-a-half ag auctex auto-complete
+             autopair android-mode anzu ac-inf-ruby ac-js2
              browse-kill-ring
              c-eldoc company color-moccur css-eldoc coffee-mode
              dired+ dired-details dired-details+ dired-single dynamic-fonts diminish
@@ -10,9 +11,11 @@
              flex-isearch flymake flymake-cursor fuzzy flycheck flx flx-ido
              geiser git-blame git-commit-mode git-gutter-fringe google-this
              gitconfig-mode github-browse-file gitignore-mode google-c-style
-             helm helm-ack helm-ag helm-c-moccur helm-gtags helm-flymake helm-rails helm-projectile helm-css-scss helm-swoop
+             helm helm-ack helm-ag helm-c-moccur helm-gtags helm-flymake helm-rails
+             helm-projectile helm-css-scss helm-swoop
              htmlize haskell-mode
-             ibuffer-vc ido-sort-mtime ido-ubiquitous ido-yes-or-no ido-vertical-mode iedit inf-ruby
+             ibuffer-vc ido-sort-mtime ido-ubiquitous ido-yes-or-no
+             ido-vertical-mode iedit inf-ruby
              jedi js2-mode
              magit multi-term
              nlinum
@@ -20,7 +23,7 @@
              pkgbuild-mode pos-tip popwin projectile pangu-spacing
              rainbow-delimiters revive rainbow-mode ruby-electric ruby-block robe rinari
              window-numbering
-             savekill session shell-pop slime smex smartparens
+             savekill session shell-pop slime smex smartparens smart-operator
              solarized-theme surround switch-window scss-mode slime-js
              tronesque-theme
              undo-tree
