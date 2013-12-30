@@ -11,6 +11,4 @@
 (require 'setup-newsticker)
 (require 'setup-google-this)
 
-(require 'command-log-mode)
-
 (provide 'init-misc-plugin)

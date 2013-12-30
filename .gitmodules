@@ -4,9 +4,6 @@
 [submodule "site-lisp/emacs-clang-complete-async"]
 	path = site-lisp/emacs-clang-complete-async
 	url = git://github.com/Golevka/emacs-clang-complete-async.git
-[submodule "site-lisp/command-log-mode"]
-	path = site-lisp/command-log-mode
-	url = https://github.com/lewang/command-log-mode.git
 [submodule "site-lisp/evil-ruby-block-object"]
 	path = site-lisp/evil-ruby-block-object
 	url = https://github.com/XuHaoJun/evil-ruby-block-object.git
