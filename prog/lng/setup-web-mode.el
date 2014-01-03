@@ -20,8 +20,8 @@
 
 (add-hook 'web-mode-hook
           (lambda ()
-            ;;Enable emmet-mode
-            (emmet-mode)))
+            (emmet-mode)
+            (ac-emmet-html-setup)))
 
 ;;Enable auto-complete-mode on web-mode
 (add-to-list 'ac-modes 'web-mode)

@@ -2,7 +2,7 @@
 
 (defvar pkg-lst
   '(ac-slime ace-jump-mode ack-and-a-half ag auctex auto-complete
-             autopair android-mode anzu ac-inf-ruby ac-js2
+             autopair android-mode anzu ac-inf-ruby ac-js2 ac-emmet
              browse-kill-ring
              c-eldoc company color-moccur css-eldoc coffee-mode command-log-mode
              dired+ dired-details dired-details+ dired-single dynamic-fonts diminish
