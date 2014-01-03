@@ -49,6 +49,7 @@
   "po" 'projectile-switch-project
   "pm" 'projectile-multi-occur
   "pr" 'projectile-replace
+  "pi" 'projectile-invalidate-cache
   "r"  'vr/replace
   "R"  'vr/query-replace
   "s"  'save-buffer
