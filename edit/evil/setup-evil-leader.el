@@ -76,14 +76,14 @@
  "hrl" 'rinari-find-lib
  "hry" 'yari-helm)
 
-(evil-leader/set-key-for-mode 'ruby-mode
+(evil-leader/set-key-for-modes 'ruby-mode
   "mm" 'ruby-send-region-or-mystuff
   "ml" 'ruby-send-current-line
   "mb" 'ruby-send-buffer
   "mi" 'inf-ruby
   "md" 'robe-doc)
 
-(evil-leader/set-key-for-mode 'emacs-lisp-mode
+(evil-leader/set-key-for-modes '(emacs-lisp-mode lisp-interaction-mode)
   "mm" 'eval-defun
   "mb" 'eval-buffer
   "ms" 'eval-last-sexp)
