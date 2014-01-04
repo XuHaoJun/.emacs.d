@@ -8,12 +8,5 @@
             (define-key evil-motion-state-local-map "gD" 'godef-jump-other-window)))
 
 (add-hook 'before-save-hook 'gofmt-before-save)
-(add-hook 'go-mode-hook
-          (lambda ()
-            (setq
-             tab-width 2
-             standard-indent 2
-             indent-tabs-mode nil)))
-
 
 (provide 'setup-go-mode)
