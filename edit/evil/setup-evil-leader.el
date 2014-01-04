@@ -93,4 +93,8 @@
 (evil-leader/set-key-for-mode 'haskell-mode
   "mm" 'inferior-haskell-load-file)
 
+(evil-leader/set-key-for-mode 'go-mode
+  "mgi" 'go-goto-imports
+  "mia" 'go-import-add)
+
 (provide 'setup-evil-leader)
