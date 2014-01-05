@@ -10,7 +10,8 @@
                                                      c-mode          c++-mode
                                                      objc-mode       latex-mode
                                                      plain-tex-mode lisp-interaction-mode
-                                                     web-mode html-mode))
+                                                     web-mode html-mode go-mode
+                                                     coffee-mode js2-mode))
                 (let ((mark-even-if-inactive transient-mark-mode))
                   (indent-region (region-beginning) (region-end) nil))))))
 
