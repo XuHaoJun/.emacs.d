@@ -56,8 +56,8 @@ Also returns nil if pid is nil."
     (setq ad-return-value nil)))
 ;;; desktop-override-stale-locks.el ends here
 
-(require 'revive)
-(add-hook 'kill-emacs-hook 'save-current-configuration)
-(resume)
+;; (require 'revive)
+;; (add-hook 'kill-emacs-hook 'save-current-configuration)
+;; (resume)
 
 (provide 'setup-session)

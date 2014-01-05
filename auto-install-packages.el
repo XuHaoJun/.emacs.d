@@ -22,7 +22,7 @@
              nlinum
              openwith org org-octopress
              pkgbuild-mode pos-tip popwin projectile pangu-spacing
-             rainbow-delimiters revive rainbow-mode ruby-electric ruby-block robe rinari
+             rainbow-delimiters rainbow-mode ruby-electric ruby-block robe rinari
              window-numbering
              savekill session shell-pop slime smex smartparens smart-operator
              solarized-theme surround switch-window scss-mode slime-js
