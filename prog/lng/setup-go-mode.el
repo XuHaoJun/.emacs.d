@@ -1,6 +1,7 @@
 (require 'go-autocomplete)
 (require 'go-mode-load)
 
+;; (add-hook 'before-save-hook 'gofmt-before-save)
 (add-hook 'go-mode-hook 'go-eldoc-setup)
 
 (add-hook 'go-mode-hook
@@ -15,6 +16,5 @@
   (interactive)
   (compile (concat "go run " (buffer-file-name))))
 
-;; (add-hook 'before-save-hook 'gofmt-before-save)
 
 (provide 'setup-go-mode)
