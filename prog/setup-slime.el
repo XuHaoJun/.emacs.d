@@ -1,7 +1,6 @@
-(require 'slime)
+(require 'slime-autoloads)
 (setq inferior-lisp-program "/usr/bin/sbcl")
-(slime-setup)
-(require 'slime-js)
+(setq slime-contribs '(slime-fancy))
 (require 'ac-slime)
 (add-hook 'slime-mode-hook 'set-up-slime-ac)
 (add-hook 'slime-repl-mode-hook 'set-up-slime-ac)
@@ -37,9 +36,7 @@
 ;;                     (require 'setup-slime-js))))
 ;;
 
-(require 'slime)
 (require 'slime-js)
-(require 'coffee-mode)
 ;; (require 'haml-coffee-mode)
 
 (setq slime-js-target-url "http://localhost:9292")
