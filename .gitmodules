@@ -10,3 +10,6 @@
 [submodule "site-lisp/ac-coffee"]
 	path = site-lisp/ac-coffee
 	url = https://github.com/akfish/ac-coffee.git
+[submodule "site-lisp/ac-inf-mongo"]
+	path = site-lisp/ac-inf-mongo
+	url = https://github.com/XuHaoJun/ac-inf-mongo
