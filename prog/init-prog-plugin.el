@@ -22,6 +22,7 @@
 (require 'setup-git)
 (require 'setup-auto-indentation)
 (require 'setup-projectile)
+(require 'setup-inf-mongo)
 ;; (require 'setup-smart-operator)
 ;; (require 'setup-ecb)
 
