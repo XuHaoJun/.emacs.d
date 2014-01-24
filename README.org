@@ -1,0 +1,26 @@
+#+TITLE: dotemacs
+#+Options: num:nil
+#+STARTUP: content
+* Installation
+#+BEGIN_SRC sh
+  git clone https://github.com/XuHaoJun/emacs.d
+  mv .emacs.d .emacs.d.bak # backup your .emacs.d if has it.
+  mv emacs.d .emacs.d
+  cd .emacs.d
+  git submodule init && git submodule update
+  emacs # first run will download lastest version packages.
+#+END_SRC
+
+* Upgrade
+Upgrade dotemacs.
+on shell:
+#+BEGIN_SRC sh
+  git pull
+#+END_SRC
+Upgrade emacs packages.
+on emacs:
+=M-x= list-packages
+
+* Quick start
+
+comming soon ....
