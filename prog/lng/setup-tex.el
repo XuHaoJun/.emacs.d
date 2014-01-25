@@ -25,4 +25,17 @@
 (add-hook 'LaTeX-mode-hook 'TeX-source-correlate-mode)
 (add-hook 'LaTeX-mode-hook 'TeX-PDF-mode)
 
+(require 'ac-math)
+(eval-after-load 'auto-complete
+  '(add-to-list 'ac-modes 'latex-mode))
+
+(defun ac-latex-mode-setup ()
+  (setq ac-sources
+        (append '(ac-source-math-unicode ac-source-math-latex ac-source-latex-commands)
+                ac-sources)))
+
+(add-hook 'LaTeX-mode-hook 'ac-latex-mode-setup)
+
+(add-hook 'LaTeX-mode-hook 'smartparens-mode)
+
 (provide 'setup-tex)
