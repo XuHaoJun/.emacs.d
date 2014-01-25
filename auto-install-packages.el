@@ -25,7 +25,7 @@
              rainbow-delimiters rainbow-mode ruby-electric ruby-block robe rinari
              window-numbering
              savekill session shell-pop slime smex smartparens smart-operator
-             solarized-theme surround switch-window scss-mode slime-js
+             solarized-theme surround scss-mode slime-js
              tronesque-theme
              undo-tree
              visual-regexp

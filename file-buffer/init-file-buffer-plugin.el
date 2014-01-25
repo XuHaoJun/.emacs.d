@@ -7,6 +7,4 @@
 (require 'setup-openwith)
 (require 'setup-popwin)
 
-(require 'switch-window)
-
 (provide 'init-file-buffer-plugin)
