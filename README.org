@@ -4,23 +4,111 @@
 * Installation
 #+BEGIN_SRC sh
   git clone https://github.com/XuHaoJun/emacs.d
-  mv .emacs.d .emacs.d.bak # backup your .emacs.d if has it.
+  mv .emacs.d .emacs.d.bak # backup your .emacs.d if exist.
   mv emacs.d .emacs.d
   cd .emacs.d
   git submodule init && git submodule update
-  emacs # first run will download lastest version packages.
+  emacs # first time run will download lastest version packages.
 #+END_SRC
 
-* Upgrade
-Upgrade dotemacs.
-on shell:
+* Updates
 #+BEGIN_SRC sh
-  git pull
+    git pull
 #+END_SRC
-Upgrade emacs packages.
-on emacs:
-=M-x= list-packages
+=M-x list-packages=, type =U= then =x=
 
-* Quick start
+* Quick Start
+- Use evil-mode by default that provides Vim features.
+- Frequently use key-bindings.
+  | Key | Description                   |
+  |-----+-------------------------------|
+  | ,,  | M-x                           |
+  | ,b  | switch buffer                 |
+  | ,B  | list buffers                  |
+  | ,f  | find file                     |
+  | ,s  | save buffer to file           |
+  | ,k  | kill buffer                   |
+  | ,g  | show git status               |
+  | ,pp | find file in project(git)     |
+  | ,pb | switch buffer in project      |
+  | ,pg | grep in project files         |
+  | F9  | open and toggle a term        |
+  | ZZ  | save and quit emacs           |
 
-comming soon ....
+* Editing
+coming soon...
+
+* About file or buffer
+coming soon...
+
+* Programming
+** General
+- Auto Complection
+  - =Tab= for auto complete, =C-n= next candicate, =C-p= previous.
+- Syntax Checking:
+  - =M-x flycheck-mode= for syntax check.
+  - =M-x helm-flycheck= for navigation.
+- =C-c i= find symbol on current buffer.
+
+** C/C++
+*** Auto Complection
+- Requirement: clang (external command)
+- Useage: Enable by default.
+*** Syntax Checking
+coming soon...
+*** Navagation
+- Requirement: global (external command)
+- Useage: =M-x helm-gtags=
+
+** Go
+*** Auto Complection
+- Requirement: gocode (external command)
+- Useage: Enable by default.
+*** Syntax Checking
+coming soon...
+*** Navagation
+- Requirement: godef (external command)
+- Useage: =gd=
+
+** Ruby
+*** Auto Complection
+- Requirement: irb (external command)
+- Useage: =M-x= =inf-ruby= or =rinari-console= for rails. =M-x robe-on=.
+*** Syntax Checking
+- Requirement: rubocop (ruby gem)
+*** Interpreter
+- Requirement: irb (external command)
+- Usage: =M-x inf-ruby=
+*** Navagation
+coming soon...
+
+** Python
+*** Auto Complection
+- Requirement: (jedi epc) (python module)
+- Useage: Enable by default.
+*** Syntax Checking
+- Requirement: flake8 (python module)
+
+** Javascript
+
+** Coffeescript
+
+** Web
+html, css, scss
+
+** Scheme
+
+** Haskell
+
+** Mongo
+*** Interpreter
+- Usage: =M-x inf-mongo=
+
+* Misc
+| app         | emacs M-x            |
+|-------------+----------------------|
+| Irc         | erc                  |
+| Terminal    | term                 |
+| Web Browser | w3m                  |
+| Dict        | kid-star-dict        |
+| Rss Reader  | newsticker-show-news |
