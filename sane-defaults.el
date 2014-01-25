@@ -18,8 +18,12 @@
 (setq kill-ring-max 300)
 
 ;;Use the awesome conkeror to open url's
-(setq browse-url-browser-function (quote browse-url-generic))
-(setq browse-url-generic-program "firefox")
+(if (and (window-system)
+         (executable-find "firefox"))
+    (progn
+      (setq browse-url-browser-function (quote browse-url-generic))
+      (setq browse-url-generic-program "firefox"))
+  (setq browse-url-browser-function 'w3m-browse-url))
 
 ;;Midle mouse insert X selection by point position.
 (setq mouse-yank-at-point t)
