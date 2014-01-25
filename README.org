@@ -57,6 +57,7 @@ coming soon...
 *** Syntax Checking
 coming soon...
 *** Navagation
+May be use [[https://github.com/Andersbakken/rtags][rtags]] for code navagation in the future.
 - Requirement: global (external command)
 - Useage: =M-x helm-gtags=
 
@@ -88,6 +89,8 @@ coming soon...
 - Useage: Enable by default.
 *** Syntax Checking
 - Requirement: flake8 (python module)
+*** Interpreter
+- Usage: =M-x python-shell-switch-to-buffer=
 
 ** Javascript
 
@@ -99,6 +102,8 @@ html, css, scss
 ** Scheme
 
 ** Haskell
+
+** Tex
 
 ** Mongo
 *** Interpreter
