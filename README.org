@@ -1,6 +1,7 @@
 #+TITLE: dotemacs
 #+Options: num:nil
 #+STARTUP: content
+
 * Installation
 #+BEGIN_SRC sh
   git clone https://github.com/XuHaoJun/emacs.d
@@ -20,22 +21,27 @@
 * Quick Start
 - Use evil-mode by default that provides Vim features.
 - Frequently use key-bindings.
-  | Key | Description                   |
-  |-----+-------------------------------|
-  | ,,  | M-x                           |
-  | ,b  | switch buffer                 |
-  | ,B  | list buffers                  |
-  | ,f  | find file                     |
-  | ,s  | save buffer to file           |
-  | ,k  | kill buffer                   |
-  | ,g  | show git status               |
-  | ,pp | find file in project(git)     |
-  | ,pb | switch buffer in project      |
-  | ,pg | grep in project files         |
-  | F9  | open and toggle a term        |
-  | ZZ  | save and quit emacs           |
+  | Key | Description                |
+  |-----+----------------------------|
+  | ,,  | M-x                        |
+  | ,b  | switch buffer              |
+  | ,B  | list buffers               |
+  | ,f  | find file                  |
+  | ,s  | save buffer to file        |
+  | ,k  | kill buffer                |
+  | ,g  | show git status            |
+  | ,pp | find file in project(git)  |
+  | ,pb | switch buffer in project   |
+  | ,pg | grep in project files      |
+  | F9  | open and toggle a terminal |
+  | ZZ  | save and quit emacs        |
 
 * Editing
+- Evil
+- Ace-jump
+- Smartparens
+- Visual-regexp
+
 coming soon...
 
 * About file or buffer
@@ -43,33 +49,37 @@ coming soon...
 
 * Programming
 ** General
-- Auto Complection
+- Auto Complection:
+  - Most of language enable by default.
   - =Tab= for auto complete, =C-n= next candicate, =C-p= previous.
 - Syntax Checking:
-  - =M-x flycheck-mode= for syntax check.
-  - =M-x helm-flycheck= for navigation.
-- =C-c i= find symbol on current buffer.
+  - You need enable it by hand.
+  - =M-x flycheck-mode= to syntax check.
+  - =M-x helm-flycheck= to errors or warnnings navigation.
+- Navigation:
+  - Only few languages can navigate source.
+  - Type =gd= jump to definition when move cursor on a symbol.
+  - =C-c i= find symbol on current buffer.
+- Indention:
 
 ** C/C++
 *** Auto Complection
 - Requirement: clang (external command)
-- Useage: Enable by default.
 *** Syntax Checking
-coming soon...
-*** Navagation
-May be use [[https://github.com/Andersbakken/rtags][rtags]] for code navagation in the future.
+- Requirement: clang (external command)
+*** Navigation
+May be use [[https://github.com/Andersbakken/rtags][rtags]] for code Navigation in the future.
 - Requirement: global (external command)
 - Useage: =M-x helm-gtags=
 
 ** Go
 *** Auto Complection
 - Requirement: gocode (external command)
-- Useage: Enable by default.
 *** Syntax Checking
-coming soon...
-*** Navagation
-- Requirement: godef (external command)
-- Useage: =gd=
+- Requirement: go (external command)
+*** Navigation
+- jump to definition
+  - Requirement: godef (external command)
 
 ** Ruby
 *** Auto Complection
@@ -80,21 +90,34 @@ coming soon...
 *** Interpreter
 - Requirement: irb (external command)
 - Usage: =M-x inf-ruby=
-*** Navagation
-coming soon...
+*** Navigation
+- Jump to definition
+  - Requirement: irb (external command)
+  - Useage: =M-x= =inf-ruby= or =rinari-console= for rails. =M-x robe-on=.
 
 ** Python
 *** Auto Complection
 - Requirement: (jedi epc) (python module)
-- Useage: Enable by default.
 *** Syntax Checking
 - Requirement: flake8 (python module)
+*** Navigation
+- Jump to definition
+  - Requirement: (jedi epc) (python module)
 *** Interpreter
 - Usage: =M-x python-shell-switch-to-buffer=
 
 ** Javascript
+*** Navigation
+- Jump to definition
+  - Requirement: node (external command)
+  - Add external libraries for jump.
+  #+BEGIN_SRC emacs-lisp
+    (add-to-list 'ac-js2-external-libraries "path/to/lib/library.js")
+  #+END_SRC
 
 ** Coffeescript
+*** Auto Complection
+- Requirement: node (external command)
 
 ** Web
 html, css, scss
