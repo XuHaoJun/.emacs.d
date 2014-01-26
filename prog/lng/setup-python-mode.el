@@ -13,6 +13,10 @@
       (list "/usr/bin/python" jedi:server-script))
 (setq jedi:complete-on-dot t)
 (add-hook 'python-mode-hook 'jedi:setup)
+
+(add-hook 'python-mode-hook
+          (lambda ()
+            (define-key evil-motion-state-local-map "gd" 'jedi:goto-definition)))
 ;; (add-hook 'python-mode-hook 'jedi:ac-setup)
 
 ;; Syntax check by flycheck-mode depend extern flake8 or pylint.
