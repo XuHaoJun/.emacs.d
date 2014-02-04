@@ -95,4 +95,7 @@
                   (set-face-background 'mode-line (car color))
                   (set-face-foreground 'mode-line (cdr color)))))))
 
+(add-hook 'prog-mode-hook (lambda ()
+                            (define-key evil-motion-state-local-map "gs" 'ido-goto-symbol)))
+
 (provide 'setup-evil-basic)
