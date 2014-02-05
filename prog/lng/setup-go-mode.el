@@ -23,14 +23,22 @@
 
 (defun go-electrify-return-if-match (arg)
   (interactive "P")
-  (if (string= "{}"
-               (buffer-substring-no-properties (- (point) 1) (+ (point) 1)))
-      (progn
-        (newline-and-indent)
-        (previous-line)
-        (end-of-line)
-        (newline-and-indent))
-    (electrify-return-if-match arg)))
+  (let ((left-point
+         (if (<= (- 1 (point)) (point-min))
+             (point-min)
+           (- 1 (point))))
+        (right-point
+         (if (>= (+ 1 (point)) (point-max))
+             (point-max)
+           (+ 1 (point)))))
+    (if (string= "{}"
+                 (buffer-substring-no-properties left-point right-point))
+        (progn
+          (newline-and-indent)
+          (previous-line)
+          (end-of-line)
+          (newline-and-indent))
+      (electrify-return-if-match arg))))
 
 (add-hook 'go-mode-hook
           (lambda () (define-key evil-insert-state-local-map (kbd "RET") 'go-electrify-return-if-match)))
