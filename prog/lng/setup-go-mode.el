@@ -24,13 +24,14 @@
 (defun go-electrify-return-if-match (arg)
   (interactive "P")
   (let ((left-point
-         (if (<= (- 1 (point)) (point-min))
+         (if (<= (- (point) 1) (point-min))
              (point-min)
-           (- 1 (point))))
+           (- (point) 1)))
         (right-point
          (if (>= (+ 1 (point)) (point-max))
              (point-max)
            (+ 1 (point)))))
+    (message (buffer-substring-no-properties left-point right-point))
     (if (string= "{}"
                  (buffer-substring-no-properties left-point right-point))
         (progn
