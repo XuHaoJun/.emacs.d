@@ -16,7 +16,7 @@
              helm-projectile helm-css-scss helm-flycheck helm-open-github helm-swoop
              htmlize haskell-mode
              ibuffer-vc ido-sort-mtime ido-ubiquitous ido-yes-or-no
-             ido-vertical-mode iedit inf-ruby inf-mongo
+             ido-vertical-mode iedit inf-ruby inf-mongo ipretty
              jedi js2-mode
              magit multi-term
              nlinum

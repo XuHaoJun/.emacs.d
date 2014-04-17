@@ -11,5 +11,6 @@
 (require 'setup-coffee-mode)
 (require 'setup-js2-mode)
 (require 'setup-go-mode)
+(require 'setup-elisp)
 
 (provide 'setup-lng-init)
