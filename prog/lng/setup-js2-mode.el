@@ -4,7 +4,8 @@
 
 (add-hook 'js2-mode-hook (lambda ()
                            (slime-js-minor-mode 1)
-                           (ac-js2-mode 1)))
+                           (ac-js2-mode 1)
+                           (rainbow-delimiters-mode 1)))
 
 ;; To add completions for external libraries add something like this:
 ;;
