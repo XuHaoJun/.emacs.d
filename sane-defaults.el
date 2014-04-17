@@ -182,4 +182,6 @@
 ;;     (dotimes (i 10)
 ;;       (when (= p (point)) ad-do-it))))
 
+(setq make-pointer-invisible t)
+
 (provide 'sane-defaults)
