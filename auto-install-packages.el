@@ -14,7 +14,7 @@
              go-mode go-eldoc go-autocomplete go-snippets
              helm helm-ack helm-ag helm-c-moccur helm-gtags helm-flymake helm-rails
              helm-projectile helm-css-scss helm-flycheck helm-open-github helm-swoop
-             htmlize haskell-mode
+             htmlize haskell-mode highlight-symbol
              ibuffer-vc ido-sort-mtime ido-ubiquitous ido-yes-or-no
              ido-vertical-mode iedit inf-ruby inf-mongo ipretty
              jedi js2-mode
