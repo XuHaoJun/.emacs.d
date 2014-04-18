@@ -184,4 +184,6 @@
 
 (setq make-pointer-invisible t)
 
+(put 'narrow-to-region 'disabled nil)
+
 (provide 'sane-defaults)
