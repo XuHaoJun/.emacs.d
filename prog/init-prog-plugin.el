@@ -1,8 +1,8 @@
 (add-to-list 'load-path (concat user-emacs-directory "prog/lng"))
 (require 'setup-lng-init)
 
-(add-to-list 'load-path (concat user-emacs-directory "prog/android"))
-(require 'setup-android-init)
+;; (add-to-list 'load-path (concat user-emacs-directory "prog/android"))
+;; (require 'setup-android-init)
 
 (add-to-list 'load-path (concat user-emacs-directory "prog/auto-complete"))
 (require 'setup-auto-complete-init)
