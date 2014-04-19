@@ -2,9 +2,8 @@
 
 (require 'setup-auto-complete-basic)
 
-;; (require 'setup-auto-complete-clang)
-(when (executable-find "clang")
-  (require 'setup-auto-complete-clang-async))
+;; (when (executable-find "clang")
+;;   (require 'setup-auto-complete-clang-async))
 
 (eval-after-load 'ielm '(require 'setup-auto-complete-ielm))
 
