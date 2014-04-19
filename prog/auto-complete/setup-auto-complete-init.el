@@ -3,7 +3,7 @@
 ;; (when (executable-find "clang")
 ;;   (require 'setup-auto-complete-clang-async))
 
-;; (require 'setup-auto-complete-clang)
+(require 'setup-auto-complete-clang)
 
 (eval-after-load 'ielm '(require 'setup-auto-complete-ielm))
 
