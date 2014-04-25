@@ -12,5 +12,6 @@
 (require 'setup-js2-mode)
 (require 'setup-go-mode)
 (require 'setup-elisp)
+(require 'setup-clojure)
 
 (provide 'setup-lng-init)
