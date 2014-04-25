@@ -2,9 +2,9 @@
 
 (global-evil-leader-mode)
 
-(evil-leader/set-leader ",")
+(evil-leader/set-leader ";")
 (evil-leader/set-key
-  ","  'smex
+  ";"  'smex
   "#"  'wg/ido-erc-buffer
   "%"  'wg/ido-term-buffer
   "ww" 'wg/ido-for-all-mode
@@ -42,6 +42,7 @@
   "ni" 'iedit-mode
   "nd" 'iedit-dwim
   "nw" 'widen
+  "o"  'other-window
   "pp" 'projectile-find-file
   "ph" 'helm-projectile
   "pg" 'projectile-ack
