@@ -1,26 +1,35 @@
+;; require package: (fullframe)
+
 (require 'magit)
-(require 'git-gutter-fringe)
 (require 'git-blame)
 (require 'git-commit-mode)
 (require 'gitignore-mode)
 (require 'gitconfig-mode)
-(require 'yagist)
 (require 'github-browse-file)
 
-(defadvice magit-status (around magit-fullscreen activate)
-  (window-configuration-to-register :magit-fullscreen)
-  ad-do-it
-  (delete-other-windows))
+;; magit setting from purcell's .emacs
+;; https://github.com/purcell/emacs.d
 
-(defun magit-quit-session ()
-    "Restores the previous window configuration and kills the magit buffer"
-      (interactive)
-        (kill-buffer)
-          (jump-to-register :magit-fullscreen))
+(defmacro after-load (feature &rest body)
+    "After FEATURE is loaded, evaluate BODY."
+      (declare (indent defun))
+        `(eval-after-load ,feature
+                               '(progn ,@body)))
+(setq-default
+ magit-save-some-buffers nil
+ magit-process-popup-time 10
+ magit-diff-refine-hunk t
+ magit-completing-read-function 'magit-ido-completing-read)
 
-(define-key magit-status-mode-map (kbd "q") 'magit-quit-session)
+(after-load 'magit
+            (fullframe magit-status magit-mode-quit-window))
 
-(eval-after-load 'git-gutter
-  '(require 'git-gutter-fringe))
+;;; When we start working on git-backed files, use git-wip if available
+(after-load 'magit
+            (global-magit-wip-save-mode)
+            (diminish 'magit-wip-save-mode))
+
+(after-load 'magit
+              (diminish 'magit-auto-revert-mode))
 
 (provide 'setup-git)
