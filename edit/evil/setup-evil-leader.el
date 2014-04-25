@@ -41,7 +41,7 @@
   "np" 'narrow-to-page
   "ni" 'iedit-mode
   "nd" 'iedit-dwim
-  "nq" 'widen
+  "nw" 'widen
   "pp" 'projectile-find-file
   "ph" 'helm-projectile
   "pg" 'projectile-ack
