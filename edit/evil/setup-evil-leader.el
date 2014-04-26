@@ -33,6 +33,7 @@
   "hm" 'helm-M-x
   "hs" 'helm-swoop
   "i"  'indent-on-page
+  "I"  'indent-on-buffer
   "G"  'magit-log
   "k"  'kill-buffer
   "K"  'kill-buffer-and-window
@@ -86,10 +87,10 @@
   "md" 'robe-doc)
 
 (evil-leader/set-key-for-modes
-  '(emacs-lisp-mode lisp-interaction-mode)
-  "mm" 'eval-defun
-  "mb" 'eval-buffer
-  "ms" 'eval-last-sexp)
+ '(emacs-lisp-mode lisp-interaction-mode)
+ "mm" 'eval-defun
+ "mb" 'eval-buffer
+ "ms" 'eval-last-sexp)
 
 (evil-leader/set-key-for-mode 'haskell-mode
   "mm" 'inferior-haskell-load-file)

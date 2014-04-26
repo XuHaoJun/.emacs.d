@@ -5,4 +5,9 @@
   (indent-region (window-start) (window-end) nil)
   (untabify (point-min) (point-max)))
 
+(defun indent-on-buffer ()
+  (interactive)
+  (save-excursion
+    (indent-region (point-min) (point-max) nil)))
+
 (provide 'util-indent)
