@@ -127,7 +127,7 @@ html, css, scss
 ** Haskell
 ** Clojure
 *** Auto Complection
-- Requirement: [[https://github.com/technomancy/leiningen][leiningen]]
+- Requirement: [[https://github.com/technomancy/leiningen][leiningen]] [[https://github.com/clojure-emacs/cider][cider]]
 
 ** Tex
 
