@@ -1,4 +1,4 @@
-;; require package (clojure-mode cider ac-nrepl)
+;; require package (clojure-mode cider ac-nrepl kibit-mode)
 
 (setq cider-repl-use-clojure-font-lock t)
 

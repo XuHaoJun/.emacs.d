@@ -19,6 +19,7 @@
              ibuffer-vc ido-sort-mtime ido-ubiquitous ido-yes-or-no
              ido-vertical-mode iedit inf-ruby inf-mongo ipretty
              jedi js2-mode
+             kibit-mode
              magit multi-term
              nlinum
              openwith org org-octopress
