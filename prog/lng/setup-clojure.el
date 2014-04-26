@@ -1,7 +1,5 @@
 ;; require package (clojure-mode cider ac-nrepl)
 
-(add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
-
 (setq cider-repl-use-clojure-font-lock t)
 
 ;; (require 'ac-nrepl)
