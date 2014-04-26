@@ -83,14 +83,21 @@
   "mm" 'ruby-send-region-or-mystuff
   "ml" 'ruby-send-current-line
   "mb" 'ruby-send-buffer
-  "mi" 'inf-ruby
+  "mr" 'inf-ruby
   "md" 'robe-doc)
 
 (evil-leader/set-key-for-modes
  '(emacs-lisp-mode lisp-interaction-mode)
  "mm" 'eval-defun
  "mb" 'eval-buffer
- "ms" 'eval-last-sexp)
+ "ml" 'eval-last-sexp)
+
+(evil-leader/set-key-for-mode 'clojure-mode
+  "mr" 'cider-jack-in
+  "mm" 'cider-eval-defun-at-point
+  "mb" 'cider-eval-buffer
+  "ml" 'cider-eval-last-sexp
+  "mq" 'cider-quit)
 
 (evil-leader/set-key-for-mode 'haskell-mode
   "mm" 'inferior-haskell-load-file)

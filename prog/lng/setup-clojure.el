@@ -1,6 +1,7 @@
 ;; require package (clojure-mode cider ac-nrepl kibit-mode)
 
 (setq cider-repl-use-clojure-font-lock t)
+(add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
 
 ;; (require 'ac-nrepl)
 (add-hook 'cider-repl-mode-hook 'ac-nrepl-setup)
