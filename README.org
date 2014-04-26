@@ -53,33 +53,35 @@ coming soon...
   - Most of language enable by default.
   - =Tab= for auto complete, =C-n= next candicate, =C-p= previous.
 - Syntax Checking:
-  - You need enable it by hand.
+  - Disable by default.
   - =M-x flycheck-mode= to syntax check.
   - =M-x helm-flycheck= to errors or warnnings navigation.
 - Navigation:
   - Only few languages can navigate source.
   - Type =gd= jump to definition when move cursor on a symbol.
-  - =C-c i= find symbol on current buffer.
+  - =gs= find symbol on current buffer.
 - Indention:
+  - =;i= Indent current page.
+  - =;I= Indent whole buffer.
 
 ** C/C++
 *** Auto Complection
-- Requirement: clang (external command)
+- Requirement: [[http://clang.llvm.org/][clang]]
 *** Syntax Checking
-- Requirement: clang (external command)
+- Requirement: [[http://clang.llvm.org/][clang]]
 *** Navigation
 May be use [[https://github.com/Andersbakken/rtags][rtags]] for code Navigation in the future.
-- Requirement: global (external command)
+- Requirement: [[https://www.gnu.org/software/global/global.html][global]]
 - Useage: =M-x helm-gtags=
 
 ** Go
 *** Auto Complection
-- Requirement: gocode (external command)
+- Requirement: [[https://github.com/nsf/gocode][gocode]]
 *** Syntax Checking
-- Requirement: go (external command)
+- Requirement: [[http://golang.org/][go]]
 *** Navigation
 - jump to definition
-  - Requirement: godef (external command)
+  - Requirement: [[https://code.google.com/p/rog-go/source/browse/exp/cmd/godef/][godef]]
 
 ** Ruby
 *** Auto Complection
@@ -88,7 +90,7 @@ May be use [[https://github.com/Andersbakken/rtags][rtags]] for code Navigation 
 *** Syntax Checking
 - Requirement: rubocop (ruby gem)
 *** Interpreter
-- Requirement: irb (external command)
+- Requirement: [[https://www.ruby-lang.org/en/][irb]]
 - Usage: =M-x inf-ruby=
 *** Navigation
 - Jump to definition
@@ -97,19 +99,19 @@ May be use [[https://github.com/Andersbakken/rtags][rtags]] for code Navigation 
 
 ** Python
 *** Auto Complection
-- Requirement: (jedi epc) (python module)
+- Requirement: [[https://github.com/davidhalter/jedi][jedi]] [[https://github.com/tkf/python-epc][epc]]
 *** Syntax Checking
-- Requirement: flake8 (python module)
+- Requirement: [[https://pypi.python.org/pypi/flake8][flake8]]
 *** Navigation
 - Jump to definition
-  - Requirement: (jedi epc) (python module)
+- Requirement: [[https://github.com/davidhalter/jedi][jedi]] [[https://github.com/tkf/python-epc][epc]]
 *** Interpreter
 - Usage: =M-x python-shell-switch-to-buffer=
 
 ** Javascript
 *** Navigation
 - Jump to definition
-  - Requirement: node (external command)
+  - Requirement: [[http://nodejs.org/][node]]
   - Add external libraries for jump.
   #+BEGIN_SRC emacs-lisp
     (add-to-list 'ac-js2-external-libraries "path/to/lib/library.js")
@@ -117,7 +119,7 @@ May be use [[https://github.com/Andersbakken/rtags][rtags]] for code Navigation 
 
 ** Coffeescript
 *** Auto Complection
-- Requirement: node (external command)
+- Requirement: [[http://nodejs.org/][node]]
 
 ** Web
 html, css, scss
@@ -132,7 +134,9 @@ html, css, scss
 - Requirement: [[https://github.com/technomancy/leiningen][leiningen]] [[https://github.com/jonase/kibit][kibit]]
 *** Navigation
 - Requirement: [[https://github.com/technomancy/leiningen][leiningen]] [[https://github.com/clojure-emacs/cider][cider]]
-
+*** Interpreter
+- Usage: =M-x cider-jack-in=
+- Requirement: [[https://github.com/technomancy/leiningen][leiningen]] [[https://github.com/clojure-emacs/cider][cider]]
 ** Tex
 
 ** Mongo
