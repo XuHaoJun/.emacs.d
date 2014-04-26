@@ -20,9 +20,11 @@
 (dynamic-fonts-setup)
 
 
-(require 'window-numbering)
-(custom-set-faces '(window-numbering-face ((t (:weight bold)))))
-(window-numbering-mode 1)
+;; (require 'window-numbering)
+;; (custom-set-faces '(window-numbering-face ((t (:weight bold)))))
+;; (window-numbering-mode 1)
+;; require ace-window
+(setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
 
 (require 'rainbow-delimiters)
 (add-hook 'scheme-mode-hook 'rainbow-delimiters-mode)

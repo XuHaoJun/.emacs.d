@@ -44,6 +44,7 @@
   "nd" 'iedit-dwim
   "nw" 'widen
   "o"  'other-window
+  "O"  'ace-window
   "pp" 'projectile-find-file
   "ph" 'helm-projectile
   "pg" 'projectile-ack
