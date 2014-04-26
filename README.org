@@ -128,6 +128,10 @@ html, css, scss
 ** Clojure
 *** Auto Complection
 - Requirement: [[https://github.com/technomancy/leiningen][leiningen]] [[https://github.com/clojure-emacs/cider][cider]]
+*** Syntax Checking
+- Requirement: [[https://github.com/technomancy/leiningen][leiningen]] [[https://github.com/jonase/kibit][kibit]]
+*** Navigation
+- Requirement: [[https://github.com/technomancy/leiningen][leiningen]] [[https://github.com/clojure-emacs/cider][cider]]
 
 ** Tex
 
