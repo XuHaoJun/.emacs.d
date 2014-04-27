@@ -7,8 +7,8 @@
 (add-to-list 'load-path (concat user-emacs-directory "prog/auto-complete"))
 (require 'setup-auto-complete-init)
 
-(add-to-list 'load-path (concat user-emacs-directory "prog/flymake"))
-(require 'setup-flymake-init)
+;; (add-to-list 'load-path (concat user-emacs-directory "prog/flymake"))
+;; (require 'setup-flymake-init)
 
 (add-to-list 'load-path (concat user-emacs-directory "prog/yasnippet"))
 (require 'setup-yasnippet)

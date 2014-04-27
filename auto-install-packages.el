@@ -10,11 +10,11 @@
              dired+ dired-details dired-details+ dired-single dynamic-fonts diminish
              eldoc-extension emacs-eclim erc-hl-nicks expand-region emmet-mode
              evil evil-leader evil-numbers evil-matchit
-             flex-isearch flymake flymake-cursor fuzzy flycheck flx flx-ido fullframe
+             flex-isearch fuzzy flycheck flx flx-ido fullframe
              geiser git-blame git-commit-mode google-this
              gitconfig-mode github-browse-file gitignore-mode google-c-style
              go-mode go-eldoc go-autocomplete go-snippets
-             helm helm-ack helm-ag helm-c-moccur helm-gtags helm-flymake helm-rails
+             helm helm-ack helm-ag helm-c-moccur helm-gtags helm-rails
              helm-projectile helm-css-scss helm-flycheck helm-open-github helm-swoop
              htmlize haskell-mode highlight-symbol
              ibuffer-vc ido-sort-mtime ido-ubiquitous ido-yes-or-no
