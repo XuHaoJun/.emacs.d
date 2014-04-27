@@ -6,7 +6,7 @@
              ace-window auto-complete-clang
              browse-kill-ring
              c-eldoc company color-moccur css-eldoc coffee-mode command-log-mode
-             clojure-mode cider ac-nrepl
+             clojure-mode cider ac-cider-compliment
              dired+ dired-details dired-details+ dired-single dynamic-fonts diminish
              eldoc-extension emacs-eclim erc-hl-nicks expand-region emmet-mode
              evil evil-leader evil-numbers evil-matchit

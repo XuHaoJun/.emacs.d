@@ -129,7 +129,7 @@ html, css, scss
 ** Haskell
 ** Clojure
 *** Auto Complection
-- Requirement: [[https://github.com/technomancy/leiningen][leiningen]] [[https://github.com/clojure-emacs/cider][cider]]
+- Requirement: [[https://github.com/technomancy/leiningen][leiningen]] [[https://github.com/clojure-emacs/cider][cider]] [[https://github.com/alexander-yakushev/compliment][compliment]]
 *** Syntax Checking
 - Requirement: [[https://github.com/technomancy/leiningen][leiningen]] [[https://github.com/jonase/kibit][kibit]]
 *** Navigation
