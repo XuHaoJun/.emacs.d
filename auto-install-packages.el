@@ -3,7 +3,7 @@
 (defvar pkg-lst
   '(ac-slime ace-jump-mode ack-and-a-half ag auctex auto-complete
              autopair android-mode anzu ac-inf-ruby ac-js2 ac-emmet ac-math
-             ace-window
+             ace-window auto-complete-clang
              browse-kill-ring
              c-eldoc company color-moccur css-eldoc coffee-mode command-log-mode
              clojure-mode cider ac-nrepl

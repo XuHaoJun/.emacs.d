@@ -13,6 +13,3 @@
 [submodule "site-lisp/ac-inf-mongo"]
 	path = site-lisp/ac-inf-mongo
 	url = https://github.com/XuHaoJun/ac-inf-mongo
-[submodule "site-lisp/auto-complete-clang"]
-	path = site-lisp/auto-complete-clang
-	url = https://github.com/brianjcj/auto-complete-clang.git
