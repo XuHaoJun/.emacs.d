@@ -14,23 +14,24 @@
 (evil-set-initial-state 'dired-mode      'emacs)
 (evil-set-initial-state 'conf-space-mode 'emacs)
 
-(add-hook 'prog-mode-hook
-          (lambda ()
+(defun current-line-text ()
+  (progn
+    (let (p1 p2 myLine)
+      (setq p1 (line-beginning-position))
+      (setq p2 (line-end-position))
+      (setq myLine (buffer-substring-no-properties p1 p2)))))
 
-            (defun get-current-line-text ()
-              (progn
-                (let (p1 p2 myLine)
-                  (setq p1 (line-beginning-position))
-                  (setq p2 (line-end-position))
-                  (setq myLine (buffer-substring-no-properties p1 p2)))))
+(defun setup-evil-insert-and-indent ()
+    (eval-after-load 'evil-mode
+      (defadvice evil-insert (after evil-insert-state activate)
+        (when (derived-mode-p 'prog-mode 'clojure-parent-mode)
+          (when (and evil-auto-indent
+                     (or (string-match "^[[:space:]]+$" (current-line-text))
+                         (string-match "^$" (current-line-text))
+                         (string-match "" (current-line-text))))
+            (indent-according-to-mode))))))
 
-            (eval-after-load 'evil-mode
-              (defadvice evil-insert (after evil-insert-state activate)
-                (when (derived-mode-p 'prog-mode)
-                  (when (and evil-auto-indent
-                             (or (string-match "^[[:space:]]+$" (get-current-line-text))
-                                 (string-match "^$" (get-current-line-text))))
-                    (indent-according-to-mode)))))))
+(add-hook 'prog-mode-hook 'setup-evil-insert-and-indent)
 
 (defvar electrify-return-match
   "[\]}\)\"]<"
