@@ -5,7 +5,7 @@
              autopair android-mode anzu ac-inf-ruby ac-js2 ac-emmet ac-math
              ace-window auto-complete-clang
              browse-kill-ring
-             c-eldoc company color-moccur css-eldoc coffee-mode command-log-mode
+             c-eldoc company company-go color-moccur css-eldoc coffee-mode command-log-mode
              clojure-mode cider ac-cider-compliment
              dired+ dired-details dired-details+ dired-single dynamic-fonts diminish
              eldoc-extension emacs-eclim erc-hl-nicks expand-region emmet-mode
