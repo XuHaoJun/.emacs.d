@@ -1,4 +1,6 @@
 (require 'company)
+(global-company-mode)
+
 ;; The useful keybindins from https://github.com/tcrayford/emacs/blob/master/vendor/slime-company.el
 (define-key company-active-map (kbd "\C-n") 'company-select-next)
 (define-key company-active-map (kbd "\C-p") 'company-select-previous)
