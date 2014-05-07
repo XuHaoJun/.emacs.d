@@ -5,10 +5,9 @@
 (add-hook 'go-mode-hook (lambda ()
                           (set (make-local-variable 'company-backends) '(company-go))))
 
-(setq company-minimum-prefix-length 2)
 (setq company-tooltip-limit 20)                      ; bigger popup window
-(setq company-minimum-prefix-length 0)               ; autocomplete right after '.'
-(setq company-idle-delay .3)                         ; decrease delay before autocompletion popup shows
+(setq company-minimum-prefix-length 1)               ; autocomplete right after '.'
+(setq company-idle-delay 0.3)                         ; decrease delay before autocompletion popup shows
 (setq company-echo-delay 0)                          ; remove annoying blinking
 (setq company-begin-commands '(self-insert-command)) ; start autocompletion only after typing
 
