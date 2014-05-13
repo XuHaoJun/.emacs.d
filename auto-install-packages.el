@@ -23,7 +23,7 @@
              kibit-mode
              magit multi-term
              nlinum
-             openwith org org-octopress
+             openwith org org-octopress ox-reveal
              pkgbuild-mode pos-tip popwin projectile pangu-spacing
              rainbow-delimiters rainbow-mode ruby-electric ruby-block robe rinari
              window-numbering
