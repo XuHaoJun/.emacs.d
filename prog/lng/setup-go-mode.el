@@ -1,5 +1,8 @@
-(require 'go-autocomplete)
 (require 'go-mode-load)
+
+(require 'company-go)
+(eval-after-load 'company-mode
+  '(add-to-list 'company-backends 'company-go))
 
 ;; (add-hook 'before-save-hook 'gofmt-before-save)
 (add-hook 'go-mode-hook 'go-eldoc-setup)
