@@ -3,7 +3,7 @@
 (defvar pkg-lst
   '(ac-slime ace-jump-mode ack-and-a-half ag auctex auto-complete
              autopair android-mode anzu ac-inf-ruby ac-js2 ac-emmet ac-math
-             ace-window auto-complete-clang
+             ace-window auto-complete-clang anaconda-mode
              browse-kill-ring
              c-eldoc company company-go color-moccur css-eldoc coffee-mode command-log-mode
              clojure-mode cider ac-cider-compliment
@@ -13,13 +13,13 @@
              flex-isearch fuzzy flycheck flx flx-ido fullframe
              geiser git-blame git-commit-mode google-this
              gitconfig-mode github-browse-file gitignore-mode google-c-style
-             go-mode go-eldoc go-autocomplete go-snippets
+             go-mode go-eldoc go-snippets
              helm helm-ack helm-ag helm-c-moccur helm-gtags helm-rails
              helm-projectile helm-css-scss helm-flycheck helm-open-github helm-swoop
              htmlize haskell-mode highlight-symbol
              ibuffer-vc ido-sort-mtime ido-ubiquitous ido-yes-or-no
              ido-vertical-mode iedit inf-ruby inf-mongo ipretty
-             jedi js2-mode
+             js2-mode
              kibit-mode
              magit multi-term
              nlinum
