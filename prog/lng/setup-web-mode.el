@@ -25,6 +25,7 @@
             (ac-emmet-html-setup)))
 
 ;;Enable auto-complete-mode on web-mode
-(add-to-list 'ac-modes 'web-mode)
+(eval-after-load 'auto-complete
+                 '(add-to-list 'ac-modes 'web-mode))
 
 (provide 'setup-web-mode)
