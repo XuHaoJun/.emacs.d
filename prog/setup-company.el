@@ -1,9 +1,5 @@
 (require 'company)
-(require 'company-go)
 (global-company-mode)
-
-(add-hook 'go-mode-hook (lambda ()
-                          (set (make-local-variable 'company-backends) '(company-go))))
 
 (setq company-tooltip-limit 8)                      ; bigger popup window
 (setq company-minimum-prefix-length 1)               ; autocomplete right after '.'
