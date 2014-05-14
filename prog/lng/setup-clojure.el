@@ -28,14 +28,14 @@
 
 (defun clojure-mysetup ()
   (rainbow-delimiters-mode 1)
-  (smartparens-mode 1))
+  (smartparens-strict-mode 1))
 
 (add-hook 'clojure-mode-hook 'clojure-mysetup)
 
 
 (defun cider-repl-mysetup ()
   (rainbow-delimiters-mode 1)
-  (smartparens-mode 1)
+  (smartparens-strict-mode 1)
   (define-key evil-normal-state-local-map "gd" 'cider-jump)
   (define-key evil-normal-state-local-map "gD" 'cider-jump-back)
   (define-key evil-normal-state-local-map (kbd "RET") 'cider-repl-return))
