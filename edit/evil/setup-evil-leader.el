@@ -91,7 +91,8 @@
  '(emacs-lisp-mode lisp-interaction-mode)
  "mm" 'eval-defun
  "mb" 'eval-buffer
- "ml" 'eval-last-sexp)
+ "me" 'eval-last-sexp
+ "mp" 'eval-print-last-sexp)
 
 (evil-leader/set-key-for-mode 'clojure-mode
   "mr" 'cider-jack-in
