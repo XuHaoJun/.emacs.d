@@ -101,6 +101,11 @@
   "mr" 'run-skewer
   "mq" 'httpd-stop)
 
+(evil-leader/set-key-for-mode 'python-mode
+  "mm" 'python-shell-send-defun
+  "mb" 'python-shell-send-buffer
+  "mr" 'python-shell-switch-to-shell)
+
 (evil-leader/set-key-for-mode 'clojure-mode
   "mr" 'cider-jack-in
   "mm" 'cider-eval-defun-at-point

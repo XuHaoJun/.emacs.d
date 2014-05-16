@@ -6,9 +6,10 @@
 
 (defun only-use-anaconda ()
   (add-to-list 'company-backends 'company-anaconda)
-  (delete 'company-ropemacs company-backends))
+  (setq company-backends
+        (delete 'company-ropemacs company-backends)))
 
-(eval-after-load 'company-mode
+(eval-after-load 'company
   '(only-use-anaconda))
 
 ;; Syntax check by flycheck-mode depend extern flake8 or pylint.
