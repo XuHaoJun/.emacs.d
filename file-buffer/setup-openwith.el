@@ -10,12 +10,12 @@
                              "ogm" "ogg" "mkv" "ogv"))
                           "smplayer"
                           '(file)))
-                  (when (executable-find "feh")
-                    (list (openwith-make-extension-regexp
-                           '("xbm" "pbm" "pgm" "ppm" "pnm"
-                             "png" "gif" "bmp" "tif" "jpeg" "jpg"))
-                          "feh -FZ"
-                          '(file)))
+                  ;; (when (executable-find "feh")
+                  ;;   (list (openwith-make-extension-regexp
+                  ;;          '("xbm" "pbm" "pgm" "ppm" "pnm"
+                  ;;            "png" "gif" "bmp" "tif" "jpeg" "jpg"))
+                  ;;         "feh -FZ"
+                  ;;         '(file)))
                   (when (executable-find "libreoffice")
                     (list (openwith-make-extension-regexp
                            '("doc" "xls" "ppt" "odt" "ods" "odg" "odp"))

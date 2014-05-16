@@ -94,6 +94,13 @@
  "me" 'eval-last-sexp
  "mp" 'eval-print-last-sexp)
 
+(evil-leader/set-key-for-mode 'scheme-mode
+  "mm" 'geiser-eval-definition
+  "mb" 'geiser-eval-buffer
+  "me" 'geiser-eval-last-sexp
+  "mr" 'run-geiser
+  "mq" 'geiser-unload)
+
 (evil-leader/set-key-for-mode 'js2-mode
   "mm" 'skewer-eval-defun
   "mb" 'skewer-load-buffer
@@ -107,10 +114,10 @@
   "mr" 'python-shell-switch-to-shell)
 
 (evil-leader/set-key-for-mode 'clojure-mode
-  "mr" 'cider-jack-in
   "mm" 'cider-eval-defun-at-point
   "mb" 'cider-eval-buffer
   "me" 'cider-eval-last-sexp
+  "mr" 'cider-jack-in
   "mq" 'cider-quit)
 
 (evil-leader/set-key-for-mode 'haskell-mode
