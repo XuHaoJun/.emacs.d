@@ -94,11 +94,18 @@
  "me" 'eval-last-sexp
  "mp" 'eval-print-last-sexp)
 
+(evil-leader/set-key-for-mode 'js2-mode
+  "mm" 'skewer-eval-defun
+  "mb" 'skewer-load-buffer
+  "me" 'skewer-eval-last-expression
+  "mr" 'run-skewer
+  "mq" 'httpd-stop)
+
 (evil-leader/set-key-for-mode 'clojure-mode
   "mr" 'cider-jack-in
   "mm" 'cider-eval-defun-at-point
   "mb" 'cider-eval-buffer
-  "ml" 'cider-eval-last-sexp
+  "me" 'cider-eval-last-sexp
   "mq" 'cider-quit)
 
 (evil-leader/set-key-for-mode 'haskell-mode
