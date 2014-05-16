@@ -140,12 +140,10 @@ May be use [[https://github.com/Andersbakken/rtags][rtags]] for code Navigation 
 
 ** Scheme
 *** Auto Complection
-- Requirement: [[https://github.com/davidhalter/jedi][jedi]] [[https://github.com/tkf/python-epc][epc]]
-*** Syntax Checking
-- Requirement: [[https://pypi.python.org/pypi/flake8][flake8]]
+- Requirement: racket or guile
 *** Navigation
 - Jump to definition
-- Requirement: [[https://github.com/davidhalter/jedi][jedi]] [[https://github.com/tkf/python-epc][epc]]
+- Requirement: racket or guile
 *** Interpreter
 - Usage: =M-x run-geiser=
 ** Haskell
