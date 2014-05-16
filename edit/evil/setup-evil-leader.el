@@ -113,6 +113,14 @@
   "mb" 'python-shell-send-buffer
   "mr" 'python-shell-switch-to-shell)
 
+(evil-leader/set-key-for-mode 'lisp-mode
+  "mm" 'slime-eval-defun
+  "mb" 'slime-eval-buffer
+  "me" 'slime-eval-last-expression
+  "mr" 'slime
+  "mq" 'slime-quit-lisp
+  "md" 'common-lisp-online-doc)
+
 (evil-leader/set-key-for-mode 'clojure-mode
   "mm" 'cider-eval-defun-at-point
   "mb" 'cider-eval-buffer

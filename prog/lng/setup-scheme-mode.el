@@ -11,8 +11,7 @@
 (add-hook 'scheme-mode-hook (lambda ()
                               (if (fboundp 'auto-complete-mode)
                                   (auto-complete-mode -1))
-                              (define-key evil-motion-state-local-map "gd" 'geiser-edit-symbol-at-point)
-                              ))
+                              (define-key evil-motion-state-local-map "gd" 'geiser-edit-symbol-at-point)))
 
 (add-hook 'geiser-repl-mode-hook 'smartparens-strict-mode)
 
