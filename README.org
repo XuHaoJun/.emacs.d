@@ -65,12 +65,12 @@ coming soon...
   - =;I= Indent whole buffer.
 - Interpreter:
   - You can send code from your buffer to Interpreter.
-  - Support (=ruby= =python= =clojure= =javascript=)
+  - Support (=ruby= =python= =clojure= =javascript= =scheme=)
   - =mm= eval-defun
   - =mb= eval-buffer
   - =me= eval-last-exp
   - =mr= run-interpreter
-  - =mq= stop-interpreter
+  - =mq= quit-interpreter
 
 ** C/C++
 *** Auto Complection
@@ -138,11 +138,16 @@ May be use [[https://github.com/Andersbakken/rtags][rtags]] for code Navigation 
 *** Auto Complection
 - Requirement: [[http://nodejs.org/][node]]
 
-** Web
-html, css, scss
-
 ** Scheme
-
+*** Auto Complection
+- Requirement: [[https://github.com/davidhalter/jedi][jedi]] [[https://github.com/tkf/python-epc][epc]]
+*** Syntax Checking
+- Requirement: [[https://pypi.python.org/pypi/flake8][flake8]]
+*** Navigation
+- Jump to definition
+- Requirement: [[https://github.com/davidhalter/jedi][jedi]] [[https://github.com/tkf/python-epc][epc]]
+*** Interpreter
+- Usage: =M-x run-geiser=
 ** Haskell
 ** Clojure
 *** Auto Complection
@@ -159,6 +164,9 @@ html, css, scss
 ** Mongo
 *** Interpreter
 - Usage: =M-x inf-mongo=
+
+** Web
+html, css, scss
 
 * Misc
 | app         | emacs M-x            |
