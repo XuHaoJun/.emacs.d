@@ -63,6 +63,14 @@ coming soon...
 - Indention:
   - =;i= Indent current page.
   - =;I= Indent whole buffer.
+- Interpreter:
+  - You can send code from your buffer to Interpreter.
+  - Support (=ruby= =python= =clojure= =javascript=)
+  - =mm= eval-defun
+  - =mb= eval-buffer
+  - =me= eval-last-exp
+  - =mr= run-interpreter
+  - =mq= stop-interpreter
 
 ** C/C++
 *** Auto Complection
@@ -74,6 +82,7 @@ May be use [[https://github.com/Andersbakken/rtags][rtags]] for code Navigation 
 - Requirement: [[https://www.gnu.org/software/global/global.html][global]]
 - Useage: =M-x helm-gtags=
 
+
 ** Go
 *** Auto Complection
 - Requirement: [[https://github.com/nsf/gocode][gocode]]
@@ -82,6 +91,7 @@ May be use [[https://github.com/Andersbakken/rtags][rtags]] for code Navigation 
 *** Navigation
 - jump to definition
   - Requirement: [[https://code.google.com/p/rog-go/source/browse/exp/cmd/godef/][godef]]
+
 
 ** Ruby
 *** Auto Complection
@@ -97,6 +107,7 @@ May be use [[https://github.com/Andersbakken/rtags][rtags]] for code Navigation 
   - Requirement: irb (external command)
   - Useage: =M-x= =inf-ruby= or =rinari-console= for rails. =M-x robe-on=.
 
+
 ** Python
 *** Auto Complection
 - Requirement: [[https://github.com/davidhalter/jedi][jedi]] [[https://github.com/tkf/python-epc][epc]]
@@ -109,13 +120,19 @@ May be use [[https://github.com/Andersbakken/rtags][rtags]] for code Navigation 
 - Usage: =M-x python-shell-switch-to-buffer=
 
 ** Javascript
+*** Auto Complection
+- Requirement: a browser
+- Useage: =M-x run-skewer=
 *** Navigation
 - Jump to definition
-  - Requirement: [[http://nodejs.org/][node]]
+  - Requirement: a browser
   - Add external libraries for jump.
   #+BEGIN_SRC emacs-lisp
     (add-to-list 'ac-js2-external-libraries "path/to/lib/library.js")
   #+END_SRC
+*** Interpreter
+- Requirement: a browser
+- Useage: =M-x run-skewer=
 
 ** Coffeescript
 *** Auto Complection
