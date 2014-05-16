@@ -23,16 +23,16 @@
 - Frequently use key-bindings.
   | Key | Description                |
   |-----+----------------------------|
-  | ,,  | M-x                        |
-  | ,b  | switch buffer              |
-  | ,B  | list buffers               |
-  | ,f  | find file                  |
-  | ,s  | save buffer to file        |
-  | ,k  | kill buffer                |
-  | ,g  | show git status            |
-  | ,pp | find file in project(git)  |
-  | ,pb | switch buffer in project   |
-  | ,pg | grep in project files      |
+  | ;;  | M-x                        |
+  | ;b  | switch buffer              |
+  | ;B  | list buffers               |
+  | ;f  | find file                  |
+  | ;s  | save buffer to file        |
+  | ;k  | kill buffer                |
+  | ;g  | show git status            |
+  | ;pp | find file in project(git)  |
+  | ;pb | switch buffer in project   |
+  | ;pg | grep in project files      |
   | F9  | open and toggle a terminal |
   | ZZ  | save and quit emacs        |
 
