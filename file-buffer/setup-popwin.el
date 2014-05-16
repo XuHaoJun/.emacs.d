@@ -27,7 +27,13 @@
 ;; vc
 (push "*vc-diff*" popwin:special-display-config)
 (push "*vc-change-log*" popwin:special-display-config)
+
+;; helm
 (push '("helm" :regexp t :height 0.45) popwin:special-display-config)
+
+;; prodigy
+(push "*prodigy*"
+      popwin:special-display-config)
 
 ;; undo-tree
 (push '(" *undo-tree*" :width 0.3 :position right) popwin:special-display-config)

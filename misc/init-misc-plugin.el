@@ -10,5 +10,6 @@
 (require 'setup-w3m)
 (require 'setup-newsticker)
 (require 'setup-google-this)
+(require 'setup-prodigy)
 
 (provide 'init-misc-plugin)
