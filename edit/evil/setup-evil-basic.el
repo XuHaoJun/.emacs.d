@@ -1,5 +1,3 @@
-(require 'evil)
-
 (setq evil-default-cursor t)
 (setq evil-auto-indent t)
 (setq evil-find-skip-newlines t)
@@ -24,14 +22,12 @@
       (setq myLine (buffer-substring-no-properties p1 p2)))))
 
 (defun setup-evil-insert-and-indent ()
-    (eval-after-load 'evil-mode
-      (defadvice evil-insert (after evil-insert-state activate)
-        (when (derived-mode-p 'prog-mode 'clojure-parent-mode)
-          (when (and evil-auto-indent
-                     (or (string-match "^[[:space:]]+$" (current-line-text))
-                         (string-match "^$" (current-line-text))
-                         (string-match "" (current-line-text))))
-            (indent-according-to-mode))))))
+  (defadvice evil-insert (after evil-insert-state activate)
+    (when (derived-mode-p 'prog-mode 'clojure-parent-mode)
+      (when (and evil-auto-indent
+                 (or (string-match "^[[:space:]]+$" (current-line-text))
+                     (string-match "^$" (current-line-text))))
+        (indent-according-to-mode)))))
 
 (add-hook 'prog-mode-hook 'setup-evil-insert-and-indent)
 

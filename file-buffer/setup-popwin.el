@@ -3,6 +3,8 @@
 
 (push "*Backtrace*" popwin:special-display-config)
 
+(push "*quickrun*" popwin:special-display-config)
+
 ;; M-x anything
 (setq anything-samewindow nil)
 (push '("*anything*" :height 20) popwin:special-display-config)
