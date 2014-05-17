@@ -7,6 +7,8 @@
 (setq evil-cross-lines t)
 (setq evil-mode-line-format nil)
 (setq evil-want-visual-char-semi-exclusive t)
+(setq evil-regexp-search t)
+(setq evil-want-C-i-jump t)
 
 (evil-set-initial-state 'term-mode       'emacs)
 (evil-set-initial-state 'ansi-term       'emacs)
