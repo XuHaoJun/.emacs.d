@@ -62,6 +62,12 @@
   `(dolist (my-mode ,mode)
      (evil-leader/set-key-for-mode my-mode ,key ,def ,@bindings)))
 
+(when (executable-find "clang-format")
+  (evil-leader/set-key-for-modes
+   '(c-mode c++-mode)
+   "i" 'clang-format-region
+   "I" 'clang-format-region))
+
 (evil-leader/set-key-for-modes
  '(c-mode c++-mode)
  "t" 'gtags-find-tag

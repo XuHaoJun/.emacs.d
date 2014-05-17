@@ -6,6 +6,7 @@
              ace-window auto-complete-clang anaconda-mode
              browse-kill-ring
              c-eldoc company company-go color-moccur css-eldoc coffee-mode command-log-mode
+             clang-format
              clojure-mode cider ac-cider-compliment
              dired+ dired-details dired-details+ dired-single dynamic-fonts diminish
              eldoc-extension emacs-eclim erc-hl-nicks expand-region emmet-mode
