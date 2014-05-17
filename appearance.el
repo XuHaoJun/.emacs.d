@@ -1,8 +1,7 @@
 ;; Theme
 (if window-system
-    (require 'solarized-dark-theme)
-  (require 'tronesque-theme))
-
+    (load-theme 'solarized-dark t)
+  (load-theme 'tronesque t))
 
 ;;blink disable
 (blink-cursor-mode (- (*) (*) (*)))
