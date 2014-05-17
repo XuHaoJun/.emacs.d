@@ -6,7 +6,6 @@
 (require 'setup-ack-and-a-half)
 (require 'setup-ag)
 (require 'setup-autopair)
-(require 'setup-browse-kill-ring)
 (require 'setup-wgrep)
 (require 'setup-flex-isearch)
 (require 'setup-iedit)

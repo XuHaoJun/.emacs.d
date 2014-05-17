@@ -4,7 +4,6 @@
   '(ac-slime ace-jump-mode ack-and-a-half ag auctex auto-complete
              autopair android-mode anzu ac-inf-ruby ac-js2 ac-emmet ac-math
              ace-window auto-complete-clang anaconda-mode
-             browse-kill-ring
              c-eldoc company company-go color-moccur css-eldoc coffee-mode command-log-mode
              clang-format
              clojure-mode cider ac-cider-compliment
@@ -28,7 +27,7 @@
              pkgbuild-mode pos-tip popwin projectile pangu-spacing prodigy
              rainbow-delimiters rainbow-mode ruby-electric ruby-block robe rinari
              window-numbering
-             savekill session shell-pop slime smex smartparens smart-operator
+             session shell-pop slime smex smartparens smart-operator
              solarized-theme surround scss-mode slime-company
              tronesque-theme
              undo-tree

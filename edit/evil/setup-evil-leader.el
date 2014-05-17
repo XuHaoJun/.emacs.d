@@ -32,6 +32,7 @@
   "hf" 'helm-find-files
   "hm" 'helm-M-x
   "hs" 'helm-swoop
+  "hk" 'helm-show-kill-ring
   "i"  'indent-on-page
   "I"  'indent-on-buffer
   "G"  'magit-log
