@@ -25,6 +25,7 @@
              nlinum
              openwith org org-octopress ox-reveal
              pkgbuild-mode pos-tip popwin projectile pangu-spacing prodigy
+             quickrun
              rainbow-delimiters rainbow-mode ruby-electric ruby-block robe rinari
              window-numbering
              session shell-pop slime smex smartparens smart-operator
