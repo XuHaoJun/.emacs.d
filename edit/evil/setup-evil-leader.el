@@ -1,5 +1,7 @@
 (require 'evil-leader)
 
+(setq evil-leader/no-prefix-mode-rx '("magit-.*-mode" "gnus-.*-mode" "*Packages*"))
+
 (global-evil-leader-mode)
 
 (evil-leader/set-leader ";")
@@ -20,6 +22,7 @@
   "2"  'split-window-below
   "3"  'split-window-right
   "b"  'ido-switch-buffer
+  "pB" 'projectile-ibuffer
   "B"  'ibuffer
   "c"  'recompile
   "C"  'compile
@@ -52,7 +55,6 @@
   "ph" 'helm-projectile
   "pg" 'projectile-ag
   "pb" 'projectile-switch-to-buffer
-  "pB" 'projectile-ibuffer
   "po" 'projectile-switch-project
   "pO" 'projectile-multi-occur
   "pr" 'projectile-replace
