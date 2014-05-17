@@ -4,7 +4,8 @@
 (eval-after-load 'company
   '(add-to-list 'company-backends 'company-go))
 
-;; (add-hook 'before-save-hook 'gofmt-before-save)
+(when (executable-find "gofmt")
+  (add-hook 'before-save-hook 'gofmt-before-save))
 (add-hook 'go-mode-hook 'go-eldoc-setup)
 
 (add-hook 'go-mode-hook

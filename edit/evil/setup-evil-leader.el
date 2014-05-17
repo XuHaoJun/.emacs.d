@@ -142,4 +142,9 @@
   "mgi" 'go-goto-imports
   "mia" 'go-import-add)
 
+(when (executable-find "gofmt")
+  (evil-leader/set-key-for-mode 'go-mode
+    "i" 'gofmt
+    "I" 'gofmt))
+
 (provide 'setup-evil-leader)
