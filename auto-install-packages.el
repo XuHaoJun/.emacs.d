@@ -13,7 +13,7 @@
              flex-isearch fuzzy flycheck flx flx-ido fullframe
              geiser git-blame git-commit-mode google-this
              gitconfig-mode github-browse-file gitignore-mode google-c-style
-             go-mode go-eldoc go-snippets
+             go-mode go-eldoc go-snippets ggtags
              helm helm-ack helm-ag helm-c-moccur helm-gtags helm-rails
              helm-projectile helm-css-scss helm-flycheck helm-open-github helm-swoop
              htmlize haskell-mode highlight-symbol
