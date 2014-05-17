@@ -12,7 +12,7 @@
 
 
 ;; Use ido everywhere
-(ido-everywhere t)
+(setq ido-everywhere t)
 (ido-ubiquitous-mode t)
 (require 'setup-ido-ubiquitous-basic)
 

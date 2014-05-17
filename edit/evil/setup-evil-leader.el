@@ -5,6 +5,7 @@
 (evil-leader/set-leader ";")
 (evil-leader/set-key
   ";"  'smex
+  "xq" 'read-only-mode
   "#"  'wg/ido-erc-buffer
   "%"  'wg/ido-term-buffer
   "ww" 'wg/ido-for-all-mode
@@ -33,6 +34,7 @@
   "hm" 'helm-M-x
   "hs" 'helm-swoop
   "hk" 'helm-show-kill-ring
+  "hc" 'helm-flycheck
   "i"  'indent-on-page
   "I"  'indent-on-buffer
   "G"  'magit-log
@@ -50,14 +52,17 @@
   "ph" 'helm-projectile
   "pg" 'projectile-ag
   "pb" 'projectile-switch-to-buffer
+  "pB" 'projectile-ibuffer
   "po" 'projectile-switch-project
-  "pm" 'projectile-multi-occur
+  "pO" 'projectile-multi-occur
   "pr" 'projectile-replace
   "pi" 'projectile-invalidate-cache
+  "ps" 'projectile-save-project-buffers
   "r"  'vr/replace
   "R"  'vr/query-replace
   "s"  'save-buffer
-  "S"  'save-some-buffers)
+  "S"  'save-some-buffers
+  "mc" 'flycheck-mode)
 
 (defmacro evil-leader/set-key-for-modes (mode key def &rest bindings)
   `(dolist (my-mode ,mode)
@@ -71,8 +76,8 @@
 
 (evil-leader/set-key-for-modes
  '(c-mode c++-mode)
- "t" 'gtags-find-tag
- "T" 'gtags-find-symbol)
+ "mt" 'gtags-find-tag
+ "ms" 'gtags-find-symbol)
 
 (evil-leader/set-key-for-modes
  '(ruby-mode web-mode)
