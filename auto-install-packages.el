@@ -7,7 +7,7 @@
              c-eldoc company company-go color-moccur css-eldoc coffee-mode command-log-mode
              clang-format
              clojure-mode cider ac-cider-compliment
-             dired+ dired-details dired-details+ dired-single dynamic-fonts diminish
+             dired-subtree dired-details dired-details+ dired-single dynamic-fonts diminish
              eldoc-extension emacs-eclim erc-hl-nicks expand-region emmet-mode
              evil evil-leader evil-numbers evil-matchit
              flex-isearch fuzzy flycheck flx flx-ido fullframe
