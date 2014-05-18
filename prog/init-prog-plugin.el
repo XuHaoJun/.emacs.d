@@ -13,7 +13,6 @@
 (require 'setup-prog-utils)
 (require 'setup-company)
 (require 'setup-compile)
-(require 'setup-slime)
 (require 'setup-eldoc)
 (require 'setup-c-eldoc)
 (require 'setup-git)
