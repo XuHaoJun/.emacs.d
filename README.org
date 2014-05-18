@@ -45,6 +45,9 @@
 coming soon...
 
 * About file or buffer
+- Ido
+- Projectile
+- Dired
 coming soon...
 
 * Programming
@@ -54,12 +57,13 @@ coming soon...
   - =Tab= for auto complete, =C-n= next candicate, =C-p= previous.
 - Syntax Checking:
   - Disable by default.
-  - =M-x flycheck-mode= to syntax check.
+  - =M-x flycheck-mode= to start syntax check.
   - =M-x helm-flycheck= to errors or warnnings navigation.
 - Navigation:
   - Only few languages can navigate source.
   - Type =gd= jump to definition when move cursor on a symbol.
   - =gs= find symbol on current buffer.
+  - =;t= will show sr-speedbar, it like vim's taglist.
 - Indention:
   - =;i= Indent current page.
   - =;I= Indent whole buffer.
@@ -95,8 +99,8 @@ May be use [[https://github.com/Andersbakken/rtags][rtags]] for code Navigation 
 
 ** Ruby
 *** Auto Complection
-- Requirement: irb (external command)
-- Useage: =M-x= =inf-ruby= or =rinari-console= for rails. =M-x robe-on=.
+- Requirement: [[https://www.ruby-lang.org/en/][irb]]
+- Useage: =M-x= =inf-ruby= or =rinari-console= for rails then =M-x robe-on=.
 *** Syntax Checking
 - Requirement: rubocop (ruby gem)
 *** Interpreter
@@ -104,7 +108,7 @@ May be use [[https://github.com/Andersbakken/rtags][rtags]] for code Navigation 
 - Usage: =M-x inf-ruby=
 *** Navigation
 - Jump to definition
-  - Requirement: irb (external command)
+  - Requirement: [[https://www.ruby-lang.org/en/][irb]]
   - Useage: =M-x= =inf-ruby= or =rinari-console= for rails. =M-x robe-on=.
 
 
