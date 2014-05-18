@@ -2,7 +2,7 @@
 (require 'setup-term-init)
 
 (add-to-list 'load-path (concat user-emacs-directory "misc/org-mode"))
-(require 'setup-org)
+(require 'setup-org-init)
 
 (require 'setup-shell-pop)
 (require 'setup-erc)
