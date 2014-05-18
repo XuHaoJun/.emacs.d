@@ -1,12 +1,15 @@
 (require 'evil-leader)
 
-(setq evil-leader/no-prefix-mode-rx '("magit-.*-mode" "gnus-.*-mode" "*Packages*"))
+(setq evil-leader/no-prefix-mode-rx
+      '("magit-.*-mode" "gnus-.*-mode" "package-menu-mode"
+        "dired-mode"))
 
 (global-evil-leader-mode)
 
 (evil-leader/set-leader ";")
 (evil-leader/set-key
   ";"  'smex
+  "!"  'shell-command
   "xq" 'read-only-mode
   "#"  'wg/ido-erc-buffer
   "%"  'wg/ido-term-buffer
@@ -154,5 +157,12 @@
   (evil-leader/set-key-for-mode 'go-mode
     "i" 'gofmt
     "I" 'gofmt))
+
+(evil-leader/set-key-for-mode 'dired-mode
+  "m C-s" 'dired-isearch-filenames
+  "m C-u C-s" 'dired-isearch-filenames-regexp
+  "mi" 'dired-subtree-insert
+  "mr" 'dired-subtree-remove
+  )
 
 (provide 'setup-evil-leader)
