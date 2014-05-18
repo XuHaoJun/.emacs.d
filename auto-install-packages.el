@@ -28,7 +28,7 @@
              quickrun
              rainbow-delimiters rainbow-mode ruby-electric ruby-block robe rinari
              window-numbering
-             session shell-pop slime smex smartparens smart-operator
+             session shell-pop slime smex smartparens
              solarized-theme surround scss-mode slime-company
              tronesque-theme
              undo-tree
