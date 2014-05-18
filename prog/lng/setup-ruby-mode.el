@@ -5,7 +5,7 @@
 ;;; it easy to send your code to the irb and can use M-x robe-start for
 ;;; code navigation and auto-complete.
 ;;;
-;;;  If you want use syntax check or style check gem install rubocop
+;;;  If you want use syntax check or style check gem install rubocop or rubylint
 ;;; and enable flycheck mode.
 ;;;
 ;;;  If you are a rails develper,rinari package provide very useful functions to develop
@@ -13,12 +13,16 @@
 ;;; but you need add two gems pry and pry-doc to your Gemfile.
 
 (require 'ruby-mode)
+
 (global-rinari-mode t) ; For ruby on rails
 (require 'yari) ; Yet Another RI interface
+
 (dolist (file-pattern '("Rakefile\\'" "\\.rake\\'" "Gemfile\\'"))
   (add-to-list 'auto-mode-alist (cons file-pattern '(. ruby-mode))))
+
 ;; Let emacs find my local gem in my home.
 (setenv "GEM_HOME" (expand-file-name "~/.gem"))
+
 ;; I bind it on evil-leader see setup-evil-leader.el file
 (defun ruby-send-region-or-mystuff (start end)
   (interactive "r")
@@ -71,40 +75,19 @@
 (require 'ruby-block)
 (add-hook 'ruby-mode-hook 'ruby-block-mode)
 
-
-(require 'inf-ruby)
-(setq inf-ruby-implementations
-      (delq (assoc "ruby" inf-ruby-implementations) inf-ruby-implementations))
-(add-to-list 'inf-ruby-implementations '("ruby"     . "irb --inf-ruby-mode -r irb/completion"))
-(add-hook 'inf-ruby-mode-hook (lambda () (setq evil-auto-indent nil)))
-(add-hook 'ruby-mode-hook 'inf-ruby-minor-mode)
-(require 'ac-inf-ruby) ;; when not installed via package.el
-(eval-after-load 'auto-complete
-  '(add-to-list 'ac-modes 'inf-ruby-mode))
-(add-hook 'inf-ruby-mode-hook 'ac-inf-ruby-enable)
 (defun ruby-send-buffer ()
   (interactive)
   (save-excursion
     (ruby-send-region (point-min) (point-max))))
 
-
 ;; Use .irbrc and set default's :PROMPT_S => nil,
 ;; then it can work on my robe and correctly output prompt
+;; depend on those gems pry pry-doc method-source
+;; M-x inf-ruby
+;; M-x robe-start
 (require 'robe)
+(eval-after-load 'company '(push 'company-robe company-backends))
 (add-hook 'ruby-mode-hook 'robe-mode)
-;; Add to auto-complete
-(eval-after-load 'robe
-  '(add-hook 'robe-mode-hook
-             (lambda ()
-               (add-to-list 'ac-sources 'ac-source-robe))))
-
-;; ;; ruby #{rsense-home}/etc/config.rb ~/.rsense"
-;; ;; to generate config file (for use ruby2.0)
-;; (when (executable-find "rsense")
-;;   (setq rsense-home "/opt/rsense-0.3")
-;;   (require 'rsense)
-;;   (add-hook 'ruby-mode-hook
-;;             (lambda ()
-;;               (add-to-list 'ac-sources 'ac-source-rsense))))
+(add-hook 'inf-ruby-mode-hook 'robe-mode)
 
 (provide 'setup-ruby-mode)
