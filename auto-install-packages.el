@@ -11,7 +11,7 @@
              eldoc-extension emacs-eclim erc-hl-nicks expand-region emmet-mode
              evil evil-leader evil-numbers evil-matchit
              flex-isearch fuzzy flycheck flx flx-ido fullframe
-             geiser git-blame git-commit-mode google-this
+             geiser git-commit-mode google-this
              gitconfig-mode github-browse-file gitignore-mode google-c-style
              go-mode go-eldoc go-snippets ggtags
              helm helm-ack helm-ag helm-c-moccur helm-gtags helm-rails
