@@ -8,11 +8,6 @@
 (setq evil-regexp-search t)
 (setq evil-want-C-i-jump t)
 
-(evil-set-initial-state 'term-mode       'emacs)
-(evil-set-initial-state 'ansi-term       'emacs)
-;; For dired use v/q
-(evil-set-initial-state 'dired-mode      'emacs)
-(evil-set-initial-state 'conf-space-mode 'emacs)
 
 (defun current-line-text ()
   (progn
