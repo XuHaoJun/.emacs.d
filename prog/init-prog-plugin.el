@@ -20,5 +20,6 @@
 (require 'setup-auto-indentation)
 (require 'setup-projectile)
 (require 'setup-inf-mongo)
+(require 'setup-sr-speedbar)
 
 (provide 'init-prog-plugin)

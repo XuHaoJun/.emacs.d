@@ -64,7 +64,8 @@
   "R"  'vr/query-replace
   "s"  'save-buffer
   "S"  'save-some-buffers
-  "mc" 'flycheck-mode)
+  "mc" 'flycheck-mode
+  "t"  'sr-speedbar-toggle)
 
 (defmacro evil-leader/set-key-for-modes (mode key def &rest bindings)
   `(dolist (my-mode ,mode)

@@ -29,7 +29,7 @@
              rainbow-delimiters rainbow-mode ruby-electric ruby-block robe rinari
              window-numbering
              session shell-pop slime smex smartparens
-             solarized-theme surround scss-mode slime-company
+             solarized-theme surround scss-mode slime-company sr-speedbar
              tronesque-theme
              undo-tree
              visual-regexp
