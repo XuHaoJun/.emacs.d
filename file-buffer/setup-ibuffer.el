@@ -1,9 +1,12 @@
 ;;From https://github.com/purcell/emacs.d/blob/master/init-ibuffer.el
 (require 'ibuffer)
 
+(eval-after-load 'ibuffer
+  '(fullframe ibuffer ibuffer-quit))
+
 (add-hook 'ibuffer-mode-hook
-	  '(lambda ()
-	     (ibuffer-auto-mode t)))
+          '(lambda ()
+             (ibuffer-auto-mode t)))
 
 (defun ibuffer-set-up-preferred-filters ()
   (ibuffer-vc-set-filter-groups-by-vc-root)

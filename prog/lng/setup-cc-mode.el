@@ -7,11 +7,10 @@
 (setq clang-format-style "google")
 
 (defun setup-gtags-hook ()
-  (ggtags-mode)
+  (ggtags-mode 1)
   (define-key evil-motion-state-local-map "gd" 'ggtags-find-tag-dwim))
 
 (when (executable-find "gtags")
-  (require 'gtags)
   (require 'ggtags)
   (add-hook 'c-mode-hook 'setup-gtags-hook)
   (add-hook 'c++-mode-hook 'setup-gtags-hook))

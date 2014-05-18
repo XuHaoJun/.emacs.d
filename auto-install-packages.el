@@ -25,6 +25,7 @@
              nlinum
              openwith org org-octopress ox-reveal
              pkgbuild-mode pos-tip popwin projectile pangu-spacing prodigy
+             php-mode
              quickrun
              rainbow-delimiters rainbow-mode ruby-electric ruby-block robe rinari
              window-numbering
