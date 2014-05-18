@@ -159,8 +159,6 @@
     "I" 'gofmt))
 
 (evil-leader/set-key-for-mode 'dired-mode
-  "m C-s" 'dired-isearch-filenames
-  "m C-u C-s" 'dired-isearch-filenames-regexp
   "mi" 'dired-subtree-insert
   "mr" 'dired-subtree-remove
   )

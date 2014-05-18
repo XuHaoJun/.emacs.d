@@ -24,7 +24,7 @@
   (if dired-single-last-single-buffer-pos
       (goto-char (pop dired-single-last-single-buffer-pos))))
 
-(defun setup-dired-single-hook ()
+(defun setup-dired-single-keys ()
   (define-key dired-mode-map (kbd "l") (lambda () (interactive)
                                          (push (point) dired-single-last-single-buffer-pos)
                                          (dired-single-buffer)))
@@ -33,7 +33,7 @@
   (define-key dired-mode-map (kbd "k") 'dired-previous-line)
   (define-key dired-mode-map (kbd "RET") 'dired-single-buffer)
   (define-key dired-mode-map (kbd "<mouse-1>") 'dired-single-buffer-mouse))
-(add-hook 'dired-mode-hook 'setup-dired-single-hook)
+(setup-dired-single-keys)
 
 ;; Hide dotfiles and . like 'ls'
 (require 'dired-x)
@@ -44,5 +44,6 @@
 (require 'wdired)
 (define-key dired-mode-map "\C-c\C-e" 'wdired-change-to-wdired-mode)
 
+(define-key dired-mode-map (kbd "/") 'dired-isearch-filenames-regexp)
 
 (provide 'setup-dired)
