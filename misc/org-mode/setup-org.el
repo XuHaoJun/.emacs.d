@@ -1,3 +1,4 @@
+(require 'org)
 (setq org-startup-indented t)
 (setq org-startup-folded t)
 (setq org-hide-leading-stars t)
@@ -5,6 +6,12 @@
           (lambda ()
             (setq truncate-lines nil)))
 (add-hook 'org-mode-hook 'auto-fill-mode)
+
+(eval-after-load "org"
+  '(progn
+     (when (executable-find "zathura")
+       (delete '("\\.pdf\\'" . default) org-file-apps)
+       (add-to-list 'org-file-apps '("\\.pdf\\'" . "zathura %s")))))
 
 ;; If you can't use it, try re-install org(8.x) and org-octopress.
 (require 'org-octopress)
