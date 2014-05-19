@@ -10,6 +10,7 @@ task :init_submodules do
 end
 
 task :upgrade_emacs_packages do
+  Dir.chdir File.expand_path("~/.emacs.d")
   puts "---- Pulling lastest emacs packages ----"
   sh "./script/upgrade-emacs-package.el"
 end
