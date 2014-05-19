@@ -10,7 +10,6 @@
 
 (package-refresh-contents)
 (auto-install-packages)
-
-(list-packages)
+(package-list-packages-no-fetch)
 (package-menu-mark-upgrades)
 (package-menu-execute)
