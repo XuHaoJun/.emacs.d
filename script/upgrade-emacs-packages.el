@@ -1,7 +1,9 @@
 #!/usr/bin/emacs --script
 
-(load-path "../setup-package.el")
-(load-path "../auto-install-packages.el")
+(add-to-list 'load-path ".")
+
+(load "setup-package.el")
+(load "auto-install-packages.el")
 
 (require 'setup-package)
 (require 'auto-install-packages)
