@@ -15,7 +15,7 @@ task :upgrade_emacs_packages do
 end
 
 def rename_dotemacs(options = {})
-  askp = opstions[:ask]
+  askp = options[:ask]
   needed_askp = false
   needed_rename = File.dirname(__FILE__) != File.expand_path("~/.emacs.d")
   if needed_rename && askp
@@ -47,7 +47,7 @@ task :default do
   end
   puts "---- Pulling lastest Version ----"
   sh "git pull"
-  sh "rake upgrade_emacs_packages"
   sh "rake init_submodules"
   sh "rake upgrade_submodules"
+  sh "rake upgrade_emacs_packages"
 end
