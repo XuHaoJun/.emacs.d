@@ -1,6 +1,6 @@
 task :upgrade_submodules do
   puts "---- Upgradeing submodules! ----"
-  sh "git submodule foreach git pull"
+  sh "git submodule foreach git pull origin master"
 end
 
 task :init_submodules do
