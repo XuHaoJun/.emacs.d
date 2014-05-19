@@ -11,5 +11,6 @@
 (require 'setup-newsticker)
 (require 'setup-google-this)
 (require 'setup-prodigy)
+(require 'setup-eshell)
 
 (provide 'init-misc-plugin)
