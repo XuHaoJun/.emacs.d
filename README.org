@@ -3,8 +3,9 @@
 #+STARTUP: content
 
 * Installation
+I write a little [[https://github.com/XuHaoJun/emacs.d/blob/master/script/bootstrap.sh][bootstrap script]] , easily install.
 #+BEGIN_SRC sh
-  curl https://raw.githubusercontent.com/XuHaoJun/emacs.d/master/script/bootstrap.sh | sh
+  curl http://bit.ly/xumacs-bootstrap | sh
 #+END_SRC
 
 * Upgrade
