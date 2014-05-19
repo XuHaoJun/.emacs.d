@@ -1,5 +1,8 @@
 ;; rquire package '(slime-company)
-(slime-setup '(slime-company))
+(eval-after-load 'lisp '(progn
+                          (require 'slime-company)
+                          (require 'slime)
+                          (slime-setup '(slime-company))))
 
 ;; See http://bc.tech.coop/blog/070927.html
 (add-to-list 'auto-mode-alist '("\\.cl\\'" . lisp-mode))
@@ -26,21 +29,21 @@
          (symbol-at-point (symbol-at-point))
          (default (symbol-name symbol-at-point))
          (inp (read-from-minibuffer
-               (if (or word-at-point symbol-at-point)
-                   (concat "Symbol (default " default "): ")
-                 "Symbol (no default): "))))
+                (if (or word-at-point symbol-at-point)
+                  (concat "Symbol (default " default "): ")
+                  "Symbol (no default): "))))
     (if (and (string= inp "") (not word-at-point) (not
-                                                   symbol-at-point))
-        (message "you didn't enter a symbol!")
+                                                    symbol-at-point))
+      (message "you didn't enter a symbol!")
       (let ((search-type (read-from-minibuffer
-                          "full-text (f) or basic (b) search (default b)? ")))
+                           "full-text (f) or basic (b) search (default b)? ")))
         (browse-url (concat "http://lispdoc.com?q="
                             (if (string= inp "")
-                                default
+                              default
                               inp)
                             "&search="
                             (if (string-equal search-type "f")
-                                "full+text+search"
+                              "full+text+search"
                               "basic+search")))))))
 
 (provide 'setup-common-lisp)
