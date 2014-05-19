@@ -17,7 +17,7 @@
              helm helm-ack helm-ag helm-c-moccur helm-gtags helm-rails
              helm-projectile helm-css-scss helm-flycheck helm-open-github helm-swoop
              htmlize haskell-mode highlight-symbol
-             ibuffer-vc ido-sort-mtime ido-ubiquitous ido-yes-or-no
+             ibuffer-vc ido-sort-mtime ido-ubiquitous
              ido-vertical-mode iedit inf-ruby inf-mongo ipretty
              js2-mode ac-js2
              kibit-mode

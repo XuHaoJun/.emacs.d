@@ -1,4 +1,3 @@
-(require 'ac-coffee)
 (custom-set-variables '(coffee-tab-width 2))
 
 (add-hook 'coffee-mode-hook (lambda ()

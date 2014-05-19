@@ -6,22 +6,15 @@
 
 (ido-sort-mtime-mode 1)
 
-
 (require 'setup-smex-basic)
 (smex-initialize)
-
 
 ;; Use ido everywhere
 (setq ido-everywhere t)
 (ido-ubiquitous-mode t)
 (require 'setup-ido-ubiquitous-basic)
 
-
 (flx-ido-mode 1)
-
-
-(ido-yes-or-no-mode t)
-
 
 (require 'ido-preview)
 (add-hook 'ido-setup-hook
