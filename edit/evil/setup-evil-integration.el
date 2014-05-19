@@ -6,7 +6,9 @@
 (eval-after-load 'help-mode
   '(progn
      (defvar help-mode-map)
-     (evil-make-overriding-map help-mode-map 'normal)))
+     (evil-make-overriding-map help-mode-map 'normal)
+     (evil-add-hjkl-bindings help-mode-map 'normal
+       "h" 'evil-backward-char)))
 
 (evil-set-initial-state 'term-mode     'emacs)
 (evil-set-initial-state 'ansi-term     'emacs)
