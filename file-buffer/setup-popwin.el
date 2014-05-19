@@ -5,12 +5,12 @@
 
 (push "*quickrun*" popwin:special-display-config)
 
-;; M-x anything
-(setq anything-samewindow nil)
-(push '("*anything*" :height 20) popwin:special-display-config)
-
 ;; M-x dired-jump-other-window
 (push '(dired-mode :position top) popwin:special-display-config)
+
+;; projectile ag search
+(push '("*ag search .*\*" :regexp t)
+      popwin:special-display-config)
 
 ;; M-!
 (push "*Shell Command Output*" popwin:special-display-config)
