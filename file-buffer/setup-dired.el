@@ -26,7 +26,8 @@
 
 (defun setup-dired-single-keys ()
   (define-key dired-mode-map (kbd "l") (lambda () (interactive)
-                                         (push (point) dired-single-last-single-buffer-pos)
+                                         (when (file-directory-p (dired-get-filename nil t))
+                                           (push (point) dired-single-last-single-buffer-pos))
                                          (dired-single-buffer)))
   (define-key dired-mode-map (kbd "h") (lambda () (interactive) (dired-single-last-single-buffer)))
   (define-key dired-mode-map (kbd "j") 'dired-next-line)
