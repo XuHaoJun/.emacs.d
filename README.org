@@ -1,4 +1,4 @@
-#+TITLE: dotemacs
+#+TITLE: xumacs
 #+Options: num:nil
 #+STARTUP: content
 
@@ -81,10 +81,9 @@ coming soon...
 *** Syntax Checking
 - Requirement: [[http://clang.llvm.org/][clang]]
 *** Navigation
-May be use [[https://github.com/Andersbakken/rtags][rtags]] for code Navigation in the future.
-- Requirement: [[https://www.gnu.org/software/global/global.html][global]]
-- Useage: =M-x helm-gtags=
-
+- Taglist
+  - Requirement: [[https://www.gnu.org/software/global/global.html][global]]
+  - Usage: =M-x helm-ggtags-find-tag=
 
 ** Go
 *** Auto Complection
@@ -95,20 +94,19 @@ May be use [[https://github.com/Andersbakken/rtags][rtags]] for code Navigation 
 - jump to definition
   - Requirement: [[https://code.google.com/p/rog-go/source/browse/exp/cmd/godef/][godef]]
 
-
 ** Ruby
 *** Auto Complection
 - Requirement: [[https://www.ruby-lang.org/en/][irb]]
-- Useage: =M-x= =inf-ruby= or =rinari-console= for rails then =M-x robe-on=.
+- Usage: =M-x= =inf-ruby= or =rinari-console= for rails then =M-x robe-on=.
 *** Syntax Checking
-- Requirement: rubocop (ruby gem)
+- Requirement: [[https://github.com/bbatsov/rubocop][rubocop]]
 *** Interpreter
 - Requirement: [[https://www.ruby-lang.org/en/][irb]]
 - Usage: =M-x inf-ruby=
 *** Navigation
 - Jump to definition
   - Requirement: [[https://www.ruby-lang.org/en/][irb]]
-  - Useage: =M-x= =inf-ruby= or =rinari-console= for rails. =M-x robe-on=.
+  - Usage: =M-x= =inf-ruby= or =rinari-console= for rails. =M-x robe-on=.
 
 
 ** Python
@@ -118,14 +116,14 @@ May be use [[https://github.com/Andersbakken/rtags][rtags]] for code Navigation 
 - Requirement: [[https://pypi.python.org/pypi/flake8][flake8]]
 *** Navigation
 - Jump to definition
-- Requirement: [[https://github.com/davidhalter/jedi][jedi]] [[https://github.com/tkf/python-epc][epc]]
+  - Requirement: [[https://github.com/davidhalter/jedi][jedi]] [[https://github.com/tkf/python-epc][epc]]
 *** Interpreter
 - Usage: =M-x python-shell-switch-to-buffer=
 
 ** Javascript
 *** Auto Complection
 - Requirement: a browser
-- Useage: =M-x run-skewer=
+- Usage: =M-x run-skewer=
 *** Navigation
 - Jump to definition
   - Requirement: a browser
@@ -135,7 +133,7 @@ May be use [[https://github.com/Andersbakken/rtags][rtags]] for code Navigation 
   #+END_SRC
 *** Interpreter
 - Requirement: a browser
-- Useage: =M-x run-skewer=
+- Usage: =M-x run-skewer=
 
 ** Coffeescript
 *** Auto Complection
@@ -146,7 +144,7 @@ May be use [[https://github.com/Andersbakken/rtags][rtags]] for code Navigation 
 - Requirement: racket or guile
 *** Navigation
 - Jump to definition
-- Requirement: racket or guile
+  - Requirement: [[http://racket-lang.org/][racket]] or [[https://www.gnu.org/software/guile/][guile]]
 *** Interpreter
 - Usage: =M-x run-geiser=
 ** Haskell
