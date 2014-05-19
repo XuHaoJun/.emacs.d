@@ -39,7 +39,7 @@
 
 
 ;; install the missing packages
-(defun auto-install-pacs ()
+(defun auto-install-packages ()
   (dolist (package pkg-lst)
     (when (not (package-installed-p package))
       (package-install package))))

@@ -21,7 +21,7 @@
 ;;;---------------------------------------------------------------------------
 (require 'setup-package)
 (require 'auto-install-packages)
-(auto-install-pacs)
+(auto-install-packages)
 ;;; End of Setup packages
 
 
