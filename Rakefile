@@ -15,24 +15,14 @@ task :upgrade_emacs_packages do
   sh "./script/upgrade-emacs-packages.el"
 end
 
-def rename_dotemacs(options = {})
-  askp = options[:ask]
-  needed_askp = false
+def rename_dotemacs()
   needed_rename = File.dirname(__FILE__) != File.expand_path("~/.emacs.d")
-  if needed_rename && askp
+  if needed_rename
     ["~/.emacs.d", "~/.emacs"].each do |dotemacs|
       if File.exists?(File.expand_path(dotemacs))
-        puts "Detect your aleardy have dotemacs: " + dotemacs
-        print "Rename to " + dotemacs + ".old" + " ?(y/n) "
-        if gets.chomp == "y"
-          File.rename(dotemacs, dotemacs + ".old")
-        else
-          return false
-        end
+        File.rename(dotemacs, dotemacs + ".old")
       end
     end
-  end
-  if needed_rename
     File.rename(File.dirname(__FILE__),
                 File.expand_path("~/.emacs.d"))
     return File.dirname(__FILE__)
@@ -42,7 +32,7 @@ def rename_dotemacs(options = {})
 end
 
 task :default do
-  renamed = rename_dotemacs(ask: true)
+  renamed = rename_dotemacs()
   if renamed
     Dir.chdir File.expand_path("~/.emacs.d")
   end
