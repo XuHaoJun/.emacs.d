@@ -1,12 +1,6 @@
-[submodule "site-lisp/emacs-clang-complete-async"]
-	path = site-lisp/emacs-clang-complete-async
-	url = git://github.com/Golevka/emacs-clang-complete-async.git
 [submodule "site-lisp/evil-ruby-block-object"]
 	path = site-lisp/evil-ruby-block-object
 	url = https://github.com/XuHaoJun/evil-ruby-block-object.git
-[submodule "site-lisp/ac-coffee"]
-	path = site-lisp/ac-coffee
-	url = https://github.com/akfish/ac-coffee.git
 [submodule "site-lisp/ac-inf-mongo"]
 	path = site-lisp/ac-inf-mongo
 	url = https://github.com/XuHaoJun/ac-inf-mongo
