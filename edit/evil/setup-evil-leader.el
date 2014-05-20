@@ -56,7 +56,7 @@
   "O"  'ace-window
   "pp" 'projectile-find-file
   "ph" 'helm-projectile
-  "pg" 'projectile-ag
+  "pg" 'projectile-enh-grep
   "pb" 'projectile-switch-to-buffer
   "po" 'projectile-switch-project
   "pO" 'projectile-multi-occur
