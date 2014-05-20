@@ -42,6 +42,8 @@
     (while (and (not did-greped)
                 fallbacks-priority)
       (setq did-greped
-       (funcall (cdr (assoc (pop fallbacks-priority) fallbacks)))))))
+            (funcall
+             (cdr (assoc (pop fallbacks-priority)
+                         fallbacks)))))))
 
 (provide 'setup-projectile)
