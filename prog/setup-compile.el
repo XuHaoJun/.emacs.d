@@ -3,9 +3,9 @@
          (bury-buffer "*compilation*")
          (winner-undo)
          (message "Build successful."))
-        (t                                                                    
+        (t
          (message "Compilation exited abnormally: %s" string))))
 
-(setq compilation-finish-functions 'compile-autoclose) 
+;; (setq compilation-finish-functions 'compile-autoclose)
 
 (provide 'setup-compile)
