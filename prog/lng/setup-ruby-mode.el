@@ -74,6 +74,7 @@
 
 (require 'ruby-block)
 (add-hook 'ruby-mode-hook 'ruby-block-mode)
+(diminish 'ruby-block-mode)
 
 (defun ruby-send-buffer ()
   (interactive)
