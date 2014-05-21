@@ -5,7 +5,7 @@
 * Installation
 I write a little [[https://github.com/XuHaoJun/emacs.d/blob/master/script/bootstrap.sh][bootstrap script]] , easily install.
 #+BEGIN_SRC sh
-  curl -L  http://bit.ly/xumacs-bootstrap | sh
+  curl -L http://bit.ly/xumacs-bootstrap | sh
 #+END_SRC
 
 * Upgrade
@@ -84,7 +84,6 @@ coming soon...
 - Taglist
   - Requirement: [[https://www.gnu.org/software/global/global.html][global]]
   - Usage: =M-x helm-ggtags-find-tag=
-
 ** Go
 *** Auto Complection
 - Requirement: [[https://github.com/nsf/gocode][gocode]]
@@ -107,7 +106,6 @@ coming soon...
 - Jump to definition
   - Requirement: [[https://www.ruby-lang.org/en/][irb]]
   - Usage: =M-x= =inf-ruby= or =rinari-console= for rails. =M-x robe-on=.
-
 
 ** Python
 *** Auto Complection
@@ -134,10 +132,6 @@ coming soon...
 *** Interpreter
 - Requirement: a browser
 - Usage: =M-x run-skewer=
-
-** Coffeescript
-*** Auto Complection
-- Requirement: [[http://nodejs.org/][node]]
 
 ** Scheme
 *** Auto Complection
