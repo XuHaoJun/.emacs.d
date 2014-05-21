@@ -81,11 +81,6 @@
    "I" 'clang-format-region))
 
 (evil-leader/set-key-for-modes
- '(c-mode c++-mode)
- "mt" 'gtags-find-tag
- "ms" 'gtags-find-symbol)
-
-(evil-leader/set-key-for-modes
  '(ruby-mode web-mode)
  "hra" 'helm-rails-all
  "hrm" 'helm-rails-models
