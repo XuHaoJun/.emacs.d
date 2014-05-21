@@ -8,6 +8,9 @@
 ;; M-x dired-jump-other-window
 (push '(dired-mode :position top) popwin:special-display-config)
 
+;; ggtags-mode
+(push "*ggtags-global*" popwin:special-display-config)
+
 ;; projectile ag search
 (push '("*ag search .*\*" :regexp t)
       popwin:special-display-config)
