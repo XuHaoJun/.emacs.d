@@ -14,7 +14,4 @@
   (when (null package-archive-contents)
     (package-refresh-contents)))
 
-(require 'fullframe)
-(fullframe list-packages quit-window)
-
 (provide 'setup-package)
