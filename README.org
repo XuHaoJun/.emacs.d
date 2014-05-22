@@ -5,7 +5,7 @@
 * Installation
 I write a little [[https://github.com/XuHaoJun/emacs.d/blob/master/script/bootstrap.sh][bootstrap script]] , easily install.
 #+BEGIN_SRC sh
-  curl -L http://bit.ly/xumacs-bootstrap | sh
+  curl -Lo- https://bit.ly/xumacs-bootstrap | sh
 #+END_SRC
 
 * Upgrade
