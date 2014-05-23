@@ -1,8 +1,10 @@
 (require 'org)
 (require 'org-latex)
 (require 'ox-latex)
-
-(setq org-latex-pdf-process '("xelatex -interaction nonstopmode -output-directory %o %f"))
+(setq org-latex-pdf-process '("xelatex -interaction nonstopmode -output-directory %o %f"
+                              "bibtex %b"
+                              "xelatex -interaction nonstopmode -output-directory %o %f"
+                              "xelatex -interaction nonstopmode -output-directory %o %f"))
 (setq org-latex-coding-system 'utf-8)
 
 (setf org-latex-default-packages-alist
@@ -23,9 +25,9 @@
 \\usepackage{graphicx}
 
 %%% 设置中文字体 %%%
-\\setCJKmainfont{WenQuanYi Micro Hei}% 文鼎宋体和楷书
-\\setCJKsansfont{WenQuanYi Micro Hei}% 文泉驿的黑体
-\\setCJKmonofont{WenQuanYi Micro Hei}
+\\setCJKmainfont{WenQuanYi Micro Hei}%
+\\setCJKsansfont{WenQuanYi Zen Hei}%
+\\setCJKmonofont{WenQuanYi Zen Hei}
 
 %%% 设置页面边距 %%%
 \\usepackage[top=2.54cm, bottom=2.54cm, left=3.17cm, right=3.17cm]{geometry} %
