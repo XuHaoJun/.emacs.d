@@ -19,7 +19,7 @@
              htmlize haskell-mode highlight-symbol
              ibuffer-vc ido-sort-mtime ido-ubiquitous
              ido-vertical-mode iedit inf-ruby inf-mongo ipretty
-             js2-mode ac-js2
+             js2-mode ac-js2 json-mode
              kibit-mode
              magit multi-term
              nlinum
