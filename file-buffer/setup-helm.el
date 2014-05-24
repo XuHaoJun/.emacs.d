@@ -1,10 +1,8 @@
-(eval-after-load 'ido '(require 'helm-mode))
 (require 'helm-ack)
 (require 'helm-ag)
 (require 'helm-rails)
 (require 'helm-projectile)
 
-(diminish 'helm-mode)
 (setq-default helm-M-x-requires-pattern 0)
 (setq helm-samewindow nil)
 

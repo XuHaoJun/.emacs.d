@@ -4,26 +4,24 @@
 ;;; Require site-lisp:
 ;;; (ido-preview)
 
+(require 'setup-smex)
+
+(flx-ido-mode 1)
+
 (ido-sort-mtime-mode 1)
 
-(require 'setup-smex-basic)
-(smex-initialize)
+(ido-vertical-mode t)
 
 ;; Use ido everywhere
 (setq ido-everywhere t)
 (ido-ubiquitous-mode t)
-(require 'setup-ido-ubiquitous-basic)
 
-(flx-ido-mode 1)
-
-(require 'ido-preview)
+;; Bind ido-preview
 (add-hook 'ido-setup-hook
   (lambda()
     (define-key ido-completion-map (kbd "C-M-p") (lookup-key ido-completion-map (kbd "C-p")))
     (define-key ido-completion-map (kbd "C-M-n") (lookup-key ido-completion-map (kbd "C-n"))) ; currently, this makes nothing. Maybe they'll make C-n key lately.
     (define-key ido-completion-map (kbd "C-p") 'ido-preview-backward)
     (define-key ido-completion-map (kbd "C-n") 'ido-preview-forward)))
-
-(ido-vertical-mode t)
 
 (provide 'setup-ido-plugin)
