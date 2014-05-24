@@ -97,7 +97,9 @@
   "mm" 'ruby-send-region-or-mystuff
   "ml" 'ruby-send-current-line
   "mb" 'ruby-send-buffer
+  "me" 'ruby-send-last-sexp
   "mr" 'inf-ruby
+  "mR" 'robe-start
   "md" 'robe-doc)
 
 (evil-leader/set-key-for-modes
@@ -155,7 +157,6 @@
 
 (evil-leader/set-key-for-mode 'dired-mode
   "mi" 'dired-subtree-insert
-  "mr" 'dired-subtree-remove
-  )
+  "mr" 'dired-subtree-remove)
 
 (provide 'setup-evil-leader)
