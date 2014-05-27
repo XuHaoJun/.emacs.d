@@ -3,7 +3,7 @@
 #+STARTUP: content
 
 * Installation
-I write a little [[https://github.com/XuHaoJun/emacs.d/blob/master/script/bootstrap.sh][bootstrap script]] , easily install.
+I wrote a little [[https://github.com/XuHaoJun/emacs.d/blob/master/script/bootstrap.sh][bootstrap script]] , easily install.
 #+BEGIN_SRC sh
   curl -Lo- https://bit.ly/xumacs-bootstrap | sh
 #+END_SRC
@@ -19,21 +19,22 @@ I write a little [[https://github.com/XuHaoJun/emacs.d/blob/master/script/bootst
 
 * Quick Start
 - Use evil-mode by default that provides Vim features.
-- Frequently use key-bindings.
-  | Key | Description                |
-  |-----+----------------------------|
-  | ;;  | M-x                        |
-  | ;b  | switch buffer              |
-  | ;B  | list buffers               |
-  | ;f  | find file                  |
-  | ;s  | save buffer to file        |
-  | ;k  | kill buffer                |
-  | ;g  | show git status            |
-  | ;pp | find file in project(git)  |
-  | ;pb | switch buffer in project   |
-  | ;pg | grep in project files      |
-  | F9  | open and toggle a terminal |
-  | ZZ  | save and quit emacs        |
+- Frequently use key-bindings, default leader key is =;=, you can reset it in
+  edit/evil/setup-evil-leader.el.
+  | Key              | Description                |
+  |------------------+----------------------------|
+  | <leader><leader> | M-x                        |
+  | <leader>b        | switch buffer              |
+  | <leader>B        | list buffers               |
+  | <leader>f        | find file                  |
+  | <leader>s        | save buffer to file        |
+  | <leader>k        | kill buffer                |
+  | <leader>g        | show git status            |
+  | <leader>pp       | find file in project       |
+  | <leader>pb       | switch buffer in project   |
+  | <leader>pg       | grep in project files      |
+  | F9               | open and toggle a terminal |
+  | ZZ               | save and quit emacs        |
 
 * Editing
 - Evil
@@ -62,10 +63,10 @@ coming soon...
   - Only few languages can navigate source.
   - Type =gd= jump to definition when move cursor on a symbol.
   - =gs= find symbol on current buffer.
-  - =;t= will show sr-speedbar, it like vim's taglist.
+  - =<leader>t= will show sr-speedbar, it like vim's taglist.
 - Indention:
-  - =;i= Indent current page.
-  - =;I= Indent whole buffer.
+  - =<leader>i= Indent current page.
+  - =<leader>I= Indent whole buffer.
 - Interpreter:
   - You can send code from your buffer to Interpreter.
   - Support (=ruby= =python= =clojure= =javascript= =scheme=)
