@@ -136,7 +136,7 @@ coming soon...
 
 ** Scheme
 *** Auto Complection
-- Requirement: racket or guile
+- Requirement: [[http://racket-lang.org/][racket]] or [[https://www.gnu.org/software/guile/][guile]]
 *** Navigation
 - Jump to definition
   - Requirement: [[http://racket-lang.org/][racket]] or [[https://www.gnu.org/software/guile/][guile]]
