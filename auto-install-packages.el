@@ -21,7 +21,7 @@
              ido-vertical-mode iedit inf-ruby inf-mongo ipretty
              js2-mode ac-js2 json-mode
              kibit-mode
-             magit multi-term
+             magit multi-term markdown-mode
              nlinum
              openwith org org-octopress ox-reveal
              pkgbuild-mode pos-tip popwin projectile pangu-spacing prodigy
