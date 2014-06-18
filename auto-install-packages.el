@@ -5,8 +5,7 @@
              autopair android-mode anzu ac-emmet
              ace-window auto-complete-clang anaconda-mode
              c-eldoc company company-go color-moccur css-eldoc coffee-mode command-log-mode
-             clang-format
-             clojure-mode cider
+             clang-format clojure-mode cider company-anaconda
              dired-subtree dired-details dired-details+ dired-single dynamic-fonts diminish
              eldoc-extension emacs-eclim erc-hl-nicks expand-region emmet-mode
              evil evil-leader evil-numbers evil-matchit
