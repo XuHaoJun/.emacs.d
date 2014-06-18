@@ -25,9 +25,9 @@
 \\usepackage{graphicx}
 
 %%% 设置中文字体 %%%
-\\setCJKmainfont{WenQuanYi Micro Hei}%
-\\setCJKsansfont{WenQuanYi Zen Hei}%
-\\setCJKmonofont{WenQuanYi Zen Hei}
+\\setmainfont{DejaVu Sans}               % main font
+\\setCJKmainfont{WenQuanYi Micro Hei}    % cjk main font
+\\setCJKfamilyfont{song}{AR PL UMing CN}
 
 %%% 设置页面边距 %%%
 \\usepackage[top=2.54cm, bottom=2.54cm, left=3.17cm, right=3.17cm]{geometry} %
