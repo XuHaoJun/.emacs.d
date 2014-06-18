@@ -137,6 +137,7 @@ coming soon...
 ** Scheme
 *** Auto Complection
 - Requirement: [[http://racket-lang.org/][racket]] or [[https://www.gnu.org/software/guile/][guile]]
+- Usage: =M-x run-geiser=
 *** Navigation
 - Jump to definition
   - Requirement: [[http://racket-lang.org/][racket]] or [[https://www.gnu.org/software/guile/][guile]]
@@ -146,6 +147,7 @@ coming soon...
 ** Clojure
 *** Auto Complection
 - Requirement: [[https://github.com/technomancy/leiningen][leiningen]] [[https://github.com/clojure-emacs/cider][cider]] [[https://github.com/alexander-yakushev/compliment][compliment]]
+- Usage: =M-x cider-jack-in=
 *** Syntax Checking
 - Requirement: [[https://github.com/technomancy/leiningen][leiningen]] [[https://github.com/jonase/kibit][kibit]]
 *** Navigation
