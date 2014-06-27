@@ -1,4 +1,7 @@
 (require 'org)
+
+(require 'ox-reveal)
+
 (setq org-startup-indented t)
 (setq org-startup-folded t)
 (setq org-hide-leading-stars t)
