@@ -179,5 +179,5 @@ html, css, scss
 Add following line to your org file:
 #+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/latest/
 
-Type =M-x org-reveal-export-to-html= to export html by using jsdelivr's
-reveal.js, open the exported html file in your browser.
+Use [[https://github.com/yjwen/org-reveal/][org-reveal]], type =M-x org-reveal-export-to-html= to export html by using
+jsdelivr's reveal.js, open the exported html file in your browser.
