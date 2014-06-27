@@ -177,7 +177,7 @@ html, css, scss
 [[https://github.com/hakimel/reveal.js][reveal.js]] is a create html5 presentation tool.
 *** Quick start:
 Add following line to your org file:
-#+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/latest/
+=#+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/latest/=
 
 Use [[https://github.com/yjwen/org-reveal/][org-reveal]], type =M-x org-reveal-export-to-html= to export html by using
 jsdelivr's reveal.js, open the exported html file in your browser.
