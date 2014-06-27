@@ -164,6 +164,7 @@ coming soon...
 ** Web
 html, css, scss
 
+
 * Misc
 | app         | emacs M-x            |
 |-------------+----------------------|
@@ -172,3 +173,11 @@ html, css, scss
 | Web Browser | w3m                  |
 | Dict        | kid-star-dict        |
 | Rss Reader  | newsticker-show-news |
+** reveal.js
+[[https://github.com/hakimel/reveal.js][reveal.js]] is a create html5 presentation tool.
+*** Quick start:
+Add following line to your org file:
+#+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/latest/
+
+Type =M-x org-reveal-export-to-html= to export html by using jsdelivr's
+reveal.js, open the exported html file in your browser.
