@@ -9,7 +9,7 @@
              dired-subtree dired-details dired-details+ dired-single dynamic-fonts diminish
              eldoc-extension emacs-eclim erc-hl-nicks expand-region emmet-mode
              evil evil-leader evil-numbers evil-matchit
-             flex-isearch fuzzy flycheck flx flx-ido fullframe
+             flex-isearch fuzzy flycheck flx flx-ido fullframe fic-mode
              geiser git-commit-mode google-this
              gitconfig-mode github-browse-file gitignore-mode google-c-style
              go-mode go-eldoc go-snippets ggtags
