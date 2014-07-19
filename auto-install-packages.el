@@ -2,7 +2,7 @@
 
 (defvar pkg-lst
   '(ac-slime ace-jump-mode ack-and-a-half ag auctex auto-complete
-             autopair android-mode anzu ac-emmet
+             autopair android-mode anzu
              ace-window auto-complete-clang anaconda-mode
              c-eldoc company company-go color-moccur css-eldoc coffee-mode command-log-mode
              clang-format clojure-mode cider company-anaconda
