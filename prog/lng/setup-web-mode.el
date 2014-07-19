@@ -14,6 +14,7 @@
 ;; Emmet
 (add-hook 'emmet-mode-hook
           (lambda ()
+            (yas-minor-mode-on)
             ;; Sync emmet indent tab with web-mode
             (setq emmet-indentation web-mode-markup-indent-offset)
             ;; Use emmet-expand-yas not emmet-expand-line,because expand-line
@@ -22,11 +23,6 @@
 
 (add-hook 'web-mode-hook
           (lambda ()
-            (emmet-mode)
-            (ac-emmet-html-setup)))
-
-;;Enable auto-complete-mode on web-mode
-(eval-after-load 'auto-complete
-                 '(add-to-list 'ac-modes 'web-mode))
+            (emmet-mode)))
 
 (provide 'setup-web-mode)
