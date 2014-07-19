@@ -159,4 +159,8 @@
   "mi" 'dired-subtree-insert
   "mr" 'dired-subtree-remove)
 
+(evil-leader/set-key-for-mode 'web-mode
+  "i" 'web-mode-buffer-indent
+  "I" 'web-mode-buffer-indent)
+
 (provide 'setup-evil-leader)
