@@ -54,7 +54,7 @@
   "nw" 'widen
   "o"  'other-window
   "O"  'other-window-backward
-  "C-o"  'ace-window
+  "C-o"  'switch-window
   "pp" 'projectile-find-file
   "ph" 'helm-projectile
   "pg" 'projectile-enh-grep
@@ -73,7 +73,7 @@
 
 (defun other-window-backward (count &optional all-frames)
   (interactive "p")
-  (other-window -1 all-frames))
+  (other-window (* -1 count) all-frames))
 
 (defmacro evil-leader/set-key-for-modes (mode key def &rest bindings)
   `(dolist (my-mode ,mode)
