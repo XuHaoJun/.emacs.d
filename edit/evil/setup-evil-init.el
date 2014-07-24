@@ -1,5 +1,6 @@
 (require 'evil)
 (require 'evil-jumper)
+(require 'evil-visualstar)
 (require 'evil-ruby-block-object)
 (require 'surround)
 
