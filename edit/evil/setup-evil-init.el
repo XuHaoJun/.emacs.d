@@ -1,4 +1,5 @@
 (require 'evil)
+(require 'evil-jumper)
 (require 'evil-ruby-block-object)
 (require 'surround)
 
