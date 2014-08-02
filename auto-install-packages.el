@@ -16,7 +16,7 @@
              gitconfig-mode github-browse-file gitignore-mode google-c-style
              go-mode go-eldoc go-snippets ggtags
              helm helm-ack helm-ag helm-c-moccur helm-gtags helm-rails
-             helm-projectile helm-css-scss helm-flycheck helm-open-github helm-swoop
+             helm-projectile helm-css-scss helm-open-github helm-swoop
              htmlize haskell-mode highlight-symbol
              ibuffer-vc ido-sort-mtime ido-ubiquitous
              ido-vertical-mode iedit inf-ruby inf-mongo ipretty

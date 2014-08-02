@@ -40,7 +40,7 @@
   "hm" 'helm-M-x
   "hs" 'helm-swoop
   "hk" 'helm-show-kill-ring
-  "hc" 'helm-flycheck
+  "hc" 'flycheck-list-errors
   "i"  'indent-on-page
   "I"  'indent-on-buffer
   "G"  'magit-log
