@@ -1,13 +1,15 @@
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 
 (add-to-list 'interpreter-mode-alist '("node" . js2-mode))
+
 (setq ac-js2-evaluate-calls t)
+
+(require 'company-tern)
+(eval-after-load 'company
+  '(add-to-list 'company-backends 'company-tern))
+
 (defun setup-js2-mode-hook ()
-  (ac-js2-mode)
-  (auto-complete-mode -1)
-  (skewer-mode)
-  (rainbow-delimiters-mode)
-  (define-key evil-motion-state-local-map "gd" 'ac-js2-jump-to-definition))
+  (smartparens-mode t))
 
 (add-hook 'js2-mode-hook 'setup-js2-mode-hook)
 
