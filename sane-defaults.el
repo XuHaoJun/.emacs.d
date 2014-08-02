@@ -33,7 +33,7 @@
 
 ;;Show line number
 (global-linum-mode -1)
-(require 'nlinum)
+;; (require 'nlinum)
 ;; (mapcar (lambda (hooksym)
 ;;           (add-hook hooksym
 ;;                     (lambda ()
@@ -69,10 +69,6 @@
 
 ;; Delete trailing whitespace on save
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
-
-(setq gc-cons-threshold 8000)
-;;---------------------------------------
-
 
 ;; after copy Ctrl+c in X11 apps, you can paste by `yank' in emacs
 (setq x-select-enable-clipboard t)
