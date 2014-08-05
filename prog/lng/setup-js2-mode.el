@@ -4,6 +4,9 @@
 
 (setq ac-js2-evaluate-calls t)
 
+(custom-set-variables
+ '(js2-basic-offset 2))
+
 (require 'company-tern)
 (eval-after-load 'company
   '(add-to-list 'company-backends 'company-tern))
