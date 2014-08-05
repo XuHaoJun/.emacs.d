@@ -31,6 +31,7 @@
              window-numbering
              session shell-pop slime smex smartparens switch-window
              solarized-theme surround scss-mode slime-company sr-speedbar
+             stylus-mode
              tronesque-theme
              undo-tree
              visual-regexp
