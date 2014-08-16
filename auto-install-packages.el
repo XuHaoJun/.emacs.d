@@ -5,7 +5,7 @@
              autopair android-mode anzu
              ace-window auto-complete-clang anaconda-mode
              c-eldoc company company-go company-ghc company-cider company-auctex
-             company-inf-python company-inf-ruby company-tern
+             company-inf-ruby company-tern
              color-moccur css-eldoc coffee-mode command-log-mode
              clang-format clojure-mode cider company-anaconda
              dired-subtree dired-details dired-details+ dired-single dynamic-fonts diminish
