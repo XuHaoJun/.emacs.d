@@ -1,4 +1,4 @@
-(add-to-list 'load-path (concat user-emacs-directory "file-buffer/ido"))
+(add-to-list 'load-path (concat base-setup-dir "/file-buffer/ido"))
 (require 'setup-ido-init)
 
 (require 'setup-ibuffer)

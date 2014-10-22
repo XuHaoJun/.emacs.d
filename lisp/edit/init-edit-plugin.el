@@ -1,4 +1,4 @@
-(add-to-list 'load-path (concat user-emacs-directory "edit/evil"))
+(add-to-list 'load-path (concat base-setup-dir "/edit/evil"))
 (require 'setup-evil-init)
 
 (require 'setup-undo-tree)

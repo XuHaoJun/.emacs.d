@@ -1,7 +1,7 @@
-(add-to-list 'load-path (concat user-emacs-directory "misc/term"))
+(add-to-list 'load-path (concat base-setup-dir "/misc/term"))
 (require 'setup-term-init)
 
-(add-to-list 'load-path (concat user-emacs-directory "misc/org-mode"))
+(add-to-list 'load-path (concat base-setup-dir "/misc/org-mode"))
 (require 'setup-org-init)
 
 (require 'setup-shell-pop)

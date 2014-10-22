@@ -4,7 +4,7 @@
   '(ac-slime ace-jump-mode ack-and-a-half ag auctex auto-complete
              autopair android-mode anzu
              ace-window auto-complete-clang anaconda-mode
-             c-eldoc company company-go company-ghc company-cider company-auctex
+             c-eldoc company company-go company-ghc company-auctex
              company-inf-ruby company-tern
              color-moccur css-eldoc coffee-mode command-log-mode
              clang-format clojure-mode cider company-anaconda

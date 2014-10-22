@@ -1,4 +1,4 @@
-(add-to-list 'load-path (concat user-emacs-directory "prog/lng"))
+(add-to-list 'load-path (concat base-setup-dir "/prog/lng"))
 (require 'setup-lng-init)
 
 ;; (add-to-list 'load-path (concat user-emacs-directory "prog/android"))
