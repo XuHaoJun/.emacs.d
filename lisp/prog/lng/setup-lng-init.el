@@ -13,6 +13,6 @@
 (require 'setup-go-mode)
 (require 'setup-elisp)
 (require 'setup-clojure)
-;;(require 'setup-common-lisp)
+(require 'setup-common-lisp)
 
 (provide 'setup-lng-init)

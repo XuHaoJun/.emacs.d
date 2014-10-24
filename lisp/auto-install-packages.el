@@ -31,7 +31,7 @@
              rainbow-delimiters rainbow-mode ruby-electric ruby-block robe rinari
              window-numbering
              session shell-pop slime smex smartparens switch-window
-             solarized-theme surround scss-mode slime-company sr-speedbar
+             solarized-theme surround scss-mode sr-speedbar
              stylus-mode
              tronesque-theme
              undo-tree
