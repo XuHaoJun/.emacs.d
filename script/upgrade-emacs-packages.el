@@ -1,6 +1,6 @@
 #!/usr/bin/emacs --script
 
-(add-to-list 'load-path ".")
+(add-to-list 'load-path "lisp/")
 
 (load "setup-package.el")
 (load "auto-install-packages.el")
