@@ -2,7 +2,9 @@
 
 (require 'company-go)
 (eval-after-load 'company
-  '(add-to-list 'company-backends 'company-go))
+  '(progn
+     (add-to-list 'company-backends 'company-go)
+     (setq company-go-insert-arguments nil)))
 
 (when (executable-find "gofmt")
   (add-hook 'before-save-hook 'gofmt-before-save))

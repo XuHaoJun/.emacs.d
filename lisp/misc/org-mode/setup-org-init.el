@@ -1,4 +1,4 @@
 (require 'setup-org)
-;;(require 'setup-org-cjk)
+(require 'setup-org-cjk)
 
 (provide 'setup-org-init)

@@ -20,4 +20,10 @@
 ;;
 ;; (add-to-list 'ac-js2-external-libraries "path/to/lib/library.js")
 
+(custom-set-variables
+ '(js2-external-variable ((t (:foreground "LightSalmon1")))))
+
+(custom-set-faces
+ '(js2-external-variable ((t (:foreground "IndianRed2")))))
+
 (provide 'setup-js2-mode)
