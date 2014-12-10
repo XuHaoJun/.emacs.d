@@ -71,7 +71,9 @@
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 ;; after copy Ctrl+c in X11 apps, you can paste by `yank' in emacs
-(setq x-select-enable-clipboard t)
+(setq x-select-enable-clipboard nil)
+(global-set-key (kbd "<mouse-2>") 'x-clipboard-yank)
+(delete-selection-mode)
 
 ;; after mouse selection in X11, you can paste by `yank' in emacs
 (setq x-select-enable-primary t)
