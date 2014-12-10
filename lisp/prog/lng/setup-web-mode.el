@@ -45,4 +45,6 @@
           (lambda ()
             (emmet-mode)))
 
+(add-to-list 'company-dabbrev-code-modes 'web-mode)
+
 (provide 'setup-web-mode)
