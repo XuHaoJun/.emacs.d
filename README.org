@@ -134,7 +134,7 @@ coming soon...
 - Requirement: a browser
 - Usage: =M-x run-skewer=
 
-** Scheme
+** Scheme or Racket
 *** Auto Complection
 - Requirement: [[http://racket-lang.org/][racket]] or [[https://www.gnu.org/software/guile/][guile]]
 - Usage: =M-x run-geiser=

@@ -28,7 +28,7 @@
              openwith org org-octopress ox-reveal
              pkgbuild-mode pos-tip popwin projectile pangu-spacing prodigy
              quickrun
-             rainbow-delimiters rainbow-mode ruby-electric ruby-block robe rinari
+             rainbow-delimiters rainbow-mode ruby-electric ruby-block robe rinari racket-mode
              window-numbering
              session shell-pop slime smex smartparens switch-window
              solarized-theme surround scss-mode sr-speedbar

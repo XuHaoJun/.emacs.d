@@ -1,4 +1,4 @@
-;;; Require package: (geiser)
+;;; Require package: (geiser racket-mode)
 ;;;
 ;;; Useage:
 ;;; Geiser is such as SLIME,and if you want auto completion(company)
