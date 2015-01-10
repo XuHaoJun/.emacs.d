@@ -22,5 +22,7 @@
                                                    (company-abort)
                                                    (if (fboundp 'evil-normal-state)
                                                        (evil-normal-state))))
+(require 'company)
+(add-to-list 'company-dabbrev-code-modes 'web-mode)
 
 (provide 'setup-company)

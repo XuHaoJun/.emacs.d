@@ -12,9 +12,9 @@
 (add-to-list 'auto-mode-alist '("\\.go\\(html\\|tmpl\\)\\'"     . web-mode))
 (add-to-list 'auto-mode-alist '("\\.jsx$" . web-mode))
 
-(custom-set-variables
- '(web-mode-disable-auto-pairing t)
- '(web-mode-enable-auto-pairing nil))
+;; (custom-set-variables
+;;  '(web-mode-disable-auto-pairing t)
+;;  '(web-mode-enable-auto-pairing nil))
 
 ;; (defadvice web-mode-highlight-part (around tweak-jsx activate)
 ;;   (if (equal web-mode-content-type "jsx")
@@ -35,6 +35,8 @@
               ;; enable flycheck
               (flycheck-select-checker 'jsxhint-checker))))
 
+(setq web-mode-code-indent-offset 2)
+
 ;; Emmet
 (add-hook 'emmet-mode-hook
           (lambda ()
@@ -44,7 +46,5 @@
 (add-hook 'web-mode-hook
           (lambda ()
             (emmet-mode)))
-
-(add-to-list 'company-dabbrev-code-modes 'web-mode)
 
 (provide 'setup-web-mode)
