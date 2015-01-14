@@ -36,7 +36,7 @@
              tronesque-theme
              undo-tree
              visual-regexp
-             w3m wgrep wgrep-ack wgrep-helm web-mode
+             w3m wgrep wgrep-ack wgrep-helm
              yasnippet yari yaml-mode))
 
 

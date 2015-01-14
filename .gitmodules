@@ -1,3 +1,7 @@
 [submodule "site-lisp/evil-ruby-block-object"]
 	path = site-lisp/evil-ruby-block-object
 	url = https://github.com/XuHaoJun/evil-ruby-block-object.git
+[submodule "site-lisp/web-mode"]
+	path = site-lisp/web-mode
+	url = https://github.com/XuHaoJun/web-mode.git
+	branch = jsx-no-broken
