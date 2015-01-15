@@ -1,5 +1,5 @@
 ;;;  Require package:
-;;; (robe yari ruby-electric ruby-block inf-ruby evil auto-complete rinari)
+;;; (robe yari ruby-electric ruby-block inf-ruby evil rinari)
 ;;; Useage:
 ;;;  M-x inf-ruby to connect irb,and it will provide REPL environment,
 ;;; it easy to send your code to the irb and can use M-x robe-start for

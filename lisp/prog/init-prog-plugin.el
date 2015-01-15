@@ -4,9 +4,6 @@
 ;; (add-to-list 'load-path (concat user-emacs-directory "prog/android"))
 ;; (require 'setup-android-init)
 
-;; (add-to-list 'load-path (concat user-emacs-directory "prog/auto-complete"))
-;; (require 'setup-auto-complete-init)
-
 ;; (require 'setup-yasnippet)
 
 (require 'setup-prog-utils)

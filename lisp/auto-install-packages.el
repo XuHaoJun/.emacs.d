@@ -1,9 +1,9 @@
 (require 'package)
 
 (defvar pkg-lst
-  '(ac-slime ace-jump-mode ack-and-a-half ag auctex auto-complete
+  '(ace-jump-mode ack-and-a-half ag auctex
              autopair android-mode anzu
-             ace-window auto-complete-clang anaconda-mode
+             ace-window anaconda-mode
              c-eldoc company company-go company-ghc company-auctex
              company-inf-ruby company-tern
              color-moccur css-eldoc coffee-mode command-log-mode
@@ -21,7 +21,7 @@
              htmlize haskell-mode highlight-symbol
              ibuffer-vc ido-sort-mtime ido-ubiquitous
              ido-vertical-mode iedit inf-ruby inf-mongo ipretty
-             js2-mode ac-js2 json-mode
+             js2-mode json-mode
              kibit-mode
              magit multi-term markdown-mode
              nlinum

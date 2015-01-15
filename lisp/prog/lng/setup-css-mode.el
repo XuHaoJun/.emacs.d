@@ -1,9 +1,4 @@
-;;; Require package: (auto-complete rainbow-mode autopair-mode css-eldoc helm-css-scss)
-
-(add-hook 'css-mode-hook
-          (lambda ()
-            (make-local-variable 'ac-fuzzy-enable)
-            (setq ac-fuzzy-enable t)))
+;;; Require package: (rainbow-mode autopair-mode css-eldoc helm-css-scss)
 
 (add-hook 'css-mode-hook
           (lambda ()
