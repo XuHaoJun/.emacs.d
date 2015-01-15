@@ -1,7 +1,7 @@
 (require 'projectile)
 (projectile-global-mode) ;; to enable in all buffers
 (diminish 'projectile-mode)
-(setq projectile-enable-caching t)
+(setq projectile-enable-caching nil)
 (setq projectile-use-git-grep t)
 
 (setq projectile-fallback-priority '(git-grep ag ack grep))
