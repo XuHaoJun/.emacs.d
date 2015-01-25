@@ -11,6 +11,7 @@
   ";"  'smex
   "!"  'shell-command
   "xq" 'read-only-mode
+  "xc" 'save-buffers-kill-terminal
   "#"  'wg/ido-erc-buffer
   "%"  'wg/ido-term-buffer
   "ww" 'wg/ido-for-all-mode
