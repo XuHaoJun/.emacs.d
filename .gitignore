@@ -11,6 +11,7 @@ session.*
 /.recentf
 /.session
 /.smex-items
+/smex-items
 auto-save-list
 ac-comphist.dat
 projectile-bookmarks.eld
