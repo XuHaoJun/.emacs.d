@@ -121,8 +121,8 @@ coming soon...
 
 ** Javascript
 *** Auto Complection
-- Requirement: a browser
-- Usage: =M-x run-skewer=
+- Requirement: [[https://github.com/marijnh/tern][tern]]
+- Usage: =M-x tern-mode=
 *** Navigation
 - Jump to definition
   - Requirement: a browser
