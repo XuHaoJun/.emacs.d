@@ -29,6 +29,7 @@
              pkgbuild-mode pos-tip popwin projectile pangu-spacing prodigy
              quickrun
              rainbow-delimiters rainbow-mode ruby-electric ruby-block robe rinari racket-mode
+             rust-mode
              window-numbering
              session shell-pop slime smex smartparens switch-window
              solarized-theme surround scss-mode sr-speedbar
