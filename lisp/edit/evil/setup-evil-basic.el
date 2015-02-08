@@ -18,7 +18,7 @@
 
 (defun setup-evil-insert-and-indent ()
   (defadvice evil-insert (after evil-insert-state activate)
-    (when (derived-mode-p 'prog-mode 'clojure-parent-mode)
+    (when (derived-mode-p 'prog-mode 'clojure-parent-mode 'rust-mode)
       (when (and evil-auto-indent
                  (or (string-match "^[[:space:]]+$" (current-line-text))
                      (string-match "^$" (current-line-text))))
