@@ -7,7 +7,8 @@
 
 (defun indent-on-buffer ()
   (interactive)
-  (save-excursion
-    (indent-region (point-min) (point-max) nil)))
+  (delete-trailing-whitespace)
+  (indent-region (point-min) (point-max) nil)
+  (untabify (point-min) (point-max)))
 
 (provide 'util-indent)
