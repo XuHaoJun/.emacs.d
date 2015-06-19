@@ -3,9 +3,11 @@
 (add-to-list 'interpreter-mode-alist '("node" . js2-mode))
 
 (custom-set-variables
- '(js2-basic-offset 2))
-
-(setq-default js2-global-externs '("module" "require" "buster" "sinon" "assert" "refute" "setTimeout" "clearTimeout" "setInterval" "clearInterval" "location" "__dirname" "console" "JSON"))
+ '(js2-basic-offset 2)
+ '(js2-global-externs
+   '("module" "require" "buster" "sinon" "assert" "refute"
+     "setTimeout" "clearTimeout" "setInterval" "clearInterval"
+     "location" "__dirname" "console" "JSON")))
 
 (require 'company-tern)
 (eval-after-load 'company
@@ -15,13 +17,6 @@
   (smartparens-mode t))
 
 (add-hook 'js2-mode-hook 'setup-js2-mode-hook)
-
-;; To add completions for external libraries add something like this:
-;;
-;; (add-to-list 'ac-js2-external-libraries "path/to/lib/library.js")
-
-(custom-set-variables
- '(js2-external-variable ((t (:foreground "LightSalmon1")))))
 
 (custom-set-faces
  '(js2-external-variable ((t (:foreground "IndianRed2")))))
