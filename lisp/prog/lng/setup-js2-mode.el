@@ -2,10 +2,10 @@
 
 (add-to-list 'interpreter-mode-alist '("node" . js2-mode))
 
-(setq ac-js2-evaluate-calls t)
-
 (custom-set-variables
  '(js2-basic-offset 2))
+
+(setq-default js2-global-externs '("module" "require" "buster" "sinon" "assert" "refute" "setTimeout" "clearTimeout" "setInterval" "clearInterval" "location" "__dirname" "console" "JSON"))
 
 (require 'company-tern)
 (eval-after-load 'company

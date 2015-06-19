@@ -84,7 +84,7 @@
   (evil-leader/set-key-for-modes
    '(c-mode c++-mode)
    "i" 'clang-format-region
-   "I" 'clang-format-region))
+   "I" 'clang-format-buffer))
 
 (evil-leader/set-key-for-modes
  '(ruby-mode web-mode)
@@ -112,8 +112,9 @@
  '(emacs-lisp-mode lisp-interaction-mode)
  "mm" 'eval-defun
  "mb" 'eval-buffer
- "me" 'eval-last-sexp
- "mp" 'eval-print-last-sexp)
+ "ml" 'eval-last-sexp
+ "mp" 'eval-print-last-sexp
+ "me" 'eval-expression)
 
 (evil-leader/set-key-for-mode 'scheme-mode
   "mm" 'geiser-eval-definition

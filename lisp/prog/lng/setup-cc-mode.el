@@ -18,6 +18,17 @@
 
 (setq company-clang-insert-arguments nil)
 
+(require 'flycheck-clangcheck)
+
+(defun my-select-clangcheck-for-checker ()
+  "Select clang-check for flycheck's checker."
+  (flycheck-set-checker-executable 'c/c++-clangcheck
+                                   "clang-check")
+  (flycheck-select-checker 'c/c++-clangcheck))
+
+(add-hook 'c-mode-hook #'my-select-clangcheck-for-checker)
+(add-hook 'c++-mode-hook #'my-select-clangcheck-for-checker)
+
 ;Edit;for work with auto-indent mode
 (add-hook 'c-mode-common-hook
           (lambda () (setq indent-tabs-mode t)))
