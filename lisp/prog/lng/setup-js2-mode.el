@@ -5,7 +5,7 @@
 (custom-set-variables
  '(js2-basic-offset 2)
  '(js2-global-externs
-   '("module" "require" "buster" "sinon" "assert" "refute"
+   '("module" "require" "buster" "sinon" "assert" "refute" "exports"
      "setTimeout" "clearTimeout" "setInterval" "clearInterval"
      "location" "__dirname" "console" "JSON")))
 
