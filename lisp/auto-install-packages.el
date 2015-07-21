@@ -13,7 +13,7 @@
              evil evil-leader evil-numbers evil-matchit evil-jumper evil-visualstar
              eshell-prompt-extras
              flex-isearch fuzzy flycheck flycheck-clangcheck flx flx-ido fullframe fic-mode
-             geiser git-commit-mode google-this
+             geiser google-this
              gitconfig-mode github-browse-file gitignore-mode google-c-style
              go-mode go-eldoc go-snippets ggtags
              helm helm-ack helm-ag helm-c-moccur helm-gtags helm-rails
@@ -22,7 +22,6 @@
              ibuffer-vc ido-sort-mtime ido-ubiquitous
              ido-vertical-mode iedit inf-ruby inf-mongo ipretty
              js2-mode json-mode
-             kibit-mode
              lua-mode less-css-mode
              magit multi-term markdown-mode web-mode
              nlinum
